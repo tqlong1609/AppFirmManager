@@ -1,0 +1,12 @@
+L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.exe.config
+L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.exe
+L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.pdb
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.exe
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.pdb
+L:\ManagerCinema\ManagerCinema\bin\Debug\Bunifu_UI_v1.52.dll
+L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
