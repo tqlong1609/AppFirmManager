@@ -26,5 +26,24 @@ namespace ManagerCinema
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            flpBackground.Controls.Add(new UcBackground());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+            flpBackground.Controls.Add(new UcItemMovie());
+        }
     }
 }

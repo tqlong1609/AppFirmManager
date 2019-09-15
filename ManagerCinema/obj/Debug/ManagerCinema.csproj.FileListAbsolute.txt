@@ -10,3 +10,17 @@ L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.exe
 L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.pdb
 L:\ManagerCinema\ManagerCinema\bin\Debug\Bunifu_UI_v1.52.dll
 L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
+L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
+L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
+L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
+L:\AppFirmManager\ManagerCinema\bin\Debug\Bunifu_UI_v1.52.dll
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
