@@ -12,6 +12,11 @@ namespace ManagerCinema
 {
     public partial class UcBackground : UserControl
     {
+        private List<Image> mListImage;
+        private int positionImage;
+
+        private bool isLeft = true;
+
         public UcBackground()
         {
             InitializeComponent();
@@ -19,12 +24,58 @@ namespace ManagerCinema
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
-            pnlBackground.BackColor = Color.Blue;
+            if (checkPosition(isLeft))
+            {
+                positionImage--;
+                pbxBackground.Image = mListImage[positionImage];
+            }
+
+        }
+
+        // check position of image out of range list image background
+        private bool checkPosition(bool _isLeft)
+        {
+            int temp = positionImage;
+            if (_isLeft) {
+                temp--; // left
+            }
+            else {
+                temp++; // right
+            }
+            if (temp >= 0 && temp < mListImage.Count()) return true;
+            return false;
         }
 
         private void btnRight_Click(object sender, EventArgs e)
         {
-            pnlBackground.BackColor = Color.Yellow;
+            if (checkPosition(!isLeft))
+            {
+                positionImage++;
+                pbxBackground.Image = mListImage[positionImage];
+            }
+        }
+
+        private void UcBackground_Load(object sender, EventArgs e)
+        {
+            mListImage = new List<Image>();
+            positionImage = 0;
+
+            btnLeft.BringToFront();
+            btnRight.BringToFront();
+            addListImage();
+            addImageToBackground();
+        }
+
+        private void addImageToBackground()
+        {
+            pbxBackground.Image = mListImage[positionImage];
+        }
+
+        private void addListImage()
+        {
+            mListImage.Add(Image.FromFile("Image//image1.jpg"));
+            mListImage.Add(Image.FromFile("Image//image4.jpg"));
+            mListImage.Add(Image.FromFile("Image//image3.jpg"));
         }
     }
 }
