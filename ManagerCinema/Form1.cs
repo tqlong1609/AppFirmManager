@@ -79,5 +79,10 @@ namespace ManagerCinema
             this.Cursor = Cursors.Default;
         }
         #endregion
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            new FmLogin().ShowDialog();
+        }
     }
 }

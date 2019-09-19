@@ -60,6 +60,12 @@
     <Compile Include="FmBackground.Designer.cs">
       <DependentUpon>FmBackground.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmLogin.Designer.cs">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="UcItemMovie.Designer.cs">
       <DependentUpon>UcItemMovie.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FmLogin.resx">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
