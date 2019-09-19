@@ -10,14 +10,20 @@ namespace ManagerCinema.ObjectFolder
     public class Movie
     {
         private Image image;
+        private string nameMovie;
 
-        public Movie(Image image)
+        public Movie(Image image, string nameMovie)
         {
             this.image = image;
+            this.nameMovie = nameMovie;
         }
 
         public Image getImage() {
             return image;
+        }
+
+        public string getNameMovie() {
+            return nameMovie;
         }
     }
 }

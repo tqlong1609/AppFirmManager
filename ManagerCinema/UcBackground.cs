@@ -59,6 +59,7 @@ namespace ManagerCinema
         {
             mListImage = new List<Image>();
             positionImage = 0;
+            tChangeImage.Start();
 
             btnLeft.BringToFront();
             btnRight.BringToFront();
@@ -76,6 +77,23 @@ namespace ManagerCinema
             mListImage.Add(Image.FromFile("Image//image1.jpg"));
             mListImage.Add(Image.FromFile("Image//image4.jpg"));
             mListImage.Add(Image.FromFile("Image//image3.jpg"));
+        }
+
+        private void tChangeImage_Tick(object sender, EventArgs e)
+        {
+            if (mListImage.Count() > 0)
+            {
+                if (checkPosition(!isLeft))
+                {
+                    positionImage++;
+                    pbxBackground.Image = mListImage[positionImage];
+                }
+                else
+                {
+                    positionImage = 0;
+                    pbxBackground.Image = mListImage[positionImage];
+                }
+            }
         }
     }
 }

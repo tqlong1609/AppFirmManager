@@ -41,12 +41,18 @@ namespace ManagerCinema
         {
             flpBackground.Controls.Add(new UcBackground());
 
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image2.jpg"))));
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image5.jpg"))));
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image6.jpg"))));
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image7.jpg"))));
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image8.jpg"))));
-            flpBackground.Controls.Add(new UcItemMovie(new Movie(Image.FromFile("Image//image9.jpg"))));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image2.jpg"),"CHÚ HỀ MA QUÁI")));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image5.jpg"),"ALLADIN VÀ CÂY ĐÈN THẦN")));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image6.jpg"),"BoBoBoi")));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image7.jpg"),"THE KID WHO WOULD BE KING")));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image8.jpg"),"DRAGON THE HINDDEN WORLD")));
+            flpBackground.Controls.Add(new UcItemMovie(
+                new Movie(Image.FromFile("Image//image9.jpg"),"DORAEMON MẶT TRĂNG PHIÊU LƯU KÝ")));
         }
 
         #region Form Move

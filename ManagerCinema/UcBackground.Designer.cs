@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcBackground));
             this.pbxBackground = new System.Windows.Forms.PictureBox();
             this.btnRight = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnLeft = new Bunifu.Framework.UI.BunifuImageButton();
+            this.tChangeImage = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLeft)).BeginInit();
@@ -76,6 +78,11 @@
             this.btnLeft.Zoom = 10;
             this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
+            // tChangeImage
+            // 
+            this.tChangeImage.Interval = 5000;
+            this.tChangeImage.Tick += new System.EventHandler(this.tChangeImage_Tick);
+            // 
             // UcBackground
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,5 +105,6 @@
         private System.Windows.Forms.PictureBox pbxBackground;
         private Bunifu.Framework.UI.BunifuImageButton btnRight;
         private Bunifu.Framework.UI.BunifuImageButton btnLeft;
+        private System.Windows.Forms.Timer tChangeImage;
     }
 }
