@@ -11,10 +11,8 @@ using System.Windows.Forms;
 
 namespace ManagerCinema
 {
-    public partial class Form1 : Form
+    public partial class Form1 : FormMain
     {
-        private bool isMoveForm;
-        private Point pStart;
 
         public Form1()
         {
@@ -34,7 +32,6 @@ namespace ManagerCinema
         private void Form1_Load(object sender, EventArgs e)
         {
             addItemGuestTheme();
-            
         }
 
         private void addItemGuestTheme()
@@ -58,25 +55,17 @@ namespace ManagerCinema
         #region Form Move
         private void Form_MouseDown(object sender, MouseEventArgs e)
         {
-            isMoveForm = true;
-            pStart = new Point(e.X, e.Y);
-            this.Cursor = Cursors.Hand;
+            mouseDownForm(e,this);
         }
 
         private void Form_MouseMove(object sender, MouseEventArgs e)
         {
-            if (isMoveForm)
-            {
-                this.Location = new Point(this.Left + e.X - pStart.X, this.Top + e.Y - pStart.Y);
-                this.Cursor = Cursors.Hand;
-            }
+            mouseMoveForm(e,this);
         }
 
         private void Form_MouseUp(object sender, MouseEventArgs e)
         {
-            isMoveForm = false;
-            pStart = Point.Empty;
-            this.Cursor = Cursors.Default;
+            mouseUpForm(this);
         }
         #endregion
 

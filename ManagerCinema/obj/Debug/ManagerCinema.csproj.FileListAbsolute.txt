@@ -25,3 +25,5 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources

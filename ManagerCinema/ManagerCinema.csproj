@@ -72,6 +72,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObjectFolder\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ObjectFolder\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +89,18 @@
     </Compile>
     <Compile Include="UcItemMovie.Designer.cs">
       <DependentUpon>UcItemMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcLogin.Designer.cs">
+      <DependentUpon>UcLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcRegister.Designer.cs">
+      <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
@@ -108,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UcItemMovie.resx">
       <DependentUpon>UcItemMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcLogin.resx">
+      <DependentUpon>UcLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcRegister.resx">
+      <DependentUpon>UcRegister.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
