@@ -54,67 +54,67 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FmBackground.cs">
+    <Compile Include="Guest\Form\FmFogetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmBackground.Designer.cs">
-      <DependentUpon>FmBackground.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FmFogetPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FmFogetPassword.Designer.cs">
+    <Compile Include="Guest\Form\FmFogetPassword.Designer.cs">
       <DependentUpon>FmFogetPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmLogin.cs">
+    <Compile Include="Guest\Form\FmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmLogin.Designer.cs">
+    <Compile Include="Guest\Form\FmLogin.Designer.cs">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="User\Form\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="User\Form\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ObjectFolder\FormMain.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ObjectFolder\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UcBackground.cs">
+    <Compile Include="User\UserControl\UcBackground.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcBackground.Designer.cs">
+    <Compile Include="User\UserControl\UcBackground.Designer.cs">
       <DependentUpon>UcBackground.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcItemMovie.cs">
+    <Compile Include="User\UserControl\UcDetailMovie.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcItemMovie.Designer.cs">
+    <Compile Include="User\UserControl\UcDetailMovie.Designer.cs">
+      <DependentUpon>UcDetailMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserControl\UcItemMovie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UserControl\UcItemMovie.Designer.cs">
       <DependentUpon>UcItemMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcLogin.cs">
+    <Compile Include="Guest\UserControl\UcLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcLogin.Designer.cs">
+    <Compile Include="Guest\UserControl\UcLogin.Designer.cs">
       <DependentUpon>UcLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcRegister.cs">
+    <Compile Include="Guest\UserControl\UcRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcRegister.Designer.cs">
+    <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FmFogetPassword.resx">
+    <EmbeddedResource Include="Guest\Form\FmFogetPassword.resx">
       <DependentUpon>FmFogetPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmLogin.resx">
+    <EmbeddedResource Include="Guest\Form\FmLogin.resx">
       <DependentUpon>FmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="User\Form\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -127,16 +127,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UcBackground.resx">
+    <EmbeddedResource Include="User\UserControl\UcBackground.resx">
       <DependentUpon>UcBackground.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcItemMovie.resx">
+    <EmbeddedResource Include="User\UserControl\UcDetailMovie.resx">
+      <DependentUpon>UcDetailMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserControl\UcItemMovie.resx">
       <DependentUpon>UcItemMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcLogin.resx">
+    <EmbeddedResource Include="Guest\UserControl\UcLogin.resx">
       <DependentUpon>UcLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcRegister.resx">
+    <EmbeddedResource Include="Guest\UserControl\UcRegister.resx">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -163,6 +166,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search_127px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Manager\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
