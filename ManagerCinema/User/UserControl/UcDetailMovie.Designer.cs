@@ -48,7 +48,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbxMovie = new System.Windows.Forms.PictureBox();
-            this.txtContent = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).BeginInit();
             this.SuspendLayout();
@@ -258,23 +258,25 @@
             this.pbxMovie.TabIndex = 0;
             this.pbxMovie.TabStop = false;
             // 
-            // txtContent
+            // label1
             // 
-            this.txtContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.txtContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContent.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtContent.Location = new System.Drawing.Point(43, 371);
-            this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(1203, 146);
-            this.txtContent.TabIndex = 19;
-            this.txtContent.Text = "...";
+            this.label1.AllowDrop = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(23, 379);
+            this.label1.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(999, 100);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "label1qwekqwhekashdkahskdhaksdhaksdhakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" +
+    "kkkkkkkk\r\nqeeqweqweqweqweqweewq\r\nqweqwe";
             // 
             // UcDetailMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.Controls.Add(this.txtContent);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lbStatus);
             this.Controls.Add(this.lbDate);
@@ -295,7 +297,7 @@
             this.Controls.Add(this.lbNameMovie);
             this.Controls.Add(this.pbxMovie);
             this.Name = "UcDetailMovie";
-            this.Size = new System.Drawing.Size(1302, 520);
+            this.Size = new System.Drawing.Size(882, 520);
             this.Load += new System.EventHandler(this.UcDetailMovie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).EndInit();
@@ -325,6 +327,6 @@
         private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.Label lbActor;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox txtContent;
+        private System.Windows.Forms.Label label1;
     }
 }

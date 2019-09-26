@@ -29,3 +29,4 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcDetailMovie.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeUser.resources

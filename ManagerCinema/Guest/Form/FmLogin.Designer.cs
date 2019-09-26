@@ -47,7 +47,7 @@
             this.lbLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogin.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogin.ForeColor = System.Drawing.Color.Gray;
-            this.lbLogin.Location = new System.Drawing.Point(54, 71);
+            this.lbLogin.Location = new System.Drawing.Point(54, 52);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(85, 33);
             this.lbLogin.TabIndex = 9;
@@ -60,7 +60,7 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(129, 71);
+            this.label3.Location = new System.Drawing.Point(129, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 33);
             this.label3.TabIndex = 10;
@@ -72,7 +72,7 @@
             this.lbRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbRegister.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRegister.ForeColor = System.Drawing.Color.Gray;
-            this.lbRegister.Location = new System.Drawing.Point(147, 71);
+            this.lbRegister.Location = new System.Drawing.Point(147, 52);
             this.lbRegister.Name = "lbRegister";
             this.lbRegister.Size = new System.Drawing.Size(119, 33);
             this.lbRegister.TabIndex = 11;
@@ -83,7 +83,7 @@
             // 
             this.lbLoginT.AutoSize = true;
             this.lbLoginT.ForeColor = System.Drawing.Color.Gray;
-            this.lbLoginT.Location = new System.Drawing.Point(64, 104);
+            this.lbLoginT.Location = new System.Drawing.Point(64, 85);
             this.lbLoginT.Name = "lbLoginT";
             this.lbLoginT.Size = new System.Drawing.Size(61, 13);
             this.lbLoginT.TabIndex = 12;
@@ -93,7 +93,7 @@
             // 
             this.lbRegisterT.AutoSize = true;
             this.lbRegisterT.ForeColor = System.Drawing.Color.Gray;
-            this.lbRegisterT.Location = new System.Drawing.Point(157, 104);
+            this.lbRegisterT.Location = new System.Drawing.Point(157, 85);
             this.lbRegisterT.Name = "lbRegisterT";
             this.lbRegisterT.Size = new System.Drawing.Size(91, 13);
             this.lbRegisterT.TabIndex = 13;
@@ -109,14 +109,15 @@
             // 
             // pnlBackground
             // 
-            this.pnlBackground.Location = new System.Drawing.Point(0, 134);
+            this.pnlBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.pnlBackground.Location = new System.Drawing.Point(0, 117);
             this.pnlBackground.Name = "pnlBackground";
-            this.pnlBackground.Size = new System.Drawing.Size(573, 269);
+            this.pnlBackground.Size = new System.Drawing.Size(576, 286);
             this.pnlBackground.TabIndex = 17;
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(54)))), ((int)(((byte)(50)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
             this.btnClose.ImageActive = null;
@@ -131,7 +132,7 @@
             // 
             // btnMinScreen
             // 
-            this.btnMinScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnMinScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(54)))), ((int)(((byte)(50)))));
             this.btnMinScreen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinScreen.Image = global::ManagerCinema.Properties.Resources.minus_127px;
             this.btnMinScreen.ImageActive = null;
@@ -148,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(54)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(577, 407);
             this.Controls.Add(this.pnlBackground);
             this.Controls.Add(this.panel1);
