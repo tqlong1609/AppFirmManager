@@ -14,34 +14,41 @@ namespace ManagerCinema
 {
     public partial class UcDetailMovie : UserControl
     {
-        private Movie movie;
 
-        [DllImport("user32.dll", EntryPoint = "ShowCaret")]
-        public static extern long ShowCaret(IntPtr hwnd);
-        [DllImport("user32.dll", EntryPoint = "HideCaret")]
-        public static extern long HideCaret(IntPtr hwnd);
-
-        public UcDetailMovie(Movie movie)
+        public UcDetailMovie()
         {
             InitializeComponent();
-            
-            this.movie = movie;
-            HideCaret(txtContent.Handle);
         }
 
         private void UcDetailMovie_Load(object sender, System.EventArgs e)
         {
-            pbxMovie.Image      = movie.getImage();
-            lbNameMovie.Text    = movie.getNameMovie();
-            lbTime.Text         = movie.getTime().ToString();
-            lbDirector.Text     = movie.getDirector();
-            lbCountry.Text      = movie.getCountry();
-            lbProducer.Text     = movie.getProducer();
-            lbType.Text         = movie.getTypeFirm();
-            lbActor.Text        = movie.getActor();
-            lbDate.Text         = movie.getDate();
-            lbStatus.Text       = movie.getStatus().ToString();
-            txtContent.Text     = movie.getContent();
+            Label label = getLabel("12:30");
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+            flpTime.Controls.Add(label);
+        }
+
+        private Label getLabel(string time)
+        {
+            Label label = new Label();
+            label.ForeColor = Color.White;
+            label.Text = time;
+            label.Font = new Font(new FontFamily("Arial"), (float)9.75);
+            label.Size = new Size(45, 16);
+            label.BorderStyle = BorderStyle.Fixed3D;
+            return label;
         }
     }
 }

@@ -54,11 +54,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FmHomeUser.cs">
+    <Compile Include="User\Form\FmDetailMovie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmHomeUser.Designer.cs">
-      <DependentUpon>FmHomeUser.cs</DependentUpon>
+    <Compile Include="User\Form\FmDetailMovie.Designer.cs">
+      <DependentUpon>FmDetailMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Guest\Form\FmFogetPassword.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,7 @@
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ObjectFolder\Cinema.cs" />
     <Compile Include="ObjectFolder\Movie.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,8 +115,8 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FmHomeUser.resx">
-      <DependentUpon>FmHomeUser.cs</DependentUpon>
+    <EmbeddedResource Include="User\Form\FmDetailMovie.resx">
+      <DependentUpon>FmDetailMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Guest\Form\FmFogetPassword.resx">
       <DependentUpon>FmFogetPassword.cs</DependentUpon>
@@ -179,7 +180,6 @@
   <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Manager\" />
-    <Folder Include="User\Form\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

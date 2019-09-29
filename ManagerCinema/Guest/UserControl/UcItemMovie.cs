@@ -38,18 +38,7 @@ namespace ManagerCinema
 
         private void pbxMovie_Click(object sender, EventArgs e)
         {
-            // close form present
-            ((Form)this.TopLevelControl).Close();
-
-            // open new form
-            threadForm = new Thread(openFormHomeUser);
-            threadForm.SetApartmentState(ApartmentState.STA);
-            threadForm.Start();
-        }
-
-        private void openFormHomeUser()
-        {
-            Application.Run(new FmHomeUser());
+            new FmDetailMovie(movie).ShowDialog();
         }
     }
 }
