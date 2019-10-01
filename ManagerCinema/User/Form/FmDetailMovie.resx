@@ -121,6 +121,24 @@
     <value>Bốn cô gái trẻ phiêu lưu đến một hòn đảo hoang vắng và khám phá được di tích của một thành phố cổ dưới lòng đại dương,tuy nhiên ác mộng xảy ra khi cổng thành sụp đổ, cả nhóm mắc kẹt trong mê cung khổng lồ và bị cá mập trắng tấn công. Liệu họ có thoát được hay không khi mà bình dưỡng khí đang cạn dần?</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnBuyTicket.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQgAAAA7CAYAAACHbxRIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALHSURBVHhe7d3bThpRFIDhPlGFAspJmAE56SBnbYgxJia1
+        xgtjbEtMWtvYxqTpQ6+yNimFsJf3sv+LL4GwGa/md/YaknkTRZEAgA+BAGAiEABMBAKAiUAAMBEIAKYX
+        A1GtxVKctiV715PMw0BST2N5++cUwCum57Gez9lPfSmcdaTaiL3nvzIDUZo03YFy930pnXdk/31Lol5D
+        aq0agFdMz2M9n0tnbdmd//NP/Ry7UPg6sBEIrUnu9liys6FE3QPvHwCwPeKk7kKRmQ2kMn+/2oO1QGgc
+        0o8jKV4ceg8EYHuVpy1593UolU7dHwi9ciAOQLh066HziY1A6MxBtxW+LwEIx95NV/KXR/8DoXcrdCDJ
+        zAFAPN9i6KhhPzlYBEInmDqk8C0GEJ7CVSK7H5NFIPR+qN7y8C0EEJ7quCnpb6NFINLfR1IdNr0LAYRH
+        txk7v08Wgdh5PnH3Qn0LAYRJf3XpAqEvfAsAhItAADARCAAmAgHARCAAmAgEABOBAGAiEABMBAKAiUAA
+        MBEIACYCAcBEIACYCAQAE4EAYCIQAEwEAoCJQAAwEQgAJgIBwEQgAJgIBAATgQBgIhAATAQCgIlAADAt
+        A6HP4NNn8fkWAQjTMhCpp7FEvYZ3EYAwLQORmQ2kPG15FwEIjz7tX5/67wKRvzySvZuudyGA8BQvDiV3
+        e7wIRKVTl/SPEXMIAE7uy0CKp61FINTeh0Ty11xFAKErnXcke9dzXVgGolqLJfMwkMqEWQQQqqh74HYT
+        1Ua8Hgi1n8w/fJx/OGx6vwxge2kc9CKhPGoum7AWCFXuN1wkCleJ9yAAtk/prO2uHFbjoDYCoXS7sXud
+        SPZh6KaZWhbfQQG8XnFSd/OG3H1fsp/7y23FKm8g/tGa6K2O1K+J+9EEgO2x83zihpHFadt7/qsXAwEg
+        bAQCgIlAADARCAAmAgHAEMlfloz9t3ELa20AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABGdBTUEAALGPC/xhBQAACUtJREFUeF7t

@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,7 +14,8 @@ namespace ManagerCinema
 {
     public partial class FmDetailMovie : FormMain
     {
-
+        private Thread threadForm;
+        
         private Movie movie;
 
         public FmDetailMovie(Movie movie)
@@ -30,31 +32,7 @@ namespace ManagerCinema
 
         private void loadItemsFromCinema()
         {
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
-            flpCinema.Controls.Add(new UcDetailMovie());
+            
         }
 
         private void loadItemsFromMovie()
@@ -98,5 +76,18 @@ namespace ManagerCinema
             mouseUpForm(this);
         }
         #endregion
+
+        private void btnBuyTicket_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            threadForm = new Thread(openFormTicket);
+            threadForm.SetApartmentState(ApartmentState.STA);
+            threadForm.Start();
+        }
+
+        private void openFormTicket()
+        {
+            Application.Run(new FmTicket(movie));
+        }
     }
 }

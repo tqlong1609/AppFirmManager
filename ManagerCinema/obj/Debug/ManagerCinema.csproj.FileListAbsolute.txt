@@ -28,5 +28,5 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcDetailMovie.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources

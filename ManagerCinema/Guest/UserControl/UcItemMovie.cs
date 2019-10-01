@@ -14,7 +14,6 @@ namespace ManagerCinema
 {
     public partial class UcItemMovie : UserControl
     {
-        private Thread threadForm;
         private Movie movie;
 
         public UcItemMovie(Movie movie)

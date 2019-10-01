@@ -47,15 +47,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbTime = new System.Windows.Forms.Label();
             this.lbNameMovie = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbxMovie = new System.Windows.Forms.PictureBox();
-            this.flpCinema = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuyTicket = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbxMovie = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // lbContent
@@ -241,7 +242,7 @@
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbTime.Location = new System.Drawing.Point(312, 97);
+            this.lbTime.Location = new System.Drawing.Point(311, 106);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(96, 20);
             this.lbTime.TabIndex = 23;
@@ -253,15 +254,80 @@
             this.lbNameMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameMovie.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbNameMovie.Location = new System.Drawing.Point(273, 36);
+            this.lbNameMovie.MaximumSize = new System.Drawing.Size(400, 100);
             this.lbNameMovie.Name = "lbNameMovie";
-            this.lbNameMovie.Size = new System.Drawing.Size(149, 29);
+            this.lbNameMovie.Size = new System.Drawing.Size(368, 58);
             this.lbNameMovie.TabIndex = 22;
-            this.lbNameMovie.Text = "Name Movie";
+            this.lbNameMovie.Text = "Name Movie Name Movie Name Movie Name Movie Name Movie";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(697, 5);
+            this.panel1.TabIndex = 44;
+            // 
+            // btnBuyTicket
+            // 
+            this.btnBuyTicket.ActiveBorderThickness = 1;
+            this.btnBuyTicket.ActiveCornerRadius = 20;
+            this.btnBuyTicket.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnBuyTicket.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.btnBuyTicket.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnBuyTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuyTicket.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuyTicket.BackgroundImage")));
+            this.btnBuyTicket.ButtonText = "BUY TICKET";
+            this.btnBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuyTicket.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuyTicket.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.IdleBorderThickness = 1;
+            this.btnBuyTicket.IdleCornerRadius = 20;
+            this.btnBuyTicket.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnBuyTicket.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.Location = new System.Drawing.Point(211, 511);
+            this.btnBuyTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuyTicket.Name = "btnBuyTicket";
+            this.btnBuyTicket.Size = new System.Drawing.Size(264, 59);
+            this.btnBuyTicket.TabIndex = 45;
+            this.btnBuyTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBuyTicket.Click += new System.EventHandler(this.btnBuyTicket_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(665, 9);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(28, 29);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 43;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMini.Image = global::ManagerCinema.Properties.Resources.minus_127px;
+            this.btnMini.ImageActive = null;
+            this.btnMini.Location = new System.Drawing.Point(629, 9);
+            this.btnMini.Name = "btnMini";
+            this.btnMini.Size = new System.Drawing.Size(28, 29);
+            this.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMini.TabIndex = 42;
+            this.btnMini.TabStop = false;
+            this.btnMini.Zoom = 10;
+            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(273, 90);
+            this.pictureBox2.Location = new System.Drawing.Point(272, 99);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -277,53 +343,16 @@
             this.pbxMovie.TabIndex = 21;
             this.pbxMovie.TabStop = false;
             // 
-            // flpCinema
-            // 
-            this.flpCinema.AutoScroll = true;
-            this.flpCinema.Location = new System.Drawing.Point(684, 36);
-            this.flpCinema.Name = "flpCinema";
-            this.flpCinema.Size = new System.Drawing.Size(553, 500);
-            this.flpCinema.TabIndex = 41;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(1209, 1);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(28, 29);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 43;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMini
-            // 
-            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMini.Image = global::ManagerCinema.Properties.Resources.minus_127px;
-            this.btnMini.ImageActive = null;
-            this.btnMini.Location = new System.Drawing.Point(1173, 1);
-            this.btnMini.Name = "btnMini";
-            this.btnMini.Size = new System.Drawing.Size(28, 29);
-            this.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMini.TabIndex = 42;
-            this.btnMini.TabStop = false;
-            this.btnMini.Zoom = 10;
-            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
-            // 
             // FmDetailMovie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.ClientSize = new System.Drawing.Size(1249, 540);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(697, 603);
+            this.Controls.Add(this.btnBuyTicket);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMini);
-            this.Controls.Add(this.flpCinema);
             this.Controls.Add(this.lbContent);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lbStatus);
@@ -346,16 +375,16 @@
             this.Controls.Add(this.pbxMovie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FmDetailMovie";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmDetailMovie";
             this.Load += new System.EventHandler(this.FmDetailMovie_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmDetailMovie_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmDetailMovie_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmDetailMovie_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMovie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,8 +412,9 @@
         private System.Windows.Forms.Label lbTime;
         private System.Windows.Forms.Label lbNameMovie;
         private System.Windows.Forms.PictureBox pbxMovie;
-        private System.Windows.Forms.FlowLayoutPanel flpCinema;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuImageButton btnMini;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnBuyTicket;
     }
 }
