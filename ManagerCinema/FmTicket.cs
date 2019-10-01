@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ManagerCinema
 {
-    public partial class FmTicket : Form
+    public partial class FmTicket : FormMain
     {
         private const int PRICE_NOMAL = 50000;
         private const int PRICE_BENCH = 100000;
@@ -56,7 +56,15 @@ namespace ManagerCinema
 
         private void btnBuyTicket_Click(object sender, EventArgs e)
         {
+            this.Close();
+            threadForm = new Thread(openFormPositionSeat);
+            threadForm.SetApartmentState(ApartmentState.STA);
+            threadForm.Start();
+        }
 
+        private void openFormPositionSeat()
+        {
+            Application.Run(new FmPositionSeat(movie));
         }
 
         private void nudNomal_ValueChanged(object sender, EventArgs e)
@@ -74,5 +82,23 @@ namespace ManagerCinema
                 string.Format(FORMAT_MONNEY, priceBench);
             lbSum.Text = string.Format(FORMAT_MONNEY, priceNomal + priceBench);
         }
+
+        #region Form Move
+        private void FmTicket_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDownForm(e, this);
+        }
+
+        private void FmTicket_MouseMove(object sender, MouseEventArgs e)
+        {
+            mouseMoveForm(e, this);
+        }
+
+        private void FmTicket_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseUpForm(this);
+        }
+        #endregion
+
     }
 }
