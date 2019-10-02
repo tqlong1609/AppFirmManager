@@ -54,18 +54,34 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FmPositionSeat.cs">
+    <Compile Include="ObjectFolder\Seat.cs" />
+    <Compile Include="ObjectFolder\SeatBench.cs" />
+    <Compile Include="ObjectFolder\SeatNomal.cs" />
+    <Compile Include="User\UserControl\ucSeatBench.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UserControl\ucSeatBench.Designer.cs">
+      <DependentUpon>ucSeatBench.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserControl\ucSeatNomal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UserControl\ucSeatNomal.Designer.cs">
+      <DependentUpon>ucSeatNomal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form\FmPositionSeat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmPositionSeat.Designer.cs">
+    <Compile Include="User\Form\FmPositionSeat.Designer.cs">
       <DependentUpon>FmPositionSeat.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmTicket.cs">
+    <Compile Include="User\Form\FmTicket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmTicket.Designer.cs">
+    <Compile Include="User\Form\FmTicket.Designer.cs">
       <DependentUpon>FmTicket.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObjectFolder\User.cs" />
     <Compile Include="User\Form\FmDetailMovie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,10 +137,16 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FmPositionSeat.resx">
+    <EmbeddedResource Include="User\UserControl\ucSeatBench.resx">
+      <DependentUpon>ucSeatBench.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserControl\ucSeatNomal.resx">
+      <DependentUpon>ucSeatNomal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form\FmPositionSeat.resx">
       <DependentUpon>FmPositionSeat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmTicket.resx">
+    <EmbeddedResource Include="User\Form\FmTicket.resx">
       <DependentUpon>FmTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmDetailMovie.resx">
@@ -189,7 +211,6 @@
   <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Manager\" />
-    <Folder Include="User\UserControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

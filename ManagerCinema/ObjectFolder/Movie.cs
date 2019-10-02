@@ -85,6 +85,11 @@ namespace ManagerCinema.ObjectFolder
             return content;
         }
 
+        public void setContent(string content)
+        {
+            this.content = content;
+        }
+
         public string getCountry()
         {
             return country;

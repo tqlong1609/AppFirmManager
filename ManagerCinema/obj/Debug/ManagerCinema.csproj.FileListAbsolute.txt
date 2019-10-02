@@ -31,3 +31,5 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resource
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
