@@ -126,7 +126,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(476, 48);
             this.label2.TabIndex = 68;
-            this.label2.Text = "Please save code QR or text below for use confirm with staff when you came to the" +
+            this.label2.Text = "Please save code QR or text below for use confirm with staff when you come to the" +
     " cinema";
             // 
             // label3

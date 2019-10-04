@@ -37,7 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbBuyTicket = new System.Windows.Forms.Label();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,9 +54,9 @@
             // 
             // pnlChangePermisstion
             // 
-            this.pnlChangePermisstion.Location = new System.Drawing.Point(1143, 36);
+            this.pnlChangePermisstion.Location = new System.Drawing.Point(1113, 39);
             this.pnlChangePermisstion.Name = "pnlChangePermisstion";
-            this.pnlChangePermisstion.Size = new System.Drawing.Size(145, 136);
+            this.pnlChangePermisstion.Size = new System.Drawing.Size(175, 136);
             this.pnlChangePermisstion.TabIndex = 11;
             // 
             // txtSearch
@@ -92,7 +92,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(7)))), ((int)(((byte)(6)))));
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lbBuyTicket);
             this.panel2.Location = new System.Drawing.Point(-2, 177);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1311, 63);
@@ -150,17 +150,18 @@
             this.bunifuDropdown2.Size = new System.Drawing.Size(152, 35);
             this.bunifuDropdown2.TabIndex = 10;
             // 
-            // label1
+            // lbBuyTicket
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(29, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 19);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "BUY TICKET";
+            this.lbBuyTicket.AutoSize = true;
+            this.lbBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbBuyTicket.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBuyTicket.ForeColor = System.Drawing.SystemColors.Control;
+            this.lbBuyTicket.Location = new System.Drawing.Point(29, 21);
+            this.lbBuyTicket.Name = "lbBuyTicket";
+            this.lbBuyTicket.Size = new System.Drawing.Size(100, 19);
+            this.lbBuyTicket.TabIndex = 11;
+            this.lbBuyTicket.Text = "BUY TICKET";
+            this.lbBuyTicket.Click += new System.EventHandler(this.lbBuyTicket_Click);
             // 
             // bunifuImageButton3
             // 
@@ -270,7 +271,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbBuyTicket;
         private System.Windows.Forms.FlowLayoutPanel flpBackground;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;

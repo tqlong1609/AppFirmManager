@@ -79,10 +79,18 @@ namespace ManagerCinema
 
         private void btnBuyTicket_Click(object sender, EventArgs e)
         {
-            this.Close();
-            threadForm = new Thread(openFormTicket);
-            threadForm.SetApartmentState(ApartmentState.STA);
-            threadForm.Start();
+            if (TypeLogin.typeLogin == ETypeLogin.user)
+            {
+                this.Close();
+                threadForm = new Thread(openFormTicket);
+                threadForm.SetApartmentState(ApartmentState.STA);
+                threadForm.Start();
+            }
+            else
+            {
+                MessageBox.Show("You have to login to buy ticket", "Notification",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void openFormTicket()

@@ -17,7 +17,6 @@ namespace ManagerCinema
         // thread handle open new form
         private Panel panel;
         private Thread threadForm;
-        public static ETypeLogin typeLogin = ETypeLogin.guest;
 
         public UcLogin(Panel panel)
         {
@@ -43,15 +42,15 @@ namespace ManagerCinema
         {
             if (txtUsername.Text.Equals("user") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = ETypeLogin.user;
+                TypeLogin.typeLogin = ETypeLogin.user;
             }
             else if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = ETypeLogin.manager;
+                TypeLogin.typeLogin = ETypeLogin.manager;
             }
             else if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = ETypeLogin.admin;
+                TypeLogin.typeLogin = ETypeLogin.admin;
             }
             else
             {
@@ -59,7 +58,7 @@ namespace ManagerCinema
                 return;
             }
 
-            openFormFollowType(typeLogin);
+            openFormFollowType(TypeLogin.typeLogin);
         }
 
         private void openFormFollowType(ETypeLogin typeLogin)
@@ -69,7 +68,7 @@ namespace ManagerCinema
             {
                 case ETypeLogin.user:
                     panel.Controls.Clear();
-                    panel.Controls.Add(new UcPermistionUser());
+                    panel.Controls.Add(new UcPermistionUser(panel));
                     break;
                 case ETypeLogin.manager:
 

@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcPermistionUser));
             this.label1 = new System.Windows.Forms.Label();
-            this.circlePictureBox1 = new ManagerCinema.ObjectFolder.Grapichs.CirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).BeginInit();
+            this.btnLogout = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pbxProfile = new ManagerCinema.ObjectFolder.Grapichs.CirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -46,27 +48,45 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Trần Quang Long";
             // 
-            // circlePictureBox1
+            // btnLogout
             // 
-            this.circlePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circlePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("circlePictureBox1.Image")));
-            this.circlePictureBox1.Location = new System.Drawing.Point(21, 3);
-            this.circlePictureBox1.Name = "circlePictureBox1";
-            this.circlePictureBox1.Size = new System.Drawing.Size(100, 64);
-            this.circlePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circlePictureBox1.TabIndex = 0;
-            this.circlePictureBox1.TabStop = false;
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageActive = null;
+            this.btnLogout.Location = new System.Drawing.Point(128, 3);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(37, 36);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLogout.TabIndex = 46;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Zoom = 10;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // pbxProfile
+            // 
+            this.pbxProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxProfile.Image = ((System.Drawing.Image)(resources.GetObject("pbxProfile.Image")));
+            this.pbxProfile.Location = new System.Drawing.Point(21, 3);
+            this.pbxProfile.Name = "pbxProfile";
+            this.pbxProfile.Size = new System.Drawing.Size(100, 64);
+            this.pbxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxProfile.TabIndex = 0;
+            this.pbxProfile.TabStop = false;
+            this.pbxProfile.Click += new System.EventHandler(this.pbxProfile_Click);
             // 
             // UcPermistionUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.circlePictureBox1);
+            this.Controls.Add(this.pbxProfile);
             this.Name = "UcPermistionUser";
-            this.Size = new System.Drawing.Size(145, 136);
-            ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(175, 136);
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxProfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,7 +94,8 @@
 
         #endregion
 
-        private ObjectFolder.Grapichs.CirclePictureBox circlePictureBox1;
+        private ObjectFolder.Grapichs.CirclePictureBox pbxProfile;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuImageButton btnLogout;
     }
 }

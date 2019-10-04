@@ -37,3 +37,4 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcPermistionLogin.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcPermistionUser.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources

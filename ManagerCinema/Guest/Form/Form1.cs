@@ -75,5 +75,18 @@ namespace ManagerCinema
         {
             return flpBackground;
         }
+
+        private void lbBuyTicket_Click(object sender, EventArgs e)
+        {
+            if(TypeLogin.typeLogin == ETypeLogin.user)
+            {
+                // todo: 
+            }
+            else
+            {
+                MessageBox.Show("You have to login to buy ticket", "Notification",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

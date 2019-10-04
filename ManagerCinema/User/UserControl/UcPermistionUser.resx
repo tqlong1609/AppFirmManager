@@ -118,7 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="circlePictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnLogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAAA4ZJREFUeF7t
+        nbFqVFEURQOCgoJgoYidfoF/JIgfIf6Cv2JnGqtUWllpYSVoE9IEJu9NSBT0eXdyx3iO74WZcSRzz1kL
+        dpGQKHuvk8EE8twBAAAAAAAAAAAAAAAAAICUDMNw/XQ2e0TWi/arU7bH9/n88WnXDWS9aL86ZXsg/9+C
+        /MRBfuIgP3GQnzjIT5zo8rvTvn+fNuo/vstZosvfqx+aEvV3e5ggPzDq7/YwQX5g1N/tYYL8wKi/28ME
+        +YFRf7eHCfIDo/5uDxPkB0b93R4myA+M+rs9TJAfGPV3e5ggPzDq7/YwQX5g1N/tYYL8wKi/28ME+YFR
+        f7eHCfIDo/5uDxPkB0b93R4myA9M6b/r9jBBfmD6vr9bNvjgNvkd5AfnsgNAfgKmDgD5jTOfz+8P+/s3
+        65uTjB0A8hvmZDZ7WDp++dZ1b4fDw9v13ZP4A0B+oyzEL7qucwDIbxAvfpFVDwD5jTElfpFlD+D4+PiB
+        Ut9sj2zyz8T3/deRnibLHkDTpJPfdU9Kp5+u41T2hoODW/VT45HyZb/rnpZeP1zP0ZRXgHdhXwEyyhcc
+        QCGrfJH+ADLLF6kPILt8kfYAkH9OygNA/gXpDgD5llQHgPy/SXMAVy2/DP2sDPh821J6vypZ6ieB5ePb
+        PICrll/+/E/u72s17f0oGPmbS3OvAMjfbJo6AOT/l7ys9bYb5G88u8Mw3Kj1thvkbzTtiBfI31j41/6q
+        bO33+UdHb0a2mMrrpr7iF1y1/G2kyH8xssNU2hQvkG9JI14g/4JU4gXyz0knXiA/qXiRXX5a8SKz/NTi
+        RVb56cWLjPIRX8km/4Tf1bsgm/y+7++VTh9dx7HoK77d/x59GTK+7NcDGH26Vs1S4vn9/Ebxz9b5I0uJ
+        XzzgQfvVd7VHVvli5ABWEq/PQX7D/HEAK4tXkN84yz6Hb+xZPshPwJh4BfnBmRKvID8wl4lXkB+Y0p/n
+        7WdF/d0eJsgPjPq7PUyQHxj1d3uYID8w6u/2MEF+YNTf7WGC/MCov9vDBPmBUX+3hwnyA6P+bg8T5AdG
+        /d0eJsgPjPq7PUyQHxj1d3uYID8w6u/2MEF+YNTf7WGC/MCov9vDBPmBUX+3h0l0+SclnxNH/cd2OUt0
+        +eSSID9xkJ84yE8c5CcO8hMH+YnTtPxhGK4Ns9kdsmbKfnVKAAAAAAAAAAAAAAAAAADIxM7OL+1Z6Rtj
+        Qn6uAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="pbxProfile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAgEAAAAAAAD/4gv4SUNDX1BST0ZJTEUAAQEAAAvoAAAAAAIAAABtbnRyUkdCIFhZ
         WiAH2QADABsAFQAkAB9hY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA9tYAAQAAAADTLQAA
