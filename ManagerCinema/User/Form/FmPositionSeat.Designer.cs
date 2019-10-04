@@ -151,6 +151,7 @@
             this.btnNext.Size = new System.Drawing.Size(264, 52);
             this.btnNext.TabIndex = 71;
             this.btnNext.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // label13
             // 

@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmTicket));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,18 +51,20 @@
             this.nudNomal = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBuyTicket = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
+            this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnBuyTicket = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudBench)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNomal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,36 +74,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(697, 5);
             this.panel1.TabIndex = 47;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
-            this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(572, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(28, 29);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 46;
-            this.btnClose.TabStop = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMini
-            // 
-            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMini.Image = global::ManagerCinema.Properties.Resources.minus_127px;
-            this.btnMini.ImageActive = null;
-            this.btnMini.Location = new System.Drawing.Point(536, 12);
-            this.btnMini.Name = "btnMini";
-            this.btnMini.Size = new System.Drawing.Size(28, 29);
-            this.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMini.TabIndex = 45;
-            this.btnMini.TabStop = false;
-            this.btnMini.Zoom = 10;
-            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
             // 
             // bunifuDropdown1
             // 
@@ -359,47 +329,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Nomal Ticket";
             // 
-            // btnBuyTicket
-            // 
-            this.btnBuyTicket.ActiveBorderThickness = 1;
-            this.btnBuyTicket.ActiveCornerRadius = 20;
-            this.btnBuyTicket.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnBuyTicket.ActiveForecolor = System.Drawing.Color.DimGray;
-            this.btnBuyTicket.ActiveLineColor = System.Drawing.Color.Red;
-            this.btnBuyTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBuyTicket.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuyTicket.BackgroundImage")));
-            this.btnBuyTicket.ButtonText = "NEXT";
-            this.btnBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuyTicket.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuyTicket.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnBuyTicket.IdleBorderThickness = 1;
-            this.btnBuyTicket.IdleCornerRadius = 20;
-            this.btnBuyTicket.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnBuyTicket.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnBuyTicket.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnBuyTicket.Location = new System.Drawing.Point(164, 494);
-            this.btnBuyTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnBuyTicket.Name = "btnBuyTicket";
-            this.btnBuyTicket.Size = new System.Drawing.Size(264, 52);
-            this.btnBuyTicket.TabIndex = 57;
-            this.btnBuyTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBuyTicket.Click += new System.EventHandler(this.btnBuyTicket_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.ImageActive = null;
-            this.btnBack.Location = new System.Drawing.Point(3, 9);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(28, 29);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBack.TabIndex = 58;
-            this.btnBack.TabStop = false;
-            this.btnBack.Zoom = 10;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -439,6 +368,77 @@
             this.bunifuDropdown3.Size = new System.Drawing.Size(315, 35);
             this.bunifuDropdown3.TabIndex = 60;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageActive = null;
+            this.btnBack.Location = new System.Drawing.Point(3, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(28, 29);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBack.TabIndex = 58;
+            this.btnBack.TabStop = false;
+            this.btnBack.Zoom = 10;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnBuyTicket
+            // 
+            this.btnBuyTicket.ActiveBorderThickness = 1;
+            this.btnBuyTicket.ActiveCornerRadius = 20;
+            this.btnBuyTicket.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnBuyTicket.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.btnBuyTicket.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnBuyTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuyTicket.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuyTicket.BackgroundImage")));
+            this.btnBuyTicket.ButtonText = "NEXT";
+            this.btnBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuyTicket.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuyTicket.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.IdleBorderThickness = 1;
+            this.btnBuyTicket.IdleCornerRadius = 20;
+            this.btnBuyTicket.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnBuyTicket.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnBuyTicket.Location = new System.Drawing.Point(164, 494);
+            this.btnBuyTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuyTicket.Name = "btnBuyTicket";
+            this.btnBuyTicket.Size = new System.Drawing.Size(264, 52);
+            this.btnBuyTicket.TabIndex = 57;
+            this.btnBuyTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBuyTicket.Click += new System.EventHandler(this.btnBuyTicket_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(572, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(28, 29);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 46;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnMini
+            // 
+            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMini.Image = global::ManagerCinema.Properties.Resources.minus_127px;
+            this.btnMini.ImageActive = null;
+            this.btnMini.Location = new System.Drawing.Point(536, 12);
+            this.btnMini.Name = "btnMini";
+            this.btnMini.Size = new System.Drawing.Size(28, 29);
+            this.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMini.TabIndex = 45;
+            this.btnMini.TabStop = false;
+            this.btnMini.Zoom = 10;
+            this.btnMini.Click += new System.EventHandler(this.btnMini_Click);
+            // 
             // FmTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -468,8 +468,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -477,6 +475,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudBench)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudNomal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

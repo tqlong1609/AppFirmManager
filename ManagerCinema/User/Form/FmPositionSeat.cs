@@ -61,40 +61,6 @@ namespace ManagerCinema
 
         private void FmPositionSeat_Load(object sender, EventArgs e)
         {
-            // NOTE: test tạm thời
-            // colums seat nomal
-            List<Seat> seatsNomal = new List<Seat>();
-            seatsNomal.Add(new Seat("1"));
-            seatsNomal.Add(new Seat("2"));
-            seatsNomal.Add(new Seat("3"));
-            seatsNomal.Add(new Seat("4"));
-            seatsNomal.Add(new Seat("5"));
-            seatsNomal.Add(new Seat("6"));
-            seatsNomal.Add(new Seat("7"));
-            seatsNomal.Add(new Seat("8"));
-            seatsNomal.Add(new Seat("9"));
-            
-            // columns seat bench
-            List<Seat> seatsBench = new List<Seat>();
-            seatsBench.Add(new Seat("1"));
-            seatsBench.Add(new Seat("2"));
-            seatsBench.Add(new Seat("3"));
-            seatsBench.Add(new Seat("4"));
-            seatsBench.Add(new Seat("5"));
-
-            arrRowSeatNomal = new List<SeatNomal>();
-            arrRowSeatBench = new List<SeatBench>();
-
-            for (int i = 0; i < 9; i++) // row = 9
-            {
-                arrRowSeatNomal.Add(new SeatNomal("A", seatsNomal));
-            }
-            arrRowSeatBench = new List<SeatBench>();
-            for (int i = 0; i < 3; i++) // row = 3
-            {
-                arrRowSeatBench.Add(new SeatBench("A", seatsBench));
-            }
-
             loadListSeatNomal();
             loadListSeatBench();
             
@@ -109,12 +75,43 @@ namespace ManagerCinema
 
         private void loadListSeatBench()
         {
+            // columns seat bench
+            List<Seat> seatsBench = new List<Seat>();
+            arrRowSeatBench = new List<SeatBench>();
 
+            seatsBench.Add(new Seat("1"));
+            seatsBench.Add(new Seat("2"));
+            seatsBench.Add(new Seat("3"));
+            seatsBench.Add(new Seat("4"));
+            seatsBench.Add(new Seat("5"));
+
+            for (int i = 0; i < 3; i++) // row = 3
+            {
+                arrRowSeatBench.Add(new SeatBench("A", seatsBench));
+            }
         }
 
         private void loadListSeatNomal()
         {
+            // NOTE: test tạm thời
+            // colums seat nomal
+            List<Seat> seatsNomal = new List<Seat>();
+            arrRowSeatNomal = new List<SeatNomal>();
 
+            seatsNomal.Add(new Seat("1"));
+            seatsNomal.Add(new Seat("2"));
+            seatsNomal.Add(new Seat("3"));
+            seatsNomal.Add(new Seat("4"));
+            seatsNomal.Add(new Seat("5"));
+            seatsNomal.Add(new Seat("6"));
+            seatsNomal.Add(new Seat("7"));
+            seatsNomal.Add(new Seat("8"));
+            seatsNomal.Add(new Seat("9"));
+
+            for (int i = 0; i < 9; i++) // row = 9
+            {
+                arrRowSeatNomal.Add(new SeatNomal("A", seatsNomal));
+            }
         }
 
         private void loadValuePanelSeat()
@@ -159,6 +156,19 @@ namespace ManagerCinema
         private void openFormTicket()
         {
             Application.Run(new FmTicket(movie));
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            threadForm = new Thread(openFormReview);
+            threadForm.SetApartmentState(ApartmentState.STA);
+            threadForm.Start();
+        }
+
+        private void openFormReview()
+        {
+            Application.Run(new FmReview(movie,user));
         }
     }
 }

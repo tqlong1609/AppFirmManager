@@ -31,6 +31,8 @@ namespace ManagerCinema
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // add Usercontrol permisstion login into panel
+            pnlChangePermisstion.Controls.Add(new UcPermistionLogin(pnlChangePermisstion));
             addItemGuestTheme();
         }
 
@@ -68,11 +70,6 @@ namespace ManagerCinema
             mouseUpForm(this);
         }
         #endregion
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            new FmLogin().ShowDialog();
-        }
 
         public FlowLayoutPanel getFlowLayoutPanel()
         {

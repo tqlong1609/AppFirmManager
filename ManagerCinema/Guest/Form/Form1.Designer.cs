@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.pnlChangePermisstion = new System.Windows.Forms.Panel();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.flpBackground = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
-            this.flpBackground = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -51,6 +51,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pnlChangePermisstion
+            // 
+            this.pnlChangePermisstion.Location = new System.Drawing.Point(1143, 36);
+            this.pnlChangePermisstion.Name = "pnlChangePermisstion";
+            this.pnlChangePermisstion.Size = new System.Drawing.Size(145, 136);
+            this.pnlChangePermisstion.TabIndex = 11;
             // 
             // txtSearch
             // 
@@ -71,6 +78,14 @@
             this.txtSearch.TabIndex = 6;
             this.txtSearch.Text = "Search by movie, actor, director,...";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // flpBackground
+            // 
+            this.flpBackground.AutoScroll = true;
+            this.flpBackground.Location = new System.Drawing.Point(12, 240);
+            this.flpBackground.Name = "flpBackground";
+            this.flpBackground.Size = new System.Drawing.Size(1276, 479);
+            this.flpBackground.TabIndex = 10;
             // 
             // panel2
             // 
@@ -147,14 +162,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "BUY TICKET";
             // 
-            // flpBackground
-            // 
-            this.flpBackground.AutoScroll = true;
-            this.flpBackground.Location = new System.Drawing.Point(12, 240);
-            this.flpBackground.Name = "flpBackground";
-            this.flpBackground.Size = new System.Drawing.Size(1276, 479);
-            this.flpBackground.TabIndex = 10;
-            // 
             // bunifuImageButton3
             // 
             this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
@@ -168,41 +175,6 @@
             this.bunifuImageButton3.TabIndex = 6;
             this.bunifuImageButton3.TabStop = false;
             this.bunifuImageButton3.Zoom = 10;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogin.BorderRadius = 0;
-            this.btnLogin.ButtonText = "Login";
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogin.Iconimage")));
-            this.btnLogin.Iconimage_right = null;
-            this.btnLogin.Iconimage_right_Selected = null;
-            this.btnLogin.Iconimage_Selected = null;
-            this.btnLogin.IconMarginLeft = 0;
-            this.btnLogin.IconMarginRight = 0;
-            this.btnLogin.IconRightVisible = true;
-            this.btnLogin.IconRightZoom = 0D;
-            this.btnLogin.IconVisible = true;
-            this.btnLogin.IconZoom = 60D;
-            this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(1184, 77);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(88, 46);
-            this.btnLogin.TabIndex = 1;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogin.Textcolor = System.Drawing.Color.White;
-            this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox2
             // 
@@ -230,7 +202,7 @@
             this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton2.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(1260, 12);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1268, 1);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(28, 29);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -245,7 +217,7 @@
             this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton1.Image = global::ManagerCinema.Properties.Resources.minus_127px;
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1224, 12);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1232, 1);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(28, 29);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -260,11 +232,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(1300, 720);
+            this.Controls.Add(this.pnlChangePermisstion);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.flpBackground);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuImageButton2);
@@ -293,7 +265,6 @@
         #endregion
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogin;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -305,6 +276,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
+        private System.Windows.Forms.Panel pnlChangePermisstion;
     }
 }
 

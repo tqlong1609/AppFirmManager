@@ -296,7 +296,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Image = global::ManagerCinema.Properties.Resources.delete_sign_filled_127px;
             this.btnClose.ImageActive = null;
@@ -311,7 +311,7 @@
             // 
             // btnMini
             // 
-            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnMini.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMini.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMini.Image = global::ManagerCinema.Properties.Resources.minus_127px;
             this.btnMini.ImageActive = null;

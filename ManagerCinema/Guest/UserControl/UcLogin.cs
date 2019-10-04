@@ -8,22 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using ManagerCinema.ObjectFolder;
 
 namespace ManagerCinema
 {
     public partial class UcLogin : UserControl
     {
         // thread handle open new form
+        private Panel panel;
         private Thread threadForm;
-        public static TypeLogin typeLogin = TypeLogin.guest;
+        public static ETypeLogin typeLogin = ETypeLogin.guest;
 
-        public enum TypeLogin
-        {
-            user, manager, admin, guest
-        }
-        public UcLogin()
+        public UcLogin(Panel panel)
         {
             InitializeComponent();
+            this.panel = panel;
         }
 
         private void lbFogetPass_Click(object sender, EventArgs e)
@@ -37,40 +36,45 @@ namespace ManagerCinema
 
         private void openFormForgetPassword()
         {
-            Application.Run(new FmFogetPassword());
+            Application.Run(new FmFogetPassword(panel));
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text.Equals("user") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = TypeLogin.user;
+                typeLogin = ETypeLogin.user;
             }
-            if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
+            else if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = TypeLogin.manager;
+                typeLogin = ETypeLogin.manager;
             }
-            if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("1"))
+            else if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("1"))
             {
-                typeLogin = TypeLogin.admin;
+                typeLogin = ETypeLogin.admin;
+            }
+            else
+            {
+                MessageBox.Show("Enter your username or password incorrect!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
             openFormFollowType(typeLogin);
         }
 
-        private void openFormFollowType(TypeLogin typeLogin)
+        private void openFormFollowType(ETypeLogin typeLogin)
         {
             ((Form)this.TopLevelControl).Close();
             switch (typeLogin)
             {
-                case TypeLogin.user:
-                    // stay form1 present
+                case ETypeLogin.user:
+                    panel.Controls.Clear();
+                    panel.Controls.Add(new UcPermistionUser());
                     break;
-                case TypeLogin.manager:
-                    // open form type manager
+                case ETypeLogin.manager:
 
                     break;
-                case TypeLogin.admin:
+                case ETypeLogin.admin:
                     // open form type password
 
                     break;

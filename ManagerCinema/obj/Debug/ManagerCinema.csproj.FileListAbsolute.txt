@@ -33,3 +33,7 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcPermistionLogin.resources
+L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcPermistionUser.resources

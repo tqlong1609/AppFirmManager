@@ -54,6 +54,34 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Guest\UserControl\UcPermistionLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Guest\UserControl\UcPermistionLogin.Designer.cs">
+      <DependentUpon>UcPermistionLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectFolder\ETypeLogin.cs" />
+    <Compile Include="ObjectFolder\Grapichs\CirclePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User\UserControl\UcPermistionUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\UserControl\UcPermistionUser.Designer.cs">
+      <DependentUpon>UcPermistionUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form\FmCheckQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form\FmCheckQR.Designer.cs">
+      <DependentUpon>FmCheckQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form\FmReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form\FmReview.Designer.cs">
+      <DependentUpon>FmReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="ObjectFolder\Seat.cs" />
     <Compile Include="ObjectFolder\SeatBench.cs" />
     <Compile Include="ObjectFolder\SeatNomal.cs" />
@@ -137,6 +165,18 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Guest\UserControl\UcPermistionLogin.resx">
+      <DependentUpon>UcPermistionLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserControl\UcPermistionUser.resx">
+      <DependentUpon>UcPermistionUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form\FmCheckQR.resx">
+      <DependentUpon>FmCheckQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form\FmReview.resx">
+      <DependentUpon>FmReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\UserControl\ucSeatBench.resx">
       <DependentUpon>ucSeatBench.cs</DependentUpon>
     </EmbeddedResource>
