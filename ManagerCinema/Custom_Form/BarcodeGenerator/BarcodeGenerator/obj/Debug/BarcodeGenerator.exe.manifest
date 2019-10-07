@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
+          If you want to change the Windows User Account Control level replace the 
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
+         If you want to utilize File and Registry Virtualization for backward 
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="120832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="120320">
       <assemblyIdentity name="BarcodeGenerator" version="1.0.0.2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+/0E5gP+3mGqhrDQM5agLotMerima5s+ZV47G4/8INo=</dsig:DigestValue>
+        <dsig:DigestValue>8LffHBlrpJ6QsgHXMA7Yxn39cA5cxF/HHCGlldQEM1s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,13 +62,13 @@
       <dsig:DigestValue>tJXwdjVdaKzDwON/2sqQ+6j+Jfu40Z0nocm4ADGt6mg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="BarcodeGenerator.exe.config" size="160">
+  <file name="BarcodeGenerator.exe.config" size="163">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>HqN2MyOS1tczkwKtzzaJRVzFYQ4972zrbLRXmp6d9F0=</dsig:DigestValue>
+      <dsig:DigestValue>l/VPfNqUVNQIPyQECM0xWlTJm+DXcPOne6oYsApBDIo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
