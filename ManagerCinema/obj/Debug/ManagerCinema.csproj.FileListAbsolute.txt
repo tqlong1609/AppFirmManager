@@ -37,3 +37,29 @@ L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
 L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
+C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
