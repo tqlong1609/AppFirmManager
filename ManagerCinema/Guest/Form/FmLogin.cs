@@ -13,14 +13,17 @@ namespace ManagerCinema
 {
     public partial class FmLogin : FormMain
     {
-        private Panel panel;
         private Size sizeFormDefault;
         private bool isFormLogin;
+
+        public FmLogin()
+        {
+            InitializeComponent();
+        }
 
         public FmLogin(Panel panel)
         {
             InitializeComponent();
-            this.panel = panel;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -63,7 +66,7 @@ namespace ManagerCinema
 
         private void addUseControlLogin()
         {
-            UcLogin ucLogin = new UcLogin(panel);
+            UcLogin ucLogin = new UcLogin();
             pnlBackground.Size = ucLogin.Size;
             this.Size = sizeFormDefault;
             pnlBackground.Controls.Add(ucLogin);

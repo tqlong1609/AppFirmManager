@@ -15,13 +15,11 @@ namespace ManagerCinema
     public partial class UcLogin : UserControl
     {
         // thread handle open new form
-        private Panel panel;
         private Thread threadForm;
 
-        public UcLogin(Panel panel)
+        public UcLogin()
         {
             InitializeComponent();
-            this.panel = panel;
         }
 
         private void lbFogetPass_Click(object sender, EventArgs e)
@@ -35,7 +33,7 @@ namespace ManagerCinema
 
         private void openFormForgetPassword()
         {
-            Application.Run(new FmFogetPassword(panel));
+            Application.Run(new FmFogetPassword());
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -67,17 +65,30 @@ namespace ManagerCinema
             switch (typeLogin)
             {
                 case ETypeLogin.user:
-                    panel.Controls.Clear();
-                    panel.Controls.Add(new UcPermistionUser(panel));
+                    threadForm = new Thread(openFormUser);
+                    threadForm.SetApartmentState(ApartmentState.STA);
+                    threadForm.Start();
                     break;
                 case ETypeLogin.manager:
-
+                    threadForm = new Thread(openFormManager);
+                    threadForm.SetApartmentState(ApartmentState.STA);
+                    threadForm.Start();
                     break;
                 case ETypeLogin.admin:
                     // open form type password
 
                     break;
             }
+        }
+
+        private void openFormUser()
+        {
+            Application.Run(new Form1());
+        }
+
+        private void openFormManager()
+        {
+            Application.Run(new FmHomeManager());
         }
     }
 }

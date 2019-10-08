@@ -16,12 +16,10 @@ namespace ManagerCinema
     {
         // thread handle open new form
         private Thread threadForm;
-        private Panel panel;
 
-        public FmFogetPassword(Panel panel)
+        public FmFogetPassword()
         {
             InitializeComponent();
-            this.panel = panel;
         }
 
         private void FmFogetPassword_MouseDown(object sender, MouseEventArgs e)
@@ -60,7 +58,7 @@ namespace ManagerCinema
 
         private void openFormLogin()
         {
-            Application.Run(new FmLogin(panel));
+            Application.Run(new FmLogin());
         }
     }
 }
