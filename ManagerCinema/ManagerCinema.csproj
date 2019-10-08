@@ -54,6 +54,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FmHomeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmHomeManager.Designer.cs">
+      <DependentUpon>FmHomeManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FmHomeManager.resx">
+      <DependentUpon>FmHomeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FmProfile.resx">
       <DependentUpon>FmProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +269,16 @@
   <ItemGroup>
     <Folder Include="Admin\" />
     <Folder Include="Manager\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Custom_Form\BarcodeGenerator\BarcodeGenerator\BarcodeGenerator.csproj">
+      <Project>{8db57ba1-e88c-43d9-ad0e-04bfa6b11c61}</Project>
+      <Name>BarcodeGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="Custom_Form\Test_QR\Test_QR\Test_QR.csproj">
+      <Project>{2c4f9072-2602-4f98-a3e6-1f4c1a7831b6}</Project>
+      <Name>Test_QR</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

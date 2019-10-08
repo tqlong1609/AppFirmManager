@@ -1,13 +1,8 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Test_QR;
 
 namespace ManagerCinema
 {
@@ -81,6 +76,8 @@ namespace ManagerCinema
             if(TypeLogin.typeLogin == ETypeLogin.user)
             {
                 // todo: 
+                Test_QR.Form1 Form_QR = new Test_QR.Form1();
+                Form_QR.ShowDialog();
             }
             else
             {
