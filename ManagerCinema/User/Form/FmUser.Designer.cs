@@ -101,7 +101,7 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(424, 21);
+            this.label4.Location = new System.Drawing.Point(297, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 19);
             this.label4.TabIndex = 12;
@@ -111,7 +111,7 @@
             // 
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.bunifuDropdown2);
-            this.panel1.Location = new System.Drawing.Point(159, 8);
+            this.panel1.Location = new System.Drawing.Point(14, 8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(213, 49);
             this.panel1.TabIndex = 14;
@@ -153,11 +153,11 @@
             this.lbBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbBuyTicket.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBuyTicket.ForeColor = System.Drawing.SystemColors.Control;
-            this.lbBuyTicket.Location = new System.Drawing.Point(29, 21);
+            this.lbBuyTicket.Location = new System.Drawing.Point(498, 21);
             this.lbBuyTicket.Name = "lbBuyTicket";
-            this.lbBuyTicket.Size = new System.Drawing.Size(100, 19);
+            this.lbBuyTicket.Size = new System.Drawing.Size(136, 19);
             this.lbBuyTicket.TabIndex = 11;
-            this.lbBuyTicket.Text = "BUY TICKET";
+            this.lbBuyTicket.Text = "SCAN VOUCHER";
             this.lbBuyTicket.Click += new System.EventHandler(this.lbBuyTicket_Click);
             // 
             // bunifuImageButton3

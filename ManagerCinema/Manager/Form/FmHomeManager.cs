@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +14,8 @@ namespace ManagerCinema
 {
     public partial class FmHomeManager : FormMain
     {
+        private Thread threadForm;
+
         public FmHomeManager()
         {
             InitializeComponent();
@@ -41,6 +44,22 @@ namespace ManagerCinema
         private void FmHomeManager_MouseUp(object sender, MouseEventArgs e)
         {
             mouseUpForm(this);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure logout ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+                threadForm = new Thread(openFormLogin);
+                threadForm.SetApartmentState(ApartmentState.STA);
+                threadForm.Start();
+            }
+        }
+
+        private void openFormLogin()
+        {
+            Application.Run(new FmLogin());
         }
     }
 }

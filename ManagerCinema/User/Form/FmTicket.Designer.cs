@@ -37,18 +37,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbxBench = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cbxNomal = new Bunifu.Framework.UI.BunifuCheckbox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lbSum = new System.Windows.Forms.Label();
-            this.lbSumBench = new System.Windows.Forms.Label();
-            this.lbSumNomal = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.nudBench = new System.Windows.Forms.NumericUpDown();
-            this.nudNomal = new System.Windows.Forms.NumericUpDown();
+            this.lbPriceBench = new System.Windows.Forms.Label();
+            this.lbPriceNomal = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -60,8 +56,6 @@
             this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBench)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNomal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
@@ -155,14 +149,11 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cbxBench);
+            this.panel2.Controls.Add(this.cbxNomal);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.lbSum);
-            this.panel2.Controls.Add(this.lbSumBench);
-            this.panel2.Controls.Add(this.lbSumNomal);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.nudBench);
-            this.panel2.Controls.Add(this.nudNomal);
+            this.panel2.Controls.Add(this.lbPriceBench);
+            this.panel2.Controls.Add(this.lbPriceNomal);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(17, 324);
@@ -170,10 +161,35 @@
             this.panel2.Size = new System.Drawing.Size(583, 162);
             this.panel2.TabIndex = 56;
             // 
+            // cbxBench
+            // 
+            this.cbxBench.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbxBench.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.cbxBench.Checked = true;
+            this.cbxBench.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbxBench.ForeColor = System.Drawing.Color.White;
+            this.cbxBench.Location = new System.Drawing.Point(279, 106);
+            this.cbxBench.Name = "cbxBench";
+            this.cbxBench.Size = new System.Drawing.Size(20, 20);
+            this.cbxBench.TabIndex = 63;
+            this.cbxBench.OnChange += new System.EventHandler(this.cbxBench_OnChange);
+            // 
+            // cbxNomal
+            // 
+            this.cbxNomal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbxNomal.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.cbxNomal.Checked = true;
+            this.cbxNomal.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbxNomal.ForeColor = System.Drawing.Color.White;
+            this.cbxNomal.Location = new System.Drawing.Point(279, 59);
+            this.cbxNomal.Name = "cbxNomal";
+            this.cbxNomal.Size = new System.Drawing.Size(20, 20);
+            this.cbxNomal.TabIndex = 62;
+            this.cbxNomal.OnChange += new System.EventHandler(this.cbxNomal_OnChange);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
@@ -182,23 +198,12 @@
             this.panel3.Size = new System.Drawing.Size(580, 28);
             this.panel3.TabIndex = 9;
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(481, 6);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(90, 16);
-            this.label14.TabIndex = 59;
-            this.label14.Text = "SUM (VND)";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(345, 7);
+            this.label13.Location = new System.Drawing.Point(436, 7);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 16);
             this.label13.TabIndex = 58;
@@ -209,110 +214,51 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(193, 7);
+            this.label12.Location = new System.Drawing.Point(267, 7);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.Size = new System.Drawing.Size(43, 16);
             this.label12.TabIndex = 57;
-            this.label12.Text = "AMOUNT";
+            this.label12.Text = "Type";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(4, 6);
+            this.label11.Location = new System.Drawing.Point(42, 7);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(105, 16);
             this.label11.TabIndex = 0;
             this.label11.Text = "TYPE TICKET";
             // 
-            // lbSum
+            // lbPriceBench
             // 
-            this.lbSum.AutoSize = true;
-            this.lbSum.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lbSum.Location = new System.Drawing.Point(488, 132);
-            this.lbSum.Name = "lbSum";
-            this.lbSum.Size = new System.Drawing.Size(72, 19);
-            this.lbSum.TabIndex = 8;
-            this.lbSum.Text = "150,000";
+            this.lbPriceBench.AutoSize = true;
+            this.lbPriceBench.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPriceBench.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbPriceBench.Location = new System.Drawing.Point(462, 106);
+            this.lbPriceBench.Name = "lbPriceBench";
+            this.lbPriceBench.Size = new System.Drawing.Size(74, 19);
+            this.lbPriceBench.TabIndex = 5;
+            this.lbPriceBench.Text = "100,000";
             // 
-            // lbSumBench
+            // lbPriceNomal
             // 
-            this.lbSumBench.AutoSize = true;
-            this.lbSumBench.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSumBench.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbSumBench.Location = new System.Drawing.Point(488, 96);
-            this.lbSumBench.Name = "lbSumBench";
-            this.lbSumBench.Size = new System.Drawing.Size(74, 19);
-            this.lbSumBench.TabIndex = 7;
-            this.lbSumBench.Text = "100,000";
-            // 
-            // lbSumNomal
-            // 
-            this.lbSumNomal.AutoSize = true;
-            this.lbSumNomal.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSumNomal.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbSumNomal.Location = new System.Drawing.Point(488, 50);
-            this.lbSumNomal.Name = "lbSumNomal";
-            this.lbSumNomal.Size = new System.Drawing.Size(66, 19);
-            this.lbSumNomal.TabIndex = 6;
-            this.lbSumNomal.Text = "50,000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(359, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 19);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "100,000";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(359, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 19);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "50,000";
-            // 
-            // nudBench
-            // 
-            this.nudBench.Location = new System.Drawing.Point(161, 96);
-            this.nudBench.Name = "nudBench";
-            this.nudBench.Size = new System.Drawing.Size(146, 20);
-            this.nudBench.TabIndex = 3;
-            this.nudBench.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudBench.ValueChanged += new System.EventHandler(this.nudBench_ValueChanged);
-            // 
-            // nudNomal
-            // 
-            this.nudNomal.Location = new System.Drawing.Point(161, 49);
-            this.nudNomal.Name = "nudNomal";
-            this.nudNomal.Size = new System.Drawing.Size(146, 20);
-            this.nudNomal.TabIndex = 2;
-            this.nudNomal.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudNomal.ValueChanged += new System.EventHandler(this.nudNomal_ValueChanged);
+            this.lbPriceNomal.AutoSize = true;
+            this.lbPriceNomal.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPriceNomal.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbPriceNomal.Location = new System.Drawing.Point(462, 59);
+            this.lbPriceNomal.Name = "lbPriceNomal";
+            this.lbPriceNomal.Size = new System.Drawing.Size(66, 19);
+            this.lbPriceNomal.TabIndex = 4;
+            this.lbPriceNomal.Text = "50,000";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(3, 94);
+            this.label5.Location = new System.Drawing.Point(43, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 19);
             this.label5.TabIndex = 1;
@@ -323,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(3, 47);
+            this.label4.Location = new System.Drawing.Point(41, 59);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 19);
             this.label4.TabIndex = 0;
@@ -472,8 +418,6 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBench)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudNomal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
@@ -495,17 +439,11 @@
         private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lbSum;
-        private System.Windows.Forms.Label lbSumBench;
-        private System.Windows.Forms.Label lbSumNomal;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown nudBench;
-        private System.Windows.Forms.NumericUpDown nudNomal;
+        private System.Windows.Forms.Label lbPriceBench;
+        private System.Windows.Forms.Label lbPriceNomal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBuyTicket;
@@ -513,5 +451,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
+        private Bunifu.Framework.UI.BunifuCheckbox cbxBench;
+        private Bunifu.Framework.UI.BunifuCheckbox cbxNomal;
     }
 }

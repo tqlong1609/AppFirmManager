@@ -14,22 +14,18 @@ namespace ManagerCinema
 {
     public partial class FmTicket : FormMain
     {
-        private const int PRICE_NOMAL = 50000;
-        private const int PRICE_BENCH = 100000;
         private const string FORMAT_MONNEY = "{0:#,##0}"; // format: 20,000
 
         private Thread threadForm;
         private Movie movie;
         private User user;
-        private int priceNomal;
-        private int priceBench;
+        private int priceNomal = 50000;
+        private int priceBench = 100000;
 
         public FmTicket(Movie movie)
         {
             InitializeComponent();
             this.movie = movie;
-            priceNomal = PRICE_NOMAL;
-            priceBench = PRICE_BENCH;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -57,33 +53,10 @@ namespace ManagerCinema
 
         private void btnBuyTicket_Click(object sender, EventArgs e)
         {
-            if (!isCountTicketZero())
-            {
-                addValueUser();
-                this.Close();
-                threadForm = new Thread(openFormPositionSeat);
-                threadForm.SetApartmentState(ApartmentState.STA);
-                threadForm.Start();
-            }
-            else
-            {
-                MessageBox.Show("You do not choose any ticket!!!", "Error", 
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private bool isCountTicketZero()
-        {
-            if (nudNomal.Value == 0 && nudBench.Value == 0)
-                return true;
-            return false;
-        }
-
-        private void addValueUser()
-        {
-            user.SumMoney = priceNomal + priceBench;
-            user.CountTicketBench = (int)nudBench.Value;
-            user.CountTicketNomal = (int)nudNomal.Value;
+            this.Close();
+            threadForm = new Thread(openFormPositionSeat);
+            threadForm.SetApartmentState(ApartmentState.STA);
+            threadForm.Start();
         }
 
         private void openFormPositionSeat()
@@ -91,21 +64,6 @@ namespace ManagerCinema
             Application.Run(new FmPositionSeat(movie,user));
         }
             
-        private void nudNomal_ValueChanged(object sender, EventArgs e)
-        {
-            priceNomal = (int)nudNomal.Value * PRICE_NOMAL;
-            lbSumNomal.Text = 
-                string.Format(FORMAT_MONNEY, priceNomal);
-            lbSum.Text = string.Format(FORMAT_MONNEY, priceNomal + priceBench);
-        }
-
-        private void nudBench_ValueChanged(object sender, EventArgs e)
-        {
-            priceBench = (int)nudBench.Value * PRICE_BENCH;
-            lbSumBench.Text =
-                string.Format(FORMAT_MONNEY, priceBench);
-            lbSum.Text = string.Format(FORMAT_MONNEY, priceNomal + priceBench);
-        }
 
         #region Form Move
         private void FmTicket_MouseDown(object sender, MouseEventArgs e)
@@ -127,6 +85,42 @@ namespace ManagerCinema
         private void FmTicket_Load(object sender, EventArgs e)
         {
             user = new User();
+
+            initNomal();
+
+            lbPriceNomal.Text = formatMonney(priceNomal);
+            lbPriceBench.Text = formatMonney(priceBench);
+        }
+
+        private void initNomal()
+        {
+            cbxBench.Checked = false;
+            cbxNomal.Checked = true;
+            user.CountTicketNomal = 1;
+            user.CountTicketBench = 0;
+        }
+
+        private void initBench()
+        {
+            cbxNomal.Checked = false;
+            cbxBench.Checked = true;
+            user.CountTicketBench = 1;
+            user.CountTicketNomal = 0;
+        }
+
+        private void cbxNomal_OnChange(object sender, EventArgs e)
+        {
+            initNomal();
+        }
+
+        private void cbxBench_OnChange(object sender, EventArgs e)
+        {
+            initBench();
+        }
+
+        private string formatMonney(int monney)
+        {
+            return string.Format(FORMAT_MONNEY, monney);
         }
     }
 }
