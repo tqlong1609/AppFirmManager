@@ -60,6 +60,13 @@
     <Compile Include="Manager\Form\FmHomeManager.Designer.cs">
       <DependentUpon>FmHomeManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObjectFolder\ETypeLoadData.cs" />
+    <Compile Include="Manager\UserControl\UcListBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Manager\UserControl\UcListBackground.Designer.cs">
+      <DependentUpon>UcListBackground.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\Form\FmProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +175,9 @@
     <EmbeddedResource Include="Manager\Form\FmHomeManager.resx">
       <DependentUpon>FmHomeManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manager\UserControl\UcListBackground.resx">
+      <DependentUpon>UcListBackground.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmProfile.resx">
       <DependentUpon>FmProfile.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,7 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Admin\" />
-    <Folder Include="Manager\UserControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

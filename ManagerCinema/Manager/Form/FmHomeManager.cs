@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ManagerCinema.ObjectFolder.ETypeLoadData;
 
 namespace ManagerCinema
 {
@@ -60,6 +61,29 @@ namespace ManagerCinema
         private void openFormLogin()
         {
             Application.Run(new FmLogin());
+        }
+
+        private void btnListTicket_Click(object sender, EventArgs e)
+        {
+            clearPanel();
+            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListTicket));
+        }
+
+        private void clearPanel()
+        {
+            pnlBackground.Controls.Clear();
+        }
+
+        private void btnTimeShowing_Click(object sender, EventArgs e)
+        {
+            clearPanel();
+            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListTimeShowing));
+        }
+
+        private void btnListSeat_Click(object sender, EventArgs e)
+        {
+            clearPanel();
+            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListSeat));
         }
     }
 }
