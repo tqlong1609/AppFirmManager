@@ -32,7 +32,6 @@ namespace BarcodeLibTest
                 barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtData.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, chkGenerateLabel.Checked, BarcodeLib.LabelPositions.BOTTOMCENTER);
                 barcode.Width = barcode.Image.Width;
                 barcode.Height = barcode.Image.Height;
-                //reposition the barcode image to the middle
                 barcode.Location = new Point((groupBox2.Location.X + groupBox2.Width / 2) - barcode.Width / 2, (groupBox2.Location.Y + groupBox2.Height / 2) - barcode.Height / 2);
 			}
             catch (Exception ex)
