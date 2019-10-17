@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Drawing;
-using System.Windows.Forms;
 using System.Drawing.Imaging;
-using System.IO;
+using System.Windows.Forms;
 
 namespace BarcodeLibTest
 {
@@ -13,9 +12,9 @@ namespace BarcodeLibTest
         public TestApp()
         {
             InitializeComponent();
-			btnSave.Enabled = false;
-			btn_Save_Info.Enabled = false;
-		}
+            btnSave.Enabled = false;
+            btn_Save_Info.Enabled = false;
+        }
 
         private void TestApp_Load(object sender, EventArgs e)
         {
@@ -25,15 +24,15 @@ namespace BarcodeLibTest
         private void btnEncode_Click(object sender, EventArgs e)
         {
             errorProvider1.Clear();
-			btnSave.Enabled = true;
-			btn_Save_Info.Enabled = true;
-			try
+            btnSave.Enabled = true;
+            btn_Save_Info.Enabled = true;
+            try
             {
                 barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtData.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, chkGenerateLabel.Checked, BarcodeLib.LabelPositions.BOTTOMCENTER);
                 barcode.Width = barcode.Image.Width;
                 barcode.Height = barcode.Image.Height;
                 barcode.Location = new Point((groupBox2.Location.X + groupBox2.Width / 2) - barcode.Width / 2, (groupBox2.Location.Y + groupBox2.Height / 2) - barcode.Height / 2);
-			}
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -63,15 +62,15 @@ namespace BarcodeLibTest
             }
         }
 
-		private void btn_Exit_Click(object sender, EventArgs e)
-		{
-			this.Close();
-		}
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-		private void btn_Save_Info_Click(object sender, EventArgs e)
-		{
-			MessageBox.Show("Thêm dữ liệu vào SQL từ Button này !");
-		}
+        private void btn_Save_Info_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thêm dữ liệu vào SQL từ Button này !");
+        }
 
         private void TxtWidth_TextChanged(object sender, EventArgs e)
         {
