@@ -1,0 +1,9 @@
+diff a/ManagerCinema/Custom_Form/BarcodeGenerator/BarcodeGenerator/BarcodeGenerator.csproj b/ManagerCinema/Custom_Form/BarcodeGenerator/BarcodeGenerator/BarcodeGenerator.csproj	(rejected hunks)
+@@ -175,6 +175,7 @@
+     <None Include="BarcodeXML.xss">
+       <DependentUpon>BarcodeXML.xsd</DependentUpon>
+     </None>
++    <None Include="packages.config" />
+     <None Include="Properties\Settings.settings">
+       <Generator>SettingsSingleFileGenerator</Generator>
+       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
