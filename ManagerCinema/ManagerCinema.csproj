@@ -54,6 +54,8 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeData.cs" />
+    <Compile Include="ConnectServer.cs" />
     <Compile Include="Manager\Form\FmHomeManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,11 +63,11 @@
       <DependentUpon>FmHomeManager.cs</DependentUpon>
     </Compile>
     <Compile Include="ObjectFolder\ETypeLoadData.cs" />
-    <Compile Include="Manager\UserControl\UcListBackground.cs">
+    <Compile Include="Manager\UserControl\UcTicket.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Manager\UserControl\UcListBackground.Designer.cs">
-      <DependentUpon>UcListBackground.cs</DependentUpon>
+    <Compile Include="Manager\UserControl\UcTicket.Designer.cs">
+      <DependentUpon>UcTicket.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmProfile.cs">
       <SubType>Form</SubType>
@@ -175,8 +177,8 @@
     <EmbeddedResource Include="Manager\Form\FmHomeManager.resx">
       <DependentUpon>FmHomeManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager\UserControl\UcListBackground.resx">
-      <DependentUpon>UcListBackground.cs</DependentUpon>
+    <EmbeddedResource Include="Manager\UserControl\UcTicket.resx">
+      <DependentUpon>UcTicket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmProfile.resx">
       <DependentUpon>FmProfile.cs</DependentUpon>

@@ -447,6 +447,7 @@
             this.Name = "FmHomeManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmHomeManager";
+            this.Load += new System.EventHandler(this.FmHomeManager_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseUp);

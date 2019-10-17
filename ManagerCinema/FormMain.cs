@@ -10,6 +10,7 @@ namespace ManagerCinema.ObjectFolder
 {
     public class FormMain : Form
     {
+        public static ConnectServer connectServer;
         protected bool isMoveForm;
         protected Point pStart;
 

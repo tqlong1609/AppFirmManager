@@ -139,7 +139,7 @@ namespace BarcodeReaderApp
 				{
 					if (decoded == Password[i])
 					{
-						// GuiMail("khanhvuongtuan37@gmail.com", "17110313@student.hcmute.edu.vn", "Administrator", decoded.ToString() + " Vừa đăng nhập");
+						//GuiMail("khanhvuongtuan37@gmail.com", "17110313@student.hcmute.edu.vn", "Administrator", decoded.ToString() + " Vừa đăng nhập");
                         // Thao tác khác
 						return;
 					}

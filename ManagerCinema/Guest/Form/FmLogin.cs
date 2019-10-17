@@ -28,6 +28,7 @@ namespace ManagerCinema
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            connectServer.NotificationCloseServer();
             this.Close();
         }
 
@@ -99,6 +100,9 @@ namespace ManagerCinema
             sizeFormDefault = this.Size;
             addUseControlLogin();
             isFormLogin = true;
+
+            // start connect to server before start
+            connectServer = ConnectServer.getInstance();
         }
 
         private void lbFogetPass_Click(object sender, EventArgs e)

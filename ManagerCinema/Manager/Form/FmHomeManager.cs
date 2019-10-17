@@ -24,6 +24,7 @@ namespace ManagerCinema
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            connectServer.NotificationCloseServer();
             this.Close();
         }
 
@@ -66,7 +67,7 @@ namespace ManagerCinema
         private void btnListTicket_Click(object sender, EventArgs e)
         {
             clearPanel();
-            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListTicket));
+            pnlBackground.Controls.Add(new UcListBackground(this));
         }
 
         private void clearPanel()
@@ -77,13 +78,15 @@ namespace ManagerCinema
         private void btnTimeShowing_Click(object sender, EventArgs e)
         {
             clearPanel();
-            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListTimeShowing));
         }
 
         private void btnListSeat_Click(object sender, EventArgs e)
         {
             clearPanel();
-            pnlBackground.Controls.Add(new UcListBackground(TypeLoad.ListSeat));
+        }
+
+        private void FmHomeManager_Load(object sender, EventArgs e)
+        {
         }
     }
 }

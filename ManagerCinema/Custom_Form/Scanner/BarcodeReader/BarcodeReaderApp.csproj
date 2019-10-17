@@ -118,6 +118,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BarcodeGenerator\BarcodeGenerator\BarcodeGenerator.csproj">
+      <Project>{8db57ba1-e88c-43d9-ad0e-04bfa6b11c61}</Project>
+      <Name>BarcodeGenerator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\FaceDetection-FaceRecognitionCs\MultiFaceRec.csproj">
       <Project>{cc813884-5d90-4044-9571-8fb7c54d9612}</Project>
       <Name>MultiFaceRec</Name>
