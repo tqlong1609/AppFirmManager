@@ -123,7 +123,7 @@ namespace ManagerCinema
         }
         private bool Connect()
         {
-            iPAddress = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9999);
+            iPAddress = new IPEndPoint(IPAddress.Parse(Const.IP), 9999);
             client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
 
             try

@@ -35,7 +35,8 @@ namespace Server
         {
             clientList = new List<Socket>();
 
-            iPAddress = new IPEndPoint(IPAddress.Any, 9999);
+            iPAddress = new IPEndPoint(IPAddress.Parse(Const.IP), 9999);
+     
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
 
             // wait ip
