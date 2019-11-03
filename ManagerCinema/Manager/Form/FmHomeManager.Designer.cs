@@ -33,7 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnNotification = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnBookTicket = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnListSeat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTicket = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -43,9 +44,6 @@
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinScreen = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnListSeat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBookTicket = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.btnNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -71,9 +69,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(58, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 19);
+            this.label1.Size = new System.Drawing.Size(170, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CINEMA MANAGER";
+            this.label1.Text = "CINEMA EMPLOYEE";
             // 
             // label2
             // 
@@ -96,19 +94,76 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Online";
             // 
-            // btnNotification
+            // btnBookTicket
             // 
-            this.btnNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNotification.Image = ((System.Drawing.Image)(resources.GetObject("btnNotification.Image")));
-            this.btnNotification.ImageActive = null;
-            this.btnNotification.Location = new System.Drawing.Point(82, 119);
-            this.btnNotification.Name = "btnNotification";
-            this.btnNotification.Size = new System.Drawing.Size(28, 29);
-            this.btnNotification.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnNotification.TabIndex = 8;
-            this.btnNotification.TabStop = false;
-            this.btnNotification.Zoom = 10;
+            this.btnBookTicket.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBookTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnBookTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBookTicket.BorderRadius = 0;
+            this.btnBookTicket.ButtonText = "BOOKING TICKET";
+            this.btnBookTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBookTicket.DisabledColor = System.Drawing.Color.Gray;
+            this.btnBookTicket.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnBookTicket.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBookTicket.Iconimage")));
+            this.btnBookTicket.Iconimage_right = null;
+            this.btnBookTicket.Iconimage_right_Selected = null;
+            this.btnBookTicket.Iconimage_Selected = null;
+            this.btnBookTicket.IconMarginLeft = 18;
+            this.btnBookTicket.IconMarginRight = 0;
+            this.btnBookTicket.IconRightVisible = true;
+            this.btnBookTicket.IconRightZoom = 0D;
+            this.btnBookTicket.IconVisible = true;
+            this.btnBookTicket.IconZoom = 90D;
+            this.btnBookTicket.IsTab = false;
+            this.btnBookTicket.Location = new System.Drawing.Point(1, 472);
+            this.btnBookTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnBookTicket.Name = "btnBookTicket";
+            this.btnBookTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnBookTicket.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnBookTicket.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnBookTicket.selected = false;
+            this.btnBookTicket.Size = new System.Drawing.Size(223, 64);
+            this.btnBookTicket.TabIndex = 20;
+            this.btnBookTicket.Text = "BOOKING TICKET";
+            this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnBookTicket.Textcolor = System.Drawing.Color.White;
+            this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnListSeat
+            // 
+            this.btnListSeat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnListSeat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListSeat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnListSeat.BorderRadius = 0;
+            this.btnListSeat.ButtonText = "LIST SEAT";
+            this.btnListSeat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListSeat.DisabledColor = System.Drawing.Color.Gray;
+            this.btnListSeat.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnListSeat.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnListSeat.Iconimage")));
+            this.btnListSeat.Iconimage_right = null;
+            this.btnListSeat.Iconimage_right_Selected = null;
+            this.btnListSeat.Iconimage_Selected = null;
+            this.btnListSeat.IconMarginLeft = 18;
+            this.btnListSeat.IconMarginRight = 0;
+            this.btnListSeat.IconRightVisible = true;
+            this.btnListSeat.IconRightZoom = 0D;
+            this.btnListSeat.IconVisible = true;
+            this.btnListSeat.IconZoom = 90D;
+            this.btnListSeat.IsTab = false;
+            this.btnListSeat.Location = new System.Drawing.Point(1, 410);
+            this.btnListSeat.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnListSeat.Name = "btnListSeat";
+            this.btnListSeat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListSeat.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnListSeat.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnListSeat.selected = false;
+            this.btnListSeat.Size = new System.Drawing.Size(223, 64);
+            this.btnListSeat.TabIndex = 19;
+            this.btnListSeat.Text = "LIST SEAT";
+            this.btnListSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnListSeat.Textcolor = System.Drawing.Color.White;
+            this.btnListSeat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListSeat.Click += new System.EventHandler(this.btnListSeat_Click);
             // 
             // bunifuFlatButton4
             // 
@@ -311,77 +366,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnListSeat
-            // 
-            this.btnListSeat.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnListSeat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnListSeat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnListSeat.BorderRadius = 0;
-            this.btnListSeat.ButtonText = "LIST SEAT";
-            this.btnListSeat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnListSeat.DisabledColor = System.Drawing.Color.Gray;
-            this.btnListSeat.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnListSeat.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnListSeat.Iconimage")));
-            this.btnListSeat.Iconimage_right = null;
-            this.btnListSeat.Iconimage_right_Selected = null;
-            this.btnListSeat.Iconimage_Selected = null;
-            this.btnListSeat.IconMarginLeft = 18;
-            this.btnListSeat.IconMarginRight = 0;
-            this.btnListSeat.IconRightVisible = true;
-            this.btnListSeat.IconRightZoom = 0D;
-            this.btnListSeat.IconVisible = true;
-            this.btnListSeat.IconZoom = 90D;
-            this.btnListSeat.IsTab = false;
-            this.btnListSeat.Location = new System.Drawing.Point(1, 410);
-            this.btnListSeat.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnListSeat.Name = "btnListSeat";
-            this.btnListSeat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnListSeat.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnListSeat.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnListSeat.selected = false;
-            this.btnListSeat.Size = new System.Drawing.Size(223, 64);
-            this.btnListSeat.TabIndex = 19;
-            this.btnListSeat.Text = "LIST SEAT";
-            this.btnListSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnListSeat.Textcolor = System.Drawing.Color.White;
-            this.btnListSeat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListSeat.Click += new System.EventHandler(this.btnListSeat_Click);
-            // 
-            // btnBookTicket
-            // 
-            this.btnBookTicket.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBookTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBookTicket.BorderRadius = 0;
-            this.btnBookTicket.ButtonText = "BOOKING TICKET";
-            this.btnBookTicket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookTicket.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBookTicket.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBookTicket.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBookTicket.Iconimage")));
-            this.btnBookTicket.Iconimage_right = null;
-            this.btnBookTicket.Iconimage_right_Selected = null;
-            this.btnBookTicket.Iconimage_Selected = null;
-            this.btnBookTicket.IconMarginLeft = 18;
-            this.btnBookTicket.IconMarginRight = 0;
-            this.btnBookTicket.IconRightVisible = true;
-            this.btnBookTicket.IconRightZoom = 0D;
-            this.btnBookTicket.IconVisible = true;
-            this.btnBookTicket.IconZoom = 90D;
-            this.btnBookTicket.IsTab = false;
-            this.btnBookTicket.Location = new System.Drawing.Point(1, 472);
-            this.btnBookTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnBookTicket.Name = "btnBookTicket";
-            this.btnBookTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnBookTicket.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnBookTicket.selected = false;
-            this.btnBookTicket.Size = new System.Drawing.Size(223, 64);
-            this.btnBookTicket.TabIndex = 20;
-            this.btnBookTicket.Text = "BOOKING TICKET";
-            this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBookTicket.Textcolor = System.Drawing.Color.White;
-            this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // FmHomeManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,7 +374,6 @@
             this.ClientSize = new System.Drawing.Size(1085, 607);
             this.Controls.Add(this.btnBookTicket);
             this.Controls.Add(this.btnListSeat);
-            this.Controls.Add(this.btnNotification);
             this.Controls.Add(this.bunifuFlatButton4);
             this.Controls.Add(this.btnTimeShowing);
             this.Controls.Add(this.btnListTicket);
@@ -412,7 +395,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmHomeManager_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.btnNotification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circlePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
@@ -438,7 +420,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnListTicket;
         private Bunifu.Framework.UI.BunifuFlatButton btnTimeShowing;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
-        private Bunifu.Framework.UI.BunifuImageButton btnNotification;
         private Bunifu.Framework.UI.BunifuFlatButton btnListSeat;
         private Bunifu.Framework.UI.BunifuFlatButton btnBookTicket;
     }

@@ -70,13 +70,14 @@ namespace ManagerCinema
                     threadForm.Start();
                     break;
                 case ETypeLogin.manager:
-                    threadForm = new Thread(openFormManager);
+                    threadForm = new Thread(openformAdmin);
                     threadForm.SetApartmentState(ApartmentState.STA);
                     threadForm.Start();
                     break;
                 case ETypeLogin.admin:
-                    // open form type password
-
+                    threadForm = new Thread(openformAdmin);
+                    threadForm.SetApartmentState(ApartmentState.STA);
+                    threadForm.Start();
                     break;
             }
         }
@@ -86,9 +87,9 @@ namespace ManagerCinema
             Application.Run(new Form1());
         }
 
-        private void openFormManager()
+        private void openformAdmin()
         {
-            Application.Run(new FmHomeManager());
+            Application.Run(new FmAdmin());
         }
     }
 }
