@@ -1,13 +1,7 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerCinema
@@ -25,7 +19,7 @@ namespace ManagerCinema
         private int countNomal;
         private int countBench;
 
-        public FmPositionSeat(Movie movie,User user)
+        public FmPositionSeat(Movie movie, User user)
         {
             InitializeComponent();
             this.movie = movie;
@@ -63,7 +57,7 @@ namespace ManagerCinema
         {
             loadListSeatNomal();
             loadListSeatBench();
-            
+
             countNomal = user.CountTicketNomal;
             countBench = user.CountTicketBench;
             lbCountNomal.Text = countNomal.ToString();
@@ -116,7 +110,7 @@ namespace ManagerCinema
 
         private void loadValuePanelSeat()
         {
-            foreach(SeatNomal temp in arrRowSeatNomal)
+            foreach (SeatNomal temp in arrRowSeatNomal)
             {
                 pnlSeat.Controls.Add(new ucSeatNomal(temp));
             }
@@ -168,7 +162,7 @@ namespace ManagerCinema
 
         private void openFormReview()
         {
-            Application.Run(new FmReview(movie,user));
+            Application.Run(new FmReview(movie, user));
         }
     }
 }

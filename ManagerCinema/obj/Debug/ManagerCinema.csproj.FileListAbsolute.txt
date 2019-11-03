@@ -127,3 +127,9 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeRea
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\TouchlessLib.dll
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.pdb
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe.config
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.dll
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe.config

@@ -1,14 +1,7 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BarcodeLibTest;
 namespace ManagerCinema
 {
     public partial class FmAdmin : FormMain
@@ -41,6 +34,17 @@ namespace ManagerCinema
         private void btnMinScreen_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnTimeShowing_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            TestApp new_Voucher = new TestApp();
+            new_Voucher.Show();
         }
     }
 }
