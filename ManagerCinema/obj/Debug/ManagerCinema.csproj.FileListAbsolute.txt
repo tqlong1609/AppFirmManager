@@ -92,3 +92,5 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Deb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShowing.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcSeat.resources

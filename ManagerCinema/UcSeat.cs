@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ManagerCinema
 {
-    public partial class UcListBackground : UserControl
+    public partial class UcSeat : UserControl
     {
-        public UcListBackground()
+        public UcSeat()
         {
             InitializeComponent();
-        }
-
-        private void UcListBackground_Load(object sender, EventArgs e)
-        {
-        }
-
-
-        private void btnReload_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

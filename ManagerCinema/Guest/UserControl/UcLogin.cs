@@ -70,7 +70,7 @@ namespace ManagerCinema
                     threadForm.Start();
                     break;
                 case ETypeLogin.manager:
-                    threadForm = new Thread(openformAdmin);
+                    threadForm = new Thread(openFormManager);
                     threadForm.SetApartmentState(ApartmentState.STA);
                     threadForm.Start();
                     break;
@@ -80,6 +80,12 @@ namespace ManagerCinema
                     threadForm.Start();
                     break;
             }
+        }
+
+        private void openFormManager()
+        {
+            Application.Run(new FmHomeManager());
+
         }
 
         private void openFormUser()

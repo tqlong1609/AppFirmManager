@@ -54,7 +54,7 @@ namespace ManagerCinema
         private void btnListTicket_Click(object sender, EventArgs e)
         {
             clearPanel();
-            pnlBackground.Controls.Add(new UcListBackground(this));
+            pnlBackground.Controls.Add(new UcListBackground());
         }
 
         private void clearPanel()
@@ -65,11 +65,13 @@ namespace ManagerCinema
         private void btnTimeShowing_Click(object sender, EventArgs e)
         {
             clearPanel();
+            pnlBackground.Controls.Add(new UcTimeShowing());
         }
 
         private void btnListSeat_Click(object sender, EventArgs e)
         {
             clearPanel();
+            pnlBackground.Controls.Add(new UcSeat());
         }
 
         private void FmHomeManager_Load(object sender, EventArgs e)
