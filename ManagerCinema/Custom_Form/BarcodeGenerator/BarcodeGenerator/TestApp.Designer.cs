@@ -82,6 +82,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.groupBox1.Controls.Add(this.btn_Exit);
             this.groupBox1.Controls.Add(this.btn_Save_Info);
             this.groupBox1.Controls.Add(this.btnSave);
@@ -91,6 +92,7 @@
             this.groupBox1.Controls.Add(this.txtData);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(218, 360);
@@ -100,6 +102,7 @@
             // 
             // btn_Exit
             // 
+            this.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_Exit.Location = new System.Drawing.Point(12, 264);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(192, 43);
@@ -110,6 +113,7 @@
             // 
             // btn_Save_Info
             // 
+            this.btn_Save_Info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_Save_Info.Location = new System.Drawing.Point(12, 134);
             this.btn_Save_Info.Name = "btn_Save_Info";
             this.btn_Save_Info.Size = new System.Drawing.Size(192, 43);
@@ -120,6 +124,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnSave.Location = new System.Drawing.Point(12, 198);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(192, 43);
@@ -130,6 +135,7 @@
             // 
             // btnEncode
             // 
+            this.btnEncode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnEncode.Location = new System.Drawing.Point(12, 69);
             this.btnEncode.Name = "btnEncode";
             this.btnEncode.Size = new System.Drawing.Size(192, 43);
@@ -158,8 +164,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.groupBox2.Controls.Add(this.barcode);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(401, 360);
@@ -194,6 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(623, 360);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

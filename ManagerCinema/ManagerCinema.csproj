@@ -270,5 +270,11 @@
   <ItemGroup>
     <Folder Include="Admin\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Custom_Form\Scanner\BarcodeReader\BarcodeReaderApp.csproj">
+      <Project>{b5099ccf-9441-40f1-944f-41ab66dc5594}</Project>
+      <Name>BarcodeReaderApp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
