@@ -152,3 +152,9 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Deb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe.config
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe.config
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcSeat.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShowing.resources

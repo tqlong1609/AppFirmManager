@@ -304,6 +304,10 @@
       <Project>{b5099ccf-9441-40f1-944f-41ab66dc5594}</Project>
       <Name>BarcodeReaderApp</Name>
     </ProjectReference>
+    <ProjectReference Include="Custom_Form\Test_QR\Test_QR\Test_QR.csproj">
+      <Project>{2c4f9072-2602-4f98-a3e6-1f4c1a7831b6}</Project>
+      <Name>Test_QR</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

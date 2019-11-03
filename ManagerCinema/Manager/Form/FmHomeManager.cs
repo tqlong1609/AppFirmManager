@@ -1,7 +1,7 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
 using System.Windows.Forms;
-
+using Test_QR;
 namespace ManagerCinema
 {
     public partial class FmHomeManager : FormMain
@@ -71,13 +71,13 @@ namespace ManagerCinema
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Form1 QR_Scanner = new Form1();
+            Test_QR.Form1 QR_Scanner = new Test_QR.Form1();
             QR_Scanner.Show();
         }
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-            Form1 QR_Scanner = new Form1();
+            Test_QR.Form1 QR_Scanner = new Test_QR.Form1();
             QR_Scanner.Show();
         }
     }
