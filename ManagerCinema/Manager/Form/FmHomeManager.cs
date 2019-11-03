@@ -1,11 +1,14 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
 using System.Windows.Forms;
-using Test_QR;
+using BarcodeReaderApp;
+using System.Threading;
+
 namespace ManagerCinema
 {
     public partial class FmHomeManager : FormMain
     {
+        private Thread thread;
 
         public FmHomeManager()
         {
@@ -71,14 +74,22 @@ namespace ManagerCinema
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            Test_QR.Form1 QR_Scanner = new Test_QR.Form1();
-            QR_Scanner.Show();
+            //thread = new Thread(openFmQr);
+            //thread.SetApartmentState(ApartmentState.STA);
+            //thread.Start();
+            BarcodeReaderApp.Form1 Scan_Ticket = new BarcodeReaderApp.Form1();
+            Scan_Ticket.Show();
         }
 
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        private void btnBookTicket_Click(object sender, EventArgs e)
         {
-            Test_QR.Form1 QR_Scanner = new Test_QR.Form1();
-            QR_Scanner.Show();
+            new FmBookticket().ShowDialog();
+        }
+
+        private void openFmQr()
+        {
+            BarcodeReaderApp.Form1 Scan_Ticket = new BarcodeReaderApp.Form1();
+            Scan_Ticket.Show();
         }
     }
 }

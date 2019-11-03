@@ -19,10 +19,7 @@ namespace BarcodeReaderApp
         public Form1()
         {
             InitializeComponent();
-            _barcodeReader = new BarcodeReader();
-            _touch = new TouchlessMgr();
-            button2.Enabled = false;
-            button4.Enabled = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,41 +89,61 @@ namespace BarcodeReaderApp
             _touch.CurrentCamera.CaptureWidth = _previewWidth;
             _touch.CurrentCamera.CaptureWidth = _previewHeight;
             _touch.CurrentCamera.OnImageCaptured += new EventHandler<CameraEventArgs>(OnImageCaptured);
+            btnExit.Enabled = false;
         }
 
         private void StopCamera()
         {
-            button3.Text = "Start Webcam";
-            if (_touch.CurrentCamera != null)
+            try
             {
-                _touch.CurrentCamera.OnImageCaptured -= new EventHandler<CameraEventArgs>(OnImageCaptured);
+                button3.Text = "Start Webcam";
+                if (_touch.CurrentCamera != null)
+                {
+                    _touch.CurrentCamera.OnImageCaptured -= new EventHandler<CameraEventArgs>(OnImageCaptured);
+                    _touch.CurrentCamera.Dispose();
+                    _touch.RefreshCameraList();
+                    btnExit.Enabled = true;
+                }
+            }
+            catch (Exception)
+            {
+                return;
             }
         }
 
         private void OnImageCaptured(object sender, CameraEventArgs args)
         {
             Bitmap bitmap = args.Image;
-            this.Invoke((MethodInvoker)delegate
+            try
             {
-                pictureBox1.Image = bitmap;
-                ReadBarcode(bitmap);
-            });
+                this.Invoke((MethodInvoker)delegate
+                {
+                    pictureBox1.Image = bitmap;
+                    ReadBarcode(bitmap);
+                });
+            }
+            catch {
+                return;  }
         }
 
         private void ReadBarcode(Bitmap bitmap)
         {
-            BarcodeReader reader = new BarcodeReader();
-            Result result = reader.Decode((Bitmap)pictureBox1.Image);
-            decoded = "";
-            if (result != null)
+            try
             {
-                textBox1.ResetText();
-                decoded = decoded + result.ToString();
-                if (decoded != "")
+                BarcodeReader reader = new BarcodeReader();
+                Result result = reader.Decode((Bitmap)pictureBox1.Image);
+                decoded = "";
+                if (result != null)
                 {
-                    textBox1.Text = decoded;
+                    textBox1.ResetText();
+                    decoded = decoded + result.ToString();
+                    if (decoded != "")
+                    {
+                        textBox1.Text = decoded;
+                    }
                 }
             }
+            catch (Exception) { }
         }
 
 		private void button4_Click(object sender, EventArgs e)
@@ -173,7 +190,10 @@ namespace BarcodeReaderApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            _barcodeReader = new BarcodeReader();
+            _touch = new TouchlessMgr();
+            button2.Enabled = false;
+            button4.Enabled = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -184,6 +204,26 @@ namespace BarcodeReaderApp
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //StopCamera();
+        }
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

@@ -60,11 +60,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FmAdmin.cs">
+    <Compile Include="Admin\Form\FmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmAdmin.Designer.cs">
+    <Compile Include="Admin\Form\FmAdmin.Designer.cs">
       <DependentUpon>FmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Form\FmBookticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Form\FmBookticket.Designer.cs">
+      <DependentUpon>FmBookticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListEmployeeAD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListEmployeeAD.Designer.cs">
+      <DependentUpon>UcListEmployeeAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListCinemaAD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListCinemaAD.Designer.cs">
+      <DependentUpon>UcListCinemaAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListMovie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListMovie.Designer.cs">
+      <DependentUpon>UcListMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListTicketAD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin\UserControl\UcListTicketAD.Designer.cs">
+      <DependentUpon>UcListTicketAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form\FmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form\FmEditUser.Designer.cs">
+      <DependentUpon>FmEditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Form\FmHomeManager.cs">
       <SubType>Form</SubType>
@@ -79,16 +115,16 @@
     <Compile Include="Manager\UserControl\UcTicket.Designer.cs">
       <DependentUpon>UcTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcSeat.cs">
+    <Compile Include="Manager\UserControl\UcSeat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcSeat.Designer.cs">
+    <Compile Include="Manager\UserControl\UcSeat.Designer.cs">
       <DependentUpon>UcSeat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcTimeShowing.cs">
+    <Compile Include="Manager\UserControl\UcTimeShowing.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcTimeShowing.Designer.cs">
+    <Compile Include="Manager\UserControl\UcTimeShowing.Designer.cs">
       <DependentUpon>UcTimeShowing.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmProfile.cs">
@@ -196,8 +232,26 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FmAdmin.resx">
+    <EmbeddedResource Include="Admin\Form\FmAdmin.resx">
       <DependentUpon>FmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
+      <DependentUpon>FmBookticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserControl\UcListEmployeeAD.resx">
+      <DependentUpon>UcListEmployeeAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserControl\UcListCinemaAD.resx">
+      <DependentUpon>UcListCinemaAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserControl\UcListMovie.resx">
+      <DependentUpon>UcListMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserControl\UcListTicketAD.resx">
+      <DependentUpon>UcListTicketAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form\FmEditUser.resx">
+      <DependentUpon>FmEditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmHomeManager.resx">
       <DependentUpon>FmHomeManager.cs</DependentUpon>
@@ -205,10 +259,10 @@
     <EmbeddedResource Include="Manager\UserControl\UcTicket.resx">
       <DependentUpon>UcTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcSeat.resx">
+    <EmbeddedResource Include="Manager\UserControl\UcSeat.resx">
       <DependentUpon>UcSeat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcTimeShowing.resx">
+    <EmbeddedResource Include="Manager\UserControl\UcTimeShowing.resx">
       <DependentUpon>UcTimeShowing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmProfile.resx">
@@ -292,9 +346,7 @@
   <ItemGroup>
     <None Include="Resources\search_127px.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Admin\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="Custom_Form\BarcodeGenerator\BarcodeGenerator\BarcodeGenerator.csproj">
       <Project>{8db57ba1-e88c-43d9-ad0e-04bfa6b11c61}</Project>

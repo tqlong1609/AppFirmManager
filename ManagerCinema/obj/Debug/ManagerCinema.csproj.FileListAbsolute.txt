@@ -1,72 +1,31 @@
-L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.exe.config
-L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.exe
-L:\ManagerCinema\ManagerCinema\bin\Debug\ManagerCinema.pdb
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.exe
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.pdb
-L:\ManagerCinema\ManagerCinema\bin\Debug\Bunifu_UI_v1.52.dll
-L:\ManagerCinema\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
-L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
-L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
-L:\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
-L:\AppFirmManager\ManagerCinema\bin\Debug\Bunifu_UI_v1.52.dll
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
-C:\Users\Tran Long\Desktop\dowload from git\New folder\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
-L:\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListBackground.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\WebCamLib.dll
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.dll
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.dll
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\TouchlessLib.dll
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe.config
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe.config
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe.config
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe.config
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmBookticket.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListBackground.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcSeat.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShowing.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
@@ -85,76 +44,11 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Deb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CoreCompileInputs.cache
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources
-<<<<<<< HEAD
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShowing.resources
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcSeat.resources
-=======
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.dll
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListBackground.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmProfile.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmCheckQR.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmReview.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatBench.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.ucSeatNomal.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmPositionSeat.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmTicket.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmDetailMovie.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmFogetPassword.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmLogin.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Form1.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Properties.Resources.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcBackground.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcItemMovie.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcLogin.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcRegister.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\WebCamLib.dll
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\TouchlessLib.dll
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe.config
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.dll
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe.config
->>>>>>> eec6672fb288820e8d7186a3e36ab2d6f327b056
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\WebCamLib.dll
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.dll
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.dll
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\TouchlessLib.dll
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeGenerator.exe.config
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\BarcodeReader.exe.config
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\Test_QR.exe.config
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe.config
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcSeat.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShowing.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmEditUser.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListEmployeeAD.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListCinemaAD.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListMovie.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicketAD.resources

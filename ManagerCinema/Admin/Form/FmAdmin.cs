@@ -46,5 +46,36 @@ namespace ManagerCinema
             TestApp new_Voucher = new TestApp();
             new_Voucher.Show();
         }
+
+        private void btnListEmployee_Click(object sender, EventArgs e)
+        {
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListEmployeeAD());
+        }
+
+        private void clearpanel()
+        {
+            pnlBackground.Controls.Clear();
+        }
+
+        private void btnListCinema_Click(object sender, EventArgs e)
+        {
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListCinemaAD());
+
+        }
+
+
+        private void btnListMovies_Click(object sender, EventArgs e)
+        {
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListMovie());
+        }
+
+        private void btnListTicket_Click(object sender, EventArgs e)
+        {
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListTicketAD());
+        }
     }
 }

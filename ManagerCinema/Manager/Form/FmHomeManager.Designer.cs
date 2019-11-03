@@ -35,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnBookTicket = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListSeat = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTicket = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -128,6 +127,7 @@
             this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBookTicket.Textcolor = System.Drawing.Color.White;
             this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
             // 
             // btnListSeat
             // 
@@ -164,42 +164,6 @@
             this.btnListSeat.Textcolor = System.Drawing.Color.White;
             this.btnListSeat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListSeat.Click += new System.EventHandler(this.btnListSeat_Click);
-            // 
-            // bunifuFlatButton4
-            // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "SCAN VOUCHER";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton4.Iconimage")));
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 20;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = true;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = true;
-            this.bunifuFlatButton4.IconZoom = 70D;
-            this.bunifuFlatButton4.IsTab = false;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(1, 229);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(223, 59);
-            this.bunifuFlatButton4.TabIndex = 17;
-            this.bunifuFlatButton4.Text = "SCAN VOUCHER";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // btnTimeShowing
             // 
@@ -376,7 +340,6 @@
             this.ClientSize = new System.Drawing.Size(1085, 607);
             this.Controls.Add(this.btnBookTicket);
             this.Controls.Add(this.btnListSeat);
-            this.Controls.Add(this.bunifuFlatButton4);
             this.Controls.Add(this.btnTimeShowing);
             this.Controls.Add(this.btnListTicket);
             this.Controls.Add(this.bunifuFlatButton1);
@@ -421,7 +384,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btnListTicket;
         private Bunifu.Framework.UI.BunifuFlatButton btnTimeShowing;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
         private Bunifu.Framework.UI.BunifuFlatButton btnListSeat;
         private Bunifu.Framework.UI.BunifuFlatButton btnBookTicket;
     }
