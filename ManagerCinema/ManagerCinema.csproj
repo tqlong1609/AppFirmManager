@@ -54,9 +54,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeData.cs" />
-    <Compile Include="ConnectServer.cs" />
-    <Compile Include="Const.cs" />
+    <Compile Include="FmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAdmin.Designer.cs">
+      <DependentUpon>FmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Form\FmHomeManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +178,9 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FmAdmin.resx">
+      <DependentUpon>FmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmHomeManager.resx">
       <DependentUpon>FmHomeManager.cs</DependentUpon>
     </EmbeddedResource>

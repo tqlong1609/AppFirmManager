@@ -21,13 +21,8 @@ namespace ManagerCinema
 
         private void UcListBackground_Load(object sender, EventArgs e)
         {
-            loadDataListTicket();
         }
 
-        private void loadDataListTicket()
-        {
-            FmLogin.connectServer.loadDataFromServer(dgvData, this, CodeData.TICKET_LOAD_ALL, btnReload);
-        }
 
         private void btnReload_Click(object sender, EventArgs e)
         {

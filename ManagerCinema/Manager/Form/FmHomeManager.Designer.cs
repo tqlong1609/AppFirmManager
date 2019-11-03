@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnNotification = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnLogout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTicket = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -110,43 +109,6 @@
             this.btnNotification.TabIndex = 8;
             this.btnNotification.TabStop = false;
             this.btnNotification.Zoom = 10;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogout.BorderRadius = 0;
-            this.btnLogout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.btnLogout.ButtonText = "LOGOUT";
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogout.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogout.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogout.Iconimage")));
-            this.btnLogout.Iconimage_right = null;
-            this.btnLogout.Iconimage_right_Selected = null;
-            this.btnLogout.Iconimage_Selected = null;
-            this.btnLogout.IconMarginLeft = 20;
-            this.btnLogout.IconMarginRight = 0;
-            this.btnLogout.IconRightVisible = true;
-            this.btnLogout.IconRightZoom = 0D;
-            this.btnLogout.IconVisible = true;
-            this.btnLogout.IconZoom = 90D;
-            this.btnLogout.IsTab = false;
-            this.btnLogout.Location = new System.Drawing.Point(-9, 544);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogout.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnLogout.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogout.selected = false;
-            this.btnLogout.Size = new System.Drawing.Size(233, 64);
-            this.btnLogout.TabIndex = 18;
-            this.btnLogout.Text = "LOGOUT";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogout.Textcolor = System.Drawing.Color.White;
-            this.btnLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // bunifuFlatButton4
             // 
@@ -429,7 +391,6 @@
             this.Controls.Add(this.btnBookTicket);
             this.Controls.Add(this.btnListSeat);
             this.Controls.Add(this.btnNotification);
-            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.bunifuFlatButton4);
             this.Controls.Add(this.btnTimeShowing);
             this.Controls.Add(this.btnListTicket);
@@ -477,7 +438,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnListTicket;
         private Bunifu.Framework.UI.BunifuFlatButton btnTimeShowing;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogout;
         private Bunifu.Framework.UI.BunifuImageButton btnNotification;
         private Bunifu.Framework.UI.BunifuFlatButton btnListSeat;
         private Bunifu.Framework.UI.BunifuFlatButton btnBookTicket;

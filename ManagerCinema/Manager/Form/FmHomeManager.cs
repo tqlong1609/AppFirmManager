@@ -15,7 +15,6 @@ namespace ManagerCinema
 {
     public partial class FmHomeManager : FormMain
     {
-        private Thread threadForm;
 
         public FmHomeManager()
         {
@@ -24,7 +23,6 @@ namespace ManagerCinema
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            connectServer.NotificationCloseServer();
             this.Close();
         }
 
@@ -46,17 +44,6 @@ namespace ManagerCinema
         private void FmHomeManager_MouseUp(object sender, MouseEventArgs e)
         {
             mouseUpForm(this);
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Are you sure logout ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                this.Close();
-                threadForm = new Thread(openFormLogin);
-                threadForm.SetApartmentState(ApartmentState.STA);
-                threadForm.Start();
-            }
         }
 
         private void openFormLogin()
