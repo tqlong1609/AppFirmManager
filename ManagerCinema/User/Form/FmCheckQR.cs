@@ -1,14 +1,12 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXing;
+using ZXing.Common;
 
 namespace ManagerCinema
 {
@@ -25,9 +23,31 @@ namespace ManagerCinema
             this.user = user;
         }
 
+        // Need to add an input here
         private void FmCheckQR_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Định dạng lại Input trong code, đây chỉ là bản Demo");
+            // Tạo một chuỗi ở đây và truyền vào barcodeWriter.Write("A") thay cho A
+            var barcodeWriter = new BarcodeWriter
+            {
+                Format = BarcodeFormat.QR_CODE,
+                Options = new EncodingOptions
+                {
+                    Height = 150,
+                    Width = 150,
+                    Margin = 0
+                }
+            };
 
+            using (var bitmap = barcodeWriter.Write("A"))
+            {
+                using (var stream = new MemoryStream())
+                {
+                    bitmap.Save(stream, ImageFormat.Png);
+                    var image = Image.FromStream(stream);
+                    pictureBox1.Image = image;
+                }
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -65,8 +85,12 @@ namespace ManagerCinema
 
         private void openFormReview()
         {
-            Application.Run(new FmReview(movie,user));
+            Application.Run(new FmReview(movie, user));
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

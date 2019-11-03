@@ -34,7 +34,6 @@
             this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
@@ -99,22 +98,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(131, 153);
+            this.pictureBox1.Location = new System.Drawing.Point(195, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(291, 244);
+            this.pictureBox1.Size = new System.Drawing.Size(151, 149);
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(189, 416);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 25);
-            this.label1.TabIndex = 67;
-            this.label1.Text = "ASKSDWUASD";
             // 
             // label2
             // 
@@ -124,10 +112,10 @@
             this.label2.Location = new System.Drawing.Point(38, 95);
             this.label2.MaximumSize = new System.Drawing.Size(500, 500);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(476, 48);
+            this.label2.Size = new System.Drawing.Size(456, 48);
             this.label2.TabIndex = 68;
-            this.label2.Text = "Please save code QR or text below for use confirm with staff when you come to the" +
-    " cinema";
+            this.label2.Text = "Please save code QR below for use confirm with staff when you come to the cinema";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -145,10 +133,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(542, 464);
+            this.ClientSize = new System.Drawing.Size(550, 349);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnBack);
@@ -178,7 +165,6 @@
         private Bunifu.Framework.UI.BunifuImageButton btnMini;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }

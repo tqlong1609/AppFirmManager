@@ -1,14 +1,9 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace ManagerCinema
 {
@@ -59,6 +54,23 @@ namespace ManagerCinema
         private void openFormLogin()
         {
             Application.Run(new FmLogin());
+        }
+
+        void GuiMail(string from, string to, string subject, string message, Attachment file = null)
+        {
+            MailMessage mess = new MailMessage(from, to, subject, message);
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            client.EnableSsl = true;
+            client.Credentials = new NetworkCredential("khanhvuongtuan37@gmail.com", "kh16111999");
+            client.Send(mess);
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string Gmail = bunifuMetroTextbox3.Text;
+            if(bunifuMetroTextbox2.Text == bunifuMetroTextbox1.Text)
+                GuiMail("khanhvuongtuan37@gmail.com", Gmail, "Reset Password", "Mật khẩu mới của bạn là: " + bunifuMetroTextbox1.Text);
+            this.Close();
         }
     }
 }

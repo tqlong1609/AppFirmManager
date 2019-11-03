@@ -49,7 +49,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ABy314drF+FlsFQFMU+cNMCGnnXlivkDTLSHucZnoXc=</dsig:DigestValue>
+        <dsig:DigestValue>Fb1K2+ha6pN/ArM1Tg5UORxJ7UhT9ZEv2+lsDhiHOrE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Dynamsoft.BarcodeReader.dll" size="18229184">
+      <assemblyIdentity name="Dynamsoft.BarcodeReader" version="7.2.0.910" publicKeyToken="AD0967C36E09320A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Cl3qi45i5xUUbIQTj2be46aesIM/Wde02goqQpLAd54=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

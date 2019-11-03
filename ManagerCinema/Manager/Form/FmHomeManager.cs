@@ -1,15 +1,6 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static ManagerCinema.ObjectFolder.ETypeLoadData;
 
 namespace ManagerCinema
 {
@@ -33,7 +24,7 @@ namespace ManagerCinema
 
         private void FmHomeManager_MouseDown(object sender, MouseEventArgs e)
         {
-            mouseDownForm(e,this);
+            mouseDownForm(e, this);
         }
 
         private void FmHomeManager_MouseMove(object sender, MouseEventArgs e)
@@ -76,6 +67,18 @@ namespace ManagerCinema
 
         private void FmHomeManager_Load(object sender, EventArgs e)
         {
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Form1 QR_Scanner = new Form1();
+            QR_Scanner.Show();
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            Form1 QR_Scanner = new Form1();
+            QR_Scanner.Show();
         }
     }
 }

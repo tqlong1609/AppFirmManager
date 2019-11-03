@@ -1,13 +1,6 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerCinema
@@ -48,7 +41,7 @@ namespace ManagerCinema
 
         private void openFormDetailMovie()
         {
-            Application.Run(new FmDetailMovie(movie) );
+            Application.Run(new FmDetailMovie(movie));
         }
 
         private void btnBuyTicket_Click(object sender, EventArgs e)
@@ -61,9 +54,9 @@ namespace ManagerCinema
 
         private void openFormPositionSeat()
         {
-            Application.Run(new FmPositionSeat(movie,user));
+            Application.Run(new FmPositionSeat(movie, user));
         }
-            
+
 
         #region Form Move
         private void FmTicket_MouseDown(object sender, MouseEventArgs e)

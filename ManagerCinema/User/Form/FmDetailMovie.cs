@@ -1,13 +1,6 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerCinema
@@ -15,7 +8,7 @@ namespace ManagerCinema
     public partial class FmDetailMovie : FormMain
     {
         private Thread threadForm;
-        
+
         private Movie movie;
 
         public FmDetailMovie(Movie movie)
@@ -32,7 +25,7 @@ namespace ManagerCinema
 
         private void loadItemsFromCinema()
         {
-            
+
         }
 
         private void loadItemsFromMovie()
