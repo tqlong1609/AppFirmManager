@@ -25,5 +25,10 @@ namespace ManagerCinema
             movieBS = new MovieBS();
             dvwMovies.DataSource = movieBS.loadData();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            new FmAddMovie().ShowDialog();
+        }
     }
 }

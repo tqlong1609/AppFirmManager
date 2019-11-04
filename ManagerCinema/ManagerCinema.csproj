@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBSMDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FmAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAddMovie.Designer.cs">
+      <DependentUpon>FmAddMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </Compile>
     <EmbeddedResource Include="Admin\Form\FmAdmin.resx">
       <DependentUpon>FmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAddMovie.resx">
+      <DependentUpon>FmAddMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
       <DependentUpon>FmBookticket.cs</DependentUpon>
