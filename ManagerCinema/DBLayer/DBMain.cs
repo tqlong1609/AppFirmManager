@@ -33,7 +33,7 @@ namespace ManagerCinema.DBLayer
             return dataSet;
         }
 
-        public bool MyExecuteNonQuery(string strSql, CommandType type, ref string error)
+        public bool MyExecuteNonQuery(string strSql, CommandType type)
         {
             bool isError = false;
             if (connect.State == ConnectionState.Open) { connect.Close(); }
@@ -45,9 +45,8 @@ namespace ManagerCinema.DBLayer
                 command.ExecuteNonQuery();
                 isError = true;
             }
-            catch (SqlException err)
+            catch (SqlException)
             {
-                error = err.Message;
             }
             finally
             {

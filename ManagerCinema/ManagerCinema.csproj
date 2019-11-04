@@ -67,6 +67,7 @@
       <DependentUpon>FmAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="BSLayer\MovieBS.cs" />
+    <Compile Include="CommonFunction.cs" />
     <Compile Include="DBLayer\DBMain.cs" />
     <Compile Include="DBSMDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

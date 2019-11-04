@@ -1,4 +1,5 @@
-﻿using ManagerCinema.ObjectFolder;
+﻿using ManagerCinema.BSLayer;
+using ManagerCinema.ObjectFolder;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace ManagerCinema
     {
         // path load image
         string path;
+        MovieBS movieBS;
 
         public FmAddMovie()
         {
@@ -38,7 +40,19 @@ namespace ManagerCinema
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-
+            int id = CommonFunction.getIdForInsert(movieBS.loadData());
+            string codeImage = CommonFunction.converImgToString(path);
+            bool isSuccess = movieBS.addMovies(id,txtName.Text,int.Parse(txtTime.Text),txtDirector.Text,txtCountry.Text,txtProducer.Text,
+                cbxType.selectedValue,txtActor.Text,dpkDateShowing.Value.ToLongDateString(),
+                rtxtContent.Text,txtTimeStart.Text,int.Parse(txtPrice.Text), codeImage);
+            if (isSuccess)
+            {
+                MessageBox.Show("Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Error", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -60,6 +74,11 @@ namespace ManagerCinema
                 pbxImage.Image = Image.FromFile(fileDialog.FileName);
                 path = fileDialog.FileName;
             }
+        }
+
+        private void FmAddMovie_Load(object sender, EventArgs e)
+        {
+            movieBS = new MovieBS();
         }
     }
 }

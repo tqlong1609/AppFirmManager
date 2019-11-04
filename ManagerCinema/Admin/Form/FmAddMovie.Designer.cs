@@ -33,14 +33,14 @@
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinScreen = new Bunifu.Framework.UI.BunifuImageButton();
             this.pbxImage = new System.Windows.Forms.PictureBox();
-            this.txxName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtDirector = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtCountry = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtProducer = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtActor = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtTime = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label9 = new System.Windows.Forms.Label();
-            this.ddwType = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxType = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dpkDateShowing = new Bunifu.Framework.UI.BunifuDatepicker();
             this.txtTimeStart = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -101,23 +101,23 @@
             this.pbxImage.TabIndex = 26;
             this.pbxImage.TabStop = false;
             // 
-            // txxName
+            // txtName
             // 
-            this.txxName.BorderColorFocused = System.Drawing.Color.LightSlateGray;
-            this.txxName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txxName.BorderColorMouseHover = System.Drawing.Color.LightSlateGray;
-            this.txxName.BorderThickness = 3;
-            this.txxName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txxName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txxName.ForeColor = System.Drawing.Color.Silver;
-            this.txxName.isPassword = false;
-            this.txxName.Location = new System.Drawing.Point(454, 55);
-            this.txxName.Margin = new System.Windows.Forms.Padding(4);
-            this.txxName.Name = "txxName";
-            this.txxName.Size = new System.Drawing.Size(391, 51);
-            this.txxName.TabIndex = 69;
-            this.txxName.Text = "Name";
-            this.txxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtName.BorderColorFocused = System.Drawing.Color.LightSlateGray;
+            this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtName.BorderColorMouseHover = System.Drawing.Color.LightSlateGray;
+            this.txtName.BorderThickness = 3;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtName.ForeColor = System.Drawing.Color.Silver;
+            this.txtName.isPassword = false;
+            this.txtName.Location = new System.Drawing.Point(454, 55);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(391, 51);
+            this.txtName.TabIndex = 69;
+            this.txtName.Text = "Name";
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtDirector
             // 
@@ -220,22 +220,22 @@
             this.label9.TabIndex = 102;
             this.label9.Text = "Type:";
             // 
-            // ddwType
+            // cbxType
             // 
-            this.ddwType.BackColor = System.Drawing.Color.Transparent;
-            this.ddwType.BorderRadius = 3;
-            this.ddwType.ForeColor = System.Drawing.Color.White;
-            this.ddwType.Items = new string[] {
+            this.cbxType.BackColor = System.Drawing.Color.Transparent;
+            this.cbxType.BorderRadius = 3;
+            this.cbxType.ForeColor = System.Drawing.Color.White;
+            this.cbxType.Items = new string[] {
         "Action",
         "Horror",
         "Funny"};
-            this.ddwType.Location = new System.Drawing.Point(531, 526);
-            this.ddwType.Name = "ddwType";
-            this.ddwType.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ddwType.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ddwType.selectedIndex = -1;
-            this.ddwType.Size = new System.Drawing.Size(315, 35);
-            this.ddwType.TabIndex = 101;
+            this.cbxType.Location = new System.Drawing.Point(531, 526);
+            this.cbxType.Name = "cbxType";
+            this.cbxType.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxType.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxType.selectedIndex = -1;
+            this.cbxType.Size = new System.Drawing.Size(315, 35);
+            this.cbxType.TabIndex = 101;
             // 
             // bunifuCustomLabel1
             // 
@@ -363,13 +363,13 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.dpkDateShowing);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.ddwType);
+            this.Controls.Add(this.cbxType);
             this.Controls.Add(this.txtTime);
             this.Controls.Add(this.txtActor);
             this.Controls.Add(this.txtProducer);
             this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.txtDirector);
-            this.Controls.Add(this.txxName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.pbxImage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
@@ -378,6 +378,7 @@
             this.Name = "FmAddMovie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmAddMovie";
+            this.Load += new System.EventHandler(this.FmAddMovie_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmAddMovie_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmAddMovie_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmAddMovie_MouseUp);
@@ -396,14 +397,14 @@
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuImageButton btnMinScreen;
         private System.Windows.Forms.PictureBox pbxImage;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txxName;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtName;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtDirector;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtCountry;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtProducer;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtActor;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTime;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuDropdown ddwType;
+        private Bunifu.Framework.UI.BunifuDropdown cbxType;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuDatepicker dpkDateShowing;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtTimeStart;
