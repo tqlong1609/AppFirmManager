@@ -66,6 +66,13 @@
     <Compile Include="Admin\Form\FmAdmin.Designer.cs">
       <DependentUpon>FmAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BSLayer\MovieBS.cs" />
+    <Compile Include="DBLayer\DBMain.cs" />
+    <Compile Include="DBSMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +327,17 @@
     <EmbeddedResource Include="Guest\UserControl\UcRegister.resx">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DBSMDataSet.xsc">
+      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBSMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBSMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBSMDataSet.xss">
+      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

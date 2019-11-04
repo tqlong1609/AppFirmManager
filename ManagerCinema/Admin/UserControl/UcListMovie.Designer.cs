@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UcListMovie));
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dvwMovies = new System.Windows.Forms.DataGridView();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvwMovies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -62,13 +62,13 @@
             this.txtSearch.Text = "Search by Movie";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // dataGridView1
+            // dvwMovies
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(859, 515);
-            this.dataGridView1.TabIndex = 20;
+            this.dvwMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvwMovies.Location = new System.Drawing.Point(3, 63);
+            this.dvwMovies.Name = "dvwMovies";
+            this.dvwMovies.Size = new System.Drawing.Size(859, 515);
+            this.dvwMovies.TabIndex = 20;
             // 
             // bunifuImageButton2
             // 
@@ -136,10 +136,11 @@
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.bunifuImageButton3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dvwMovies);
             this.Name = "UcListMovie";
             this.Size = new System.Drawing.Size(865, 641);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.UcListMovie_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvwMovies)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -155,6 +156,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvwMovies;
     }
 }
