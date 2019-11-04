@@ -89,7 +89,7 @@ namespace BarcodeReaderApp
             _touch.CurrentCamera.CaptureWidth = _previewWidth;
             _touch.CurrentCamera.CaptureWidth = _previewHeight;
             _touch.CurrentCamera.OnImageCaptured += new EventHandler<CameraEventArgs>(OnImageCaptured);
-            btnExit.Enabled = false;
+        //    btnExit.Enabled = false;
         }
 
         private void StopCamera()
@@ -208,7 +208,8 @@ namespace BarcodeReaderApp
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            //StopCamera();
+            StopCamera();
+            this.Hide();
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e)
