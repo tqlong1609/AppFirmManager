@@ -43,7 +43,6 @@
             this.cbxType = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dpkDateShowing = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.txtTimeStart = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtPrice = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.rtxtContent = new System.Windows.Forms.RichTextBox();
             this.btnLoad = new Bunifu.Framework.UI.BunifuImageButton();
@@ -262,24 +261,6 @@
             this.dpkDateShowing.TabIndex = 103;
             this.dpkDateShowing.Value = new System.DateTime(2019, 9, 26, 12, 20, 57, 390);
             // 
-            // txtTimeStart
-            // 
-            this.txtTimeStart.BorderColorFocused = System.Drawing.Color.LightSlateGray;
-            this.txtTimeStart.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTimeStart.BorderColorMouseHover = System.Drawing.Color.LightSlateGray;
-            this.txtTimeStart.BorderThickness = 3;
-            this.txtTimeStart.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimeStart.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtTimeStart.ForeColor = System.Drawing.Color.Silver;
-            this.txtTimeStart.isPassword = false;
-            this.txtTimeStart.Location = new System.Drawing.Point(454, 409);
-            this.txtTimeStart.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTimeStart.Name = "txtTimeStart";
-            this.txtTimeStart.Size = new System.Drawing.Size(391, 51);
-            this.txtTimeStart.TabIndex = 105;
-            this.txtTimeStart.Text = "Time start";
-            this.txtTimeStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // txtPrice
             // 
             this.txtPrice.BorderColorFocused = System.Drawing.Color.LightSlateGray;
@@ -359,7 +340,6 @@
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.rtxtContent);
             this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.txtTimeStart);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.dpkDateShowing);
             this.Controls.Add(this.label9);
@@ -407,7 +387,6 @@
         private Bunifu.Framework.UI.BunifuDropdown cbxType;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuDatepicker dpkDateShowing;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtTimeStart;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPrice;
         private System.Windows.Forms.RichTextBox rtxtContent;
         private Bunifu.Framework.UI.BunifuImageButton btnLoad;

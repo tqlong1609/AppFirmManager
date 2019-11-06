@@ -167,9 +167,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(275, 325);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 20);
+            this.label8.Size = new System.Drawing.Size(48, 20);
             this.label8.TabIndex = 31;
-            this.label8.Text = "Status:";
+            this.label8.Text = "Price:";
             // 
             // label7
             // 

@@ -20,13 +20,13 @@ namespace ManagerCinema
         private void FmDetailMovie_Load(object sender, EventArgs e)
         {
             loadItemsFromMovie();
-            loadItemsFromCinema();
+            //loadItemsFromCinema();
         }
 
-        private void loadItemsFromCinema()
-        {
+        //private void loadItemsFromCinema()
+        //{
 
-        }
+        //}
 
         private void loadItemsFromMovie()
         {
@@ -39,7 +39,7 @@ namespace ManagerCinema
             lbType.Text = movie.getTypeFirm();
             lbActor.Text = movie.getActor();
             lbDate.Text = movie.getDate();
-            lbStatus.Text = movie.getStatus().ToString();
+            lbStatus.Text = movie.getPrice().ToString();
             lbContent.Text = movie.getContent();
         }
 

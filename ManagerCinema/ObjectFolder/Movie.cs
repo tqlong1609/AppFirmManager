@@ -19,17 +19,15 @@ namespace ManagerCinema.ObjectFolder
         private string date;
         private string content;
         private string country;
-        private Status status;
+        private int price;
 
-        public enum Status
-        {
-            demonstration, vietsub, Engsub
-        }
 
         public Movie(Image image, string nameMovie,int time, string director,
             string producer, string typeFirm, string actor, string date, 
-            string content, string country, Status status)
+            string content, string country, int price)
         {
+            this.nameMovie = nameMovie;
+            this.image = image;
             this.director = director;
             this.producer = producer;
             this.typeFirm = typeFirm;
@@ -37,7 +35,7 @@ namespace ManagerCinema.ObjectFolder
             this.date = date;
             this.content = content;
             this.country = country;
-            this.status = status;
+            this.price = price;
             this.time = time;
         }
 
@@ -95,9 +93,9 @@ namespace ManagerCinema.ObjectFolder
             return country;
         }
 
-        public Status getStatus()
+        public int getPrice()
         {
-            return status;
+            return price;
         }
 
         public int getTime()

@@ -27,8 +27,8 @@ namespace ManagerCinema
             return sum;
         }
 
-        // convert byte to image
-        public static Image ByteToImg(string byteString)
+        // convert string to image
+        public static Image stringToImg(string byteString)
         {
             byte[] imgBytes = Convert.FromBase64String(byteString);
             MemoryStream ms = new MemoryStream(imgBytes, 0, imgBytes.Length);
@@ -37,7 +37,7 @@ namespace ManagerCinema
             return image;
         }
 
-        // convert image to byte
+        // convert image to string
         public static string converImgToString(string path)
         {
             FileStream fs;

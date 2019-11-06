@@ -1,5 +1,8 @@
-﻿using ManagerCinema.ObjectFolder;
+﻿using ManagerCinema.BSLayer;
+using ManagerCinema.ObjectFolder;
 using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
@@ -9,6 +12,8 @@ namespace ManagerCinema
     public partial class Form1 : FormMain
     {
         private Thread threadForm;
+        private List<Movie> listMovies;
+        private MovieBS movieBS;
 
         public Form1()
         {
@@ -27,27 +32,47 @@ namespace ManagerCinema
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            listMovies = new List<Movie>();
+            movieBS = new MovieBS();
+
+            loadMovies();
             // add Usercontrol permisstion login into panel
             addItemGuestTheme();
         }
 
+        private void loadMovies()
+        {
+            DataTable dataMovies = movieBS.loadData();
+            foreach(DataRow rows in dataMovies.Rows)
+            {
+                Image img = CommonFunction.stringToImg(rows["image"].ToString().Trim());
+                listMovies.Add(new Movie(img, rows["Name"].ToString(), int.Parse(rows["Time"].ToString()),
+                    rows["Director"].ToString(), rows["Producer"].ToString(), rows["Type"].ToString()
+                    , rows["Actor"].ToString(), rows["Date"].ToString(), rows["Content"].ToString(),
+                    rows["Country"].ToString(), int.Parse(rows["Price"].ToString())));
+            }
+        }
 
         private void addItemGuestTheme()
         {
             flpBackground.Controls.Add(new UcBackground());
 
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image2.jpg"), "CHÚ HỀ MA QUÁI")));
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image5.jpg"), "ALLADIN VÀ CÂY ĐÈN THẦN")));
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image6.jpg"), "BoBoBoi")));
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image7.jpg"), "THE KID WHO WOULD BE KING")));
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image8.jpg"), "DRAGON THE HINDDEN WORLD")));
-            flpBackground.Controls.Add(new UcItemMovie(
-                new Movie(Image.FromFile("Image//image9.jpg"), "DORAEMON MẶT TRĂNG PHIÊU LƯU KÝ")));
+            foreach(Movie movie in listMovies)
+            {
+                flpBackground.Controls.Add(new UcItemMovie(movie));
+            }
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image2.jpg"), "CHÚ HỀ MA QUÁI")));
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image5.jpg"), "ALLADIN VÀ CÂY ĐÈN THẦN")));
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image6.jpg"), "BoBoBoi")));
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image7.jpg"), "THE KID WHO WOULD BE KING")));
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image8.jpg"), "DRAGON THE HINDDEN WORLD")));
+            //flpBackground.Controls.Add(new UcItemMovie(
+            //    new Movie(Image.FromFile("Image//image9.jpg"), "DORAEMON MẶT TRĂNG PHIÊU LƯU KÝ")));
         }
 
         #region Form Move

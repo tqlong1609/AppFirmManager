@@ -44,7 +44,7 @@ namespace ManagerCinema
             string codeImage = CommonFunction.converImgToString(path);
             bool isSuccess = movieBS.addMovies(id,txtName.Text,int.Parse(txtTime.Text),txtDirector.Text,txtCountry.Text,txtProducer.Text,
                 cbxType.selectedValue,txtActor.Text,dpkDateShowing.Value.ToLongDateString(),
-                rtxtContent.Text,txtTimeStart.Text,int.Parse(txtPrice.Text), codeImage);
+                rtxtContent.Text,int.Parse(txtPrice.Text), codeImage);
             if (isSuccess)
             {
                 MessageBox.Show("Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
