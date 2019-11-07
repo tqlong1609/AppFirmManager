@@ -15,12 +15,14 @@ namespace ManagerCinema
         private Thread threadForm;
         private Movie movie;
         private User user;
+        private int idRoomCinema;
 
-        public FmCheckQR(Movie movie, User user)
+        public FmCheckQR(Movie movie, User user, int idRoomCinema)
         {
             InitializeComponent();
             this.movie = movie;
             this.user = user;
+            this.idRoomCinema = idRoomCinema;
         }
 
         // Need to add an input here
@@ -85,7 +87,7 @@ namespace ManagerCinema
 
         private void openFormReview()
         {
-            Application.Run(new FmReview(movie, user));
+            Application.Run(new FmReview(movie, user,idRoomCinema));
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -1,6 +1,9 @@
-﻿using ManagerCinema.ObjectFolder;
+﻿using ManagerCinema.BSLayer;
+using ManagerCinema.ObjectFolder;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -8,6 +11,7 @@ namespace ManagerCinema
 {
     public partial class FmPositionSeat : FormMain
     {
+        private MovieBS movieBS;
         private List<SeatNomal> arrRowSeatNomal;
         private List<SeatBench> arrRowSeatBench;
 
@@ -18,12 +22,14 @@ namespace ManagerCinema
         private SeatNomal seatNomal;
         private int countNomal;
         private int countBench;
+        private int idRoomCinema;
 
-        public FmPositionSeat(Movie movie, User user)
+        public FmPositionSeat(Movie movie, User user, int idRoomCinema)
         {
             InitializeComponent();
             this.movie = movie;
             this.user = user;
+            this.idRoomCinema = idRoomCinema;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -55,6 +61,9 @@ namespace ManagerCinema
 
         private void FmPositionSeat_Load(object sender, EventArgs e)
         {
+            movieBS = new MovieBS();
+
+            loadValueInforSeat();
             loadListSeatNomal();
             loadListSeatBench();
 
@@ -65,6 +74,24 @@ namespace ManagerCinema
 
             loadValuePanelSeat();
             //loadValueDropDown();
+        }
+
+        private void loadValueInforSeat()
+        {
+            List<string> listSeat = new List<string>(); 
+            DataTable tableSeats = movieBS.getInforSeatFromIdCinema(idRoomCinema);
+
+            foreach(DataRow rows in tableSeats.Rows)
+            {
+                listSeat.Add(rows["NameRoom"].ToString());
+            }
+
+            listSeat = listSeat.Distinct().ToList();
+
+            foreach(string value in listSeat)
+            {
+                cbxRoomCinema.AddItem(value);
+            }
         }
 
         private void loadListSeatBench()
@@ -162,7 +189,7 @@ namespace ManagerCinema
 
         private void openFormReview()
         {
-            Application.Run(new FmReview(movie, user));
+            Application.Run(new FmReview(movie, user, idRoomCinema));
         }
     }
 }

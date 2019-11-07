@@ -46,6 +46,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.lbCountNomal = new System.Windows.Forms.Label();
             this.lbCountBench = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbxRoomCinema = new Bunifu.Framework.UI.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
@@ -167,13 +169,13 @@
             this.drdRow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.drdRow.ForeColor = System.Drawing.Color.White;
             this.drdRow.Items = new string[0];
-            this.drdRow.Location = new System.Drawing.Point(173, 548);
+            this.drdRow.Location = new System.Drawing.Point(188, 548);
             this.drdRow.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.drdRow.Name = "drdRow";
             this.drdRow.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.drdRow.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.drdRow.selectedIndex = -1;
-            this.drdRow.Size = new System.Drawing.Size(181, 35);
+            this.drdRow.Size = new System.Drawing.Size(104, 35);
             this.drdRow.TabIndex = 76;
             // 
             // label11
@@ -181,7 +183,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(120, 556);
+            this.label11.Location = new System.Drawing.Point(135, 556);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 20);
             this.label11.TabIndex = 77;
@@ -192,7 +194,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Location = new System.Drawing.Point(382, 556);
+            this.label12.Location = new System.Drawing.Point(430, 556);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 20);
             this.label12.TabIndex = 79;
@@ -204,12 +206,12 @@
             this.drdColumn.BorderRadius = 3;
             this.drdColumn.ForeColor = System.Drawing.Color.White;
             this.drdColumn.Items = new string[0];
-            this.drdColumn.Location = new System.Drawing.Point(465, 548);
+            this.drdColumn.Location = new System.Drawing.Point(513, 548);
             this.drdColumn.Name = "drdColumn";
             this.drdColumn.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.drdColumn.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.drdColumn.selectedIndex = -1;
-            this.drdColumn.Size = new System.Drawing.Size(181, 35);
+            this.drdColumn.Size = new System.Drawing.Size(104, 35);
             this.drdColumn.TabIndex = 78;
             // 
             // pnlSeat
@@ -264,12 +266,41 @@
             this.lbCountBench.TabIndex = 83;
             this.lbCountBench.Text = "...";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(459, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 20);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "ROOM:";
+            // 
+            // cbxRoomCinema
+            // 
+            this.cbxRoomCinema.BackColor = System.Drawing.Color.Transparent;
+            this.cbxRoomCinema.BorderRadius = 3;
+            this.cbxRoomCinema.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cbxRoomCinema.ForeColor = System.Drawing.Color.White;
+            this.cbxRoomCinema.Items = new string[0];
+            this.cbxRoomCinema.Location = new System.Drawing.Point(524, 109);
+            this.cbxRoomCinema.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.cbxRoomCinema.Name = "cbxRoomCinema";
+            this.cbxRoomCinema.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxRoomCinema.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxRoomCinema.selectedIndex = -1;
+            this.cbxRoomCinema.Size = new System.Drawing.Size(122, 35);
+            this.cbxRoomCinema.TabIndex = 89;
+            // 
             // FmPositionSeat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(749, 673);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbxRoomCinema);
             this.Controls.Add(this.pnlSeat);
             this.Controls.Add(this.lbCountBench);
             this.Controls.Add(this.lbCountNomal);
@@ -322,5 +353,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lbCountNomal;
         private System.Windows.Forms.Label lbCountBench;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuDropdown cbxRoomCinema;
     }
 }

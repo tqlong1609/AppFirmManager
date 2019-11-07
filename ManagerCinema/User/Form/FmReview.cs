@@ -10,12 +10,14 @@ namespace ManagerCinema
         private Thread threadForm;
         private Movie movie;
         private User user;
+        private int idRoomCinema;
 
-        public FmReview(Movie movie, User user)
+        public FmReview(Movie movie, User user, int idRoomCinema)
         {
             InitializeComponent();
             this.movie = movie;
             this.user = user;
+            this.idRoomCinema = idRoomCinema;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -53,7 +55,7 @@ namespace ManagerCinema
 
         private void openFormPositionSeat()
         {
-            Application.Run(new FmPositionSeat(movie, user));
+            Application.Run(new FmPositionSeat(movie, user, idRoomCinema));
         }
 
         private void FmReview_Load(object sender, EventArgs e)
@@ -72,7 +74,7 @@ namespace ManagerCinema
 
         private void openFormCheckQR()
         {
-            Application.Run(new FmCheckQR(movie, user));
+            Application.Run(new FmCheckQR(movie, user, idRoomCinema));
         }
     }
 }

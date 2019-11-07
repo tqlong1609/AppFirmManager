@@ -21,6 +21,7 @@ namespace ManagerCinema
         private int priceBench = 100000;
         private DataTable inforTicket;
         private List<String> listAddress;
+        private int idRoomCinema;
 
 
 
@@ -63,7 +64,7 @@ namespace ManagerCinema
 
         private void openFormPositionSeat()
         {
-            Application.Run(new FmPositionSeat(movie, user));
+            Application.Run(new FmPositionSeat(movie, user, idRoomCinema));
         }
 
 
@@ -188,6 +189,7 @@ namespace ManagerCinema
                 if (rows["Name"].ToString().Trim().Equals(cbxCinema.selectedValue))
                 {
                     cbxDate.AddItem(rows["Date"].ToString());
+                    idRoomCinema = int.Parse(rows["idCinema"].ToString());
                 }
             }
         }
