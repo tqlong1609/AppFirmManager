@@ -11,7 +11,7 @@ namespace ManagerCinema
 {
     public class CommonFunction
     {
-        // this is function get id for insert 
+        // this is function get id for insert  from movie
         public static int getIdForInsert(DataTable dataTable)
         {
             int sum = 0;

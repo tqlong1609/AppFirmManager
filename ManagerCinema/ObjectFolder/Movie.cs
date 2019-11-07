@@ -9,6 +9,7 @@ namespace ManagerCinema.ObjectFolder
 {
     public class Movie
     {
+        private int id;
         private Image image;
         private int time;
         private string nameMovie;
@@ -22,10 +23,11 @@ namespace ManagerCinema.ObjectFolder
         private int price;
 
 
-        public Movie(Image image, string nameMovie,int time, string director,
+        public Movie(int id,Image image, string nameMovie,int time, string director,
             string producer, string typeFirm, string actor, string date, 
             string content, string country, int price)
         {
+            this.id = id;
             this.nameMovie = nameMovie;
             this.image = image;
             this.director = director;
@@ -39,10 +41,9 @@ namespace ManagerCinema.ObjectFolder
             this.time = time;
         }
 
-        public Movie(Image image, string nameMovie)
+        public int getId()
         {
-            this.image = image;
-            this.nameMovie = nameMovie;
+            return id;
         }
 
         public Image getImage() {

@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmTicket));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxCinema = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxTime = new Bunifu.Framework.UI.BunifuDropdown();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxDate = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbxBench = new Bunifu.Framework.UI.BunifuCheckbox();
             this.cbxNomal = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -49,7 +49,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxCity = new Bunifu.Framework.UI.BunifuDropdown();
             this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBuyTicket = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
@@ -69,35 +69,35 @@
             this.panel1.Size = new System.Drawing.Size(697, 5);
             this.panel1.TabIndex = 47;
             // 
-            // bunifuDropdown1
+            // cbxCinema
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items = new string[] {
-        "Vincom thu duc"};
-            this.bunifuDropdown1.Location = new System.Drawing.Point(164, 146);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(315, 35);
-            this.bunifuDropdown1.TabIndex = 48;
+            this.cbxCinema.BackColor = System.Drawing.Color.Transparent;
+            this.cbxCinema.BorderRadius = 3;
+            this.cbxCinema.ForeColor = System.Drawing.Color.White;
+            this.cbxCinema.Items = new string[0];
+            this.cbxCinema.Location = new System.Drawing.Point(164, 146);
+            this.cbxCinema.Name = "cbxCinema";
+            this.cbxCinema.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxCinema.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxCinema.selectedIndex = -1;
+            this.cbxCinema.Size = new System.Drawing.Size(315, 35);
+            this.cbxCinema.TabIndex = 48;
+            this.cbxCinema.onItemSelected += new System.EventHandler(this.cbxCinema_onItemSelected);
             // 
-            // bunifuDropdown2
+            // cbxTime
             // 
-            this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown2.BorderRadius = 3;
-            this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.Items = new string[] {
+            this.cbxTime.BackColor = System.Drawing.Color.Transparent;
+            this.cbxTime.BorderRadius = 3;
+            this.cbxTime.ForeColor = System.Drawing.Color.White;
+            this.cbxTime.Items = new string[] {
         "11:30"};
-            this.bunifuDropdown2.Location = new System.Drawing.Point(164, 259);
-            this.bunifuDropdown2.Name = "bunifuDropdown2";
-            this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown2.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown2.selectedIndex = -1;
-            this.bunifuDropdown2.Size = new System.Drawing.Size(315, 35);
-            this.bunifuDropdown2.TabIndex = 49;
+            this.cbxTime.Location = new System.Drawing.Point(164, 259);
+            this.cbxTime.Name = "cbxTime";
+            this.cbxTime.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxTime.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxTime.selectedIndex = -1;
+            this.cbxTime.Size = new System.Drawing.Size(315, 35);
+            this.cbxTime.TabIndex = 49;
             // 
             // label1
             // 
@@ -132,20 +132,21 @@
             this.label3.TabIndex = 54;
             this.label3.Text = "Time:";
             // 
-            // bunifuDropdown4
+            // cbxDate
             // 
-            this.bunifuDropdown4.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown4.BorderRadius = 3;
-            this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown4.Items = new string[] {
+            this.cbxDate.BackColor = System.Drawing.Color.Transparent;
+            this.cbxDate.BorderRadius = 3;
+            this.cbxDate.ForeColor = System.Drawing.Color.White;
+            this.cbxDate.Items = new string[] {
         "30-09-2019"};
-            this.bunifuDropdown4.Location = new System.Drawing.Point(164, 202);
-            this.bunifuDropdown4.Name = "bunifuDropdown4";
-            this.bunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown4.selectedIndex = -1;
-            this.bunifuDropdown4.Size = new System.Drawing.Size(315, 35);
-            this.bunifuDropdown4.TabIndex = 55;
+            this.cbxDate.Location = new System.Drawing.Point(164, 202);
+            this.cbxDate.Name = "cbxDate";
+            this.cbxDate.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxDate.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxDate.selectedIndex = -1;
+            this.cbxDate.Size = new System.Drawing.Size(315, 35);
+            this.cbxDate.TabIndex = 55;
+            this.cbxDate.onItemSelected += new System.EventHandler(this.cbxDate_onItemSelected);
             // 
             // panel2
             // 
@@ -297,22 +298,20 @@
             this.label9.TabIndex = 61;
             this.label9.Text = "City:";
             // 
-            // bunifuDropdown3
+            // cbxCity
             // 
-            this.bunifuDropdown3.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown3.BorderRadius = 3;
-            this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.Items = new string[] {
-        "Tp Hồ Chí Minh",
-        "Tp Đà Nẵng",
-        "Tp Hà Nội"};
-            this.bunifuDropdown3.Location = new System.Drawing.Point(164, 89);
-            this.bunifuDropdown3.Name = "bunifuDropdown3";
-            this.bunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuDropdown3.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown3.selectedIndex = -1;
-            this.bunifuDropdown3.Size = new System.Drawing.Size(315, 35);
-            this.bunifuDropdown3.TabIndex = 60;
+            this.cbxCity.BackColor = System.Drawing.Color.Transparent;
+            this.cbxCity.BorderRadius = 3;
+            this.cbxCity.ForeColor = System.Drawing.Color.White;
+            this.cbxCity.Items = new string[0];
+            this.cbxCity.Location = new System.Drawing.Point(164, 89);
+            this.cbxCity.Name = "cbxCity";
+            this.cbxCity.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxCity.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxCity.selectedIndex = -1;
+            this.cbxCity.Size = new System.Drawing.Size(315, 35);
+            this.cbxCity.TabIndex = 60;
+            this.cbxCity.onItemSelected += new System.EventHandler(this.cbxCity_onItemSelected);
             // 
             // btnBack
             // 
@@ -392,17 +391,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(612, 562);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.bunifuDropdown3);
+            this.Controls.Add(this.cbxCity);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnBuyTicket);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.bunifuDropdown4);
+            this.Controls.Add(this.cbxDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bunifuDropdown2);
-            this.Controls.Add(this.bunifuDropdown1);
+            this.Controls.Add(this.cbxTime);
+            this.Controls.Add(this.cbxCinema);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnMini);
@@ -431,12 +430,12 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuImageButton btnMini;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown2;
+        private Bunifu.Framework.UI.BunifuDropdown cbxCinema;
+        private Bunifu.Framework.UI.BunifuDropdown cbxTime;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown4;
+        private Bunifu.Framework.UI.BunifuDropdown cbxDate;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label13;
@@ -450,7 +449,7 @@
         private Bunifu.Framework.UI.BunifuImageButton btnBack;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown3;
+        private Bunifu.Framework.UI.BunifuDropdown cbxCity;
         private Bunifu.Framework.UI.BunifuCheckbox cbxBench;
         private Bunifu.Framework.UI.BunifuCheckbox cbxNomal;
     }

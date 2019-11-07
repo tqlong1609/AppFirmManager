@@ -20,7 +20,7 @@ namespace ManagerCinema.BSLayer
 
         public DataTable loadData()
         {
-            string sqlString = "exec getAllMovies";
+            string sqlString = "SELECT * from getAllMovies()";
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 
@@ -36,6 +36,12 @@ namespace ManagerCinema.BSLayer
                 type,actor,date,content,price,pathImage);
 
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
+
+        public DataTable getInforTicketFromIdMovies(int id)
+        {
+            string sqlString = String.Format("select * from getInforTicketFromIdMovies({0})",id);
+            return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
     }
 }

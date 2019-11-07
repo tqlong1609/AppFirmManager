@@ -46,7 +46,7 @@ namespace ManagerCinema
             foreach(DataRow rows in dataMovies.Rows)
             {
                 Image img = CommonFunction.stringToImg(rows["image"].ToString().Trim());
-                listMovies.Add(new Movie(img, rows["Name"].ToString(), int.Parse(rows["Time"].ToString()),
+                listMovies.Add(new Movie(int.Parse(rows["IdMovie"].ToString()),img, rows["Name"].ToString(), int.Parse(rows["Time"].ToString()),
                     rows["Director"].ToString(), rows["Producer"].ToString(), rows["Type"].ToString()
                     , rows["Actor"].ToString(), rows["Date"].ToString(), rows["Content"].ToString(),
                     rows["Country"].ToString(), int.Parse(rows["Price"].ToString())));
@@ -61,18 +61,6 @@ namespace ManagerCinema
             {
                 flpBackground.Controls.Add(new UcItemMovie(movie));
             }
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image2.jpg"), "CHÚ HỀ MA QUÁI")));
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image5.jpg"), "ALLADIN VÀ CÂY ĐÈN THẦN")));
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image6.jpg"), "BoBoBoi")));
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image7.jpg"), "THE KID WHO WOULD BE KING")));
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image8.jpg"), "DRAGON THE HINDDEN WORLD")));
-            //flpBackground.Controls.Add(new UcItemMovie(
-            //    new Movie(Image.FromFile("Image//image9.jpg"), "DORAEMON MẶT TRĂNG PHIÊU LƯU KÝ")));
         }
 
         #region Form Move

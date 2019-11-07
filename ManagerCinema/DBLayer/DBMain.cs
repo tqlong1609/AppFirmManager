@@ -10,7 +10,8 @@ namespace ManagerCinema.DBLayer
 {
     class DBMain
     {
-        string connStr = "Data Source=.;Initial Catalog=DBSM;Integrated Security=True";
+        // NOTE: edit connstr when run
+        string connStr = "Data Source=.;Initial Catalog=DBSM1;Integrated Security=True";
         SqlConnection connect = null;
         SqlCommand command = null;
         SqlDataAdapter adapter = null;

@@ -1,5 +1,9 @@
-﻿using ManagerCinema.ObjectFolder;
+﻿using ManagerCinema.BSLayer;
+using ManagerCinema.ObjectFolder;
 using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -12,8 +16,13 @@ namespace ManagerCinema
         private Thread threadForm;
         private Movie movie;
         private User user;
+        private MovieBS movieBS;
         private int priceNomal = 50000;
         private int priceBench = 100000;
+        private DataTable inforTicket;
+        private List<String> listAddress;
+
+
 
         public FmTicket(Movie movie)
         {
@@ -77,12 +86,37 @@ namespace ManagerCinema
 
         private void FmTicket_Load(object sender, EventArgs e)
         {
+            movieBS = new MovieBS();
+            listAddress = new List<string>();
+
             user = new User();
 
             initNomal();
 
+            loadInfoTicket();
+
             lbPriceNomal.Text = formatMonney(priceNomal);
             lbPriceBench.Text = formatMonney(priceBench);
+        }
+
+        private void loadInfoTicket()
+        {
+             inforTicket = movieBS.getInforTicketFromIdMovies(movie.getId());
+
+            foreach(DataRow dataRow in inforTicket.Rows)
+            {
+                listAddress.Add(dataRow["Address"].ToString());
+            }
+
+            listAddress = listAddress.Distinct().ToList();
+
+            foreach(string value in listAddress)
+            {
+                cbxCity.AddItem(value);
+            }
+
+            priceNomal = movie.getPrice();
+            priceBench = movie.getPrice() * 2;
         }
 
         private void initNomal()
@@ -91,6 +125,8 @@ namespace ManagerCinema
             cbxNomal.Checked = true;
             user.CountTicketNomal = 1;
             user.CountTicketBench = 0;
+
+           
         }
 
         private void initBench()
@@ -114,6 +150,46 @@ namespace ManagerCinema
         private string formatMonney(int monney)
         {
             return string.Format(FORMAT_MONNEY, monney);
+        }
+
+        private void cbxCity_onItemSelected(object sender, EventArgs e)
+        {
+            cbxCinema.Clear();
+            cbxDate.Clear();
+            cbxTime.Clear();
+            foreach(DataRow rows in inforTicket.Rows)
+            {
+                if (rows["Address"].ToString().Trim().Equals(cbxCity.selectedValue))
+                {
+                    cbxCinema.AddItem(rows["Name"].ToString());
+                }   
+            }
+        }
+
+        private void cbxDate_onItemSelected(object sender, EventArgs e)
+        {
+            cbxTime.Clear();
+            foreach (DataRow rows in inforTicket.Rows)
+            {
+                if (rows["Name"].ToString().Trim().Equals(cbxCinema.selectedValue)
+                    && rows["Date"].ToString().Trim().Equals(cbxDate.selectedValue))
+                {
+                    cbxTime.AddItem(rows["Time"].ToString());
+                }
+            }
+        }
+
+        private void cbxCinema_onItemSelected(object sender, EventArgs e)
+        {
+            cbxDate.Clear();
+            cbxTime.Clear();
+            foreach (DataRow rows in inforTicket.Rows)
+            {
+                if (rows["Name"].ToString().Trim().Equals(cbxCinema.selectedValue))
+                {
+                    cbxDate.AddItem(rows["Date"].ToString());
+                }
+            }
         }
     }
 }
