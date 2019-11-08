@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using ManagerCinema.ObjectFolder;
+using System;
 using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using ManagerCinema.ObjectFolder;
 
 namespace ManagerCinema
 {
@@ -25,7 +20,7 @@ namespace ManagerCinema
         private Button createButton(string text)
         {
             Button button = new Button();
-            button.Size = new Size(45,23);
+            button.Size = new Size(45, 23);
             button.FlatStyle = FlatStyle.Flat;
             button.BackColor = Color.Gray;
             button.Text = text;

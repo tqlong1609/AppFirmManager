@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManagerCinema.DBLayer
 {
@@ -54,6 +49,15 @@ namespace ManagerCinema.DBLayer
                 connect.Close();
             }
             return isError;
+        }
+        public string ExecuteScalar(string Query, CommandType type)
+        {
+            if (connect.State == ConnectionState.Open) { connect.Close(); }
+            connect.Open();
+            command.CommandText = Query;
+            command.CommandType = type;
+            SqlCommand cmd1 = new SqlCommand(Query, connect);
+            return cmd1.ExecuteScalar().ToString();
         }
     }
 }

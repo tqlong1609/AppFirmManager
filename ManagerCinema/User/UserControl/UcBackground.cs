@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerCinema
@@ -36,10 +32,12 @@ namespace ManagerCinema
         private bool checkPosition(bool _isLeft)
         {
             int temp = positionImage;
-            if (_isLeft) {
+            if (_isLeft)
+            {
                 temp--; // left
             }
-            else {
+            else
+            {
                 temp++; // right
             }
             if (temp >= 0 && temp < mListImage.Count()) return true;

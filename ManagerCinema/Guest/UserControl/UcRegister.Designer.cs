@@ -66,6 +66,7 @@
             this.btnLogin.Size = new System.Drawing.Size(239, 48);
             this.btnLogin.TabIndex = 23;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // bunifuMetroTextbox2
             // 
