@@ -148,25 +148,8 @@ namespace BarcodeReaderApp
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-			string File_Open = File.ReadAllText(Application.StartupPath + "\\Password.txt");
-			string[] Password = File_Open.Split('%');
-			try
-			{
-				for (int i = 0; i < Password.Length; i++)
-				{
-					if (decoded == Password[i])
-					{
-						//GuiMail("khanhvuongtuan37@gmail.com", "17110313@student.hcmute.edu.vn", "Administrator", decoded.ToString() + " Vừa đăng nhập");
-                        // Thao tác khác
-                        return;
-                    }
-                }
-                this.Close();
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show("Thông tin không đúng, mời nhập lại !");
-            }
+
+            this.Close();
         }
 
 

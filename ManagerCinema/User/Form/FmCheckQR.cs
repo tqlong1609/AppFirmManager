@@ -28,8 +28,6 @@ namespace ManagerCinema
         // Need to add an input here
         private void FmCheckQR_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Định dạng lại Input trong code, đây chỉ là bản Demo");
-            // Tạo một chuỗi ở đây và truyền vào barcodeWriter.Write("A") thay cho A
             var barcodeWriter = new BarcodeWriter
             {
                 Format = BarcodeFormat.QR_CODE,
@@ -41,7 +39,7 @@ namespace ManagerCinema
                 }
             };
 
-            using (var bitmap = barcodeWriter.Write("A"))
+            using (var bitmap = barcodeWriter.Write(this.movie.getId().ToString()))
             {
                 using (var stream = new MemoryStream())
                 {

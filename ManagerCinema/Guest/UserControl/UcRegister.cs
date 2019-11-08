@@ -23,7 +23,7 @@ namespace ManagerCinema
             string Password = bunifuMetroTextbox4.Text;
             string Confirm_Password = bunifuMetroTextbox8.Text;
             string Address = bunifuMetroTextbox5.Text;
-            string Date_Of_Birth = bunifuDatepicker1.Value.ToString();
+            string Date_Of_Birth = bunifuDatepicker1.Value.ToLongDateString();
             string Name = bunifuMetroTextbox6.Text;
             RegistBS = new RegisterBS();
             string Username_Existed = RegistBS.Check_Username(Username);
