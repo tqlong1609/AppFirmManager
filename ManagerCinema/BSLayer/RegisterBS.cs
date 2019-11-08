@@ -12,9 +12,14 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
-        public string Regist(string Username, string Password)
+        public void Regist(string Username, string Numberphone, string Gender, string Email, string Password, string Confirm_Password, string Address, string Date_Of_Birth, string Name)
         {
-            string sqlString = "SELECT [dbo].[Login]('" + Username + "','" + Password + "')";
+            string sqlString = "EXEC New_Account'" + Username + "','" + Name + "','" + Numberphone + "','" + Gender + "','" + Email + "','" + Password + "','" + Address + "','" + Date_Of_Birth;
+            dBMain.ExecuteScalar(sqlString, CommandType.Text);
+        }
+        public string Check_Username(string Username)
+        {
+            string sqlString = "SELECT dbo.Check_Username('" + Username + "')";
             return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
     }
