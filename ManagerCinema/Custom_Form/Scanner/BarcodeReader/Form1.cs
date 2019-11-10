@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Drawing;
-using System.IO;
 using System.Net;
 using System.Net.Mail;
 using System.Windows.Forms;
 using TouchlessLib;
 using ZXing;
+using BarcodeReaderApp.BSLayer;
 namespace BarcodeReaderApp
 {
     public partial class Form1 : Form
@@ -15,7 +15,7 @@ namespace BarcodeReaderApp
         private const int _previewWidth = 640;
         private const int _previewHeight = 480;
         public string decoded;
-
+        private Scan_Ticket_BS Scan_Ticket;
         public Form1()
         {
             InitializeComponent();
@@ -148,7 +148,10 @@ namespace BarcodeReaderApp
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-
+            string ID = textBox1.Text;
+            Scan_Ticket = new Scan_Ticket_BS();
+            string Result = Scan_Ticket.Scan_Ticket(ID);
+            MessageBox.Show("Kết quả: " + Result);
             this.Close();
         }
 
