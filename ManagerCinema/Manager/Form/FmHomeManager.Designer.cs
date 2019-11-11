@@ -114,7 +114,7 @@
             this.btnBookTicket.IconVisible = true;
             this.btnBookTicket.IconZoom = 90D;
             this.btnBookTicket.IsTab = false;
-            this.btnBookTicket.Location = new System.Drawing.Point(1, 472);
+            this.btnBookTicket.Location = new System.Drawing.Point(-2, 411);
             this.btnBookTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnBookTicket.Name = "btnBookTicket";
             this.btnBookTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
@@ -150,7 +150,7 @@
             this.btnListSeat.IconVisible = true;
             this.btnListSeat.IconZoom = 90D;
             this.btnListSeat.IsTab = false;
-            this.btnListSeat.Location = new System.Drawing.Point(1, 410);
+            this.btnListSeat.Location = new System.Drawing.Point(-2, 349);
             this.btnListSeat.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnListSeat.Name = "btnListSeat";
             this.btnListSeat.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
@@ -186,7 +186,7 @@
             this.btnTimeShowing.IconVisible = true;
             this.btnTimeShowing.IconZoom = 90D;
             this.btnTimeShowing.IsTab = false;
-            this.btnTimeShowing.Location = new System.Drawing.Point(1, 349);
+            this.btnTimeShowing.Location = new System.Drawing.Point(-2, 288);
             this.btnTimeShowing.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnTimeShowing.Name = "btnTimeShowing";
             this.btnTimeShowing.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
@@ -222,7 +222,7 @@
             this.btnListTicket.IconVisible = true;
             this.btnListTicket.IconZoom = 90D;
             this.btnListTicket.IsTab = false;
-            this.btnListTicket.Location = new System.Drawing.Point(1, 287);
+            this.btnListTicket.Location = new System.Drawing.Point(-2, 226);
             this.btnListTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.btnListTicket.Name = "btnListTicket";
             this.btnListTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));

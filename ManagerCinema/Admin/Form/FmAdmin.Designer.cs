@@ -235,6 +235,7 @@
             this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnBookTicket.Textcolor = System.Drawing.Color.White;
             this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
             // 
             // btnListSeat
             // 

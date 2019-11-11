@@ -81,7 +81,6 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCin
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListEmployeeAD.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListCinemaAD.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListMovie.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicketAD.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmEditUser.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmHomeManager.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListBackground.resources
@@ -107,3 +106,6 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCin
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListUser.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicket.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListVoucher.resources

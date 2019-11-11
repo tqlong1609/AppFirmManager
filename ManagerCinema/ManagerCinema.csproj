@@ -70,6 +70,9 @@
     <Compile Include="BSLayer\LoginBS.cs" />
     <Compile Include="BSLayer\MovieBS.cs" />
     <Compile Include="BSLayer\RegisterBS.cs" />
+    <Compile Include="BSLayer\TicketBS.cs" />
+    <Compile Include="BSLayer\UserBS.cs" />
+    <Compile Include="BSLayer\VoucherBS.cs" />
     <Compile Include="CommonFunction.cs" />
     <Compile Include="DBLayer\DBMain.cs" />
     <Compile Include="DBSMDataSet.Designer.cs">
@@ -107,11 +110,23 @@
     <Compile Include="Admin\UserControl\UcListMovie.Designer.cs">
       <DependentUpon>UcListMovie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\UserControl\UcListTicketAD.cs">
+    <Compile Include="UcListTicket.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Admin\UserControl\UcListTicketAD.Designer.cs">
-      <DependentUpon>UcListTicketAD.cs</DependentUpon>
+    <Compile Include="UcListTicket.Designer.cs">
+      <DependentUpon>UcListTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcListUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcListUser.Designer.cs">
+      <DependentUpon>UcListUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcListVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcListVoucher.Designer.cs">
+      <DependentUpon>UcListVoucher.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmEditUser.cs">
       <SubType>Form</SubType>
@@ -267,8 +282,14 @@
     <EmbeddedResource Include="Admin\UserControl\UcListMovie.resx">
       <DependentUpon>UcListMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\UserControl\UcListTicketAD.resx">
-      <DependentUpon>UcListTicketAD.cs</DependentUpon>
+    <EmbeddedResource Include="UcListTicket.resx">
+      <DependentUpon>UcListTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcListUser.resx">
+      <DependentUpon>UcListUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcListVoucher.resx">
+      <DependentUpon>UcListVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmEditUser.resx">
       <DependentUpon>FmEditUser.cs</DependentUpon>

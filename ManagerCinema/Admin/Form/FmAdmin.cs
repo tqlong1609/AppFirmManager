@@ -38,7 +38,8 @@ namespace ManagerCinema
 
         private void btnTimeShowing_Click(object sender, EventArgs e)
         {
-
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListVoucher());
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
@@ -75,7 +76,13 @@ namespace ManagerCinema
         private void btnListTicket_Click(object sender, EventArgs e)
         {
             clearpanel();
-            pnlBackground.Controls.Add(new UcListTicketAD());
+            pnlBackground.Controls.Add(new UcListTicket());
+        }
+
+        private void btnBookTicket_Click(object sender, EventArgs e)
+        {
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListUser());
         }
     }
 }

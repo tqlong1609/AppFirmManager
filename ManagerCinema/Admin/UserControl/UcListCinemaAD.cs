@@ -8,5 +8,10 @@ namespace ManagerCinema
         {
             InitializeComponent();
         }
+
+        private void UcListCinemaAD_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

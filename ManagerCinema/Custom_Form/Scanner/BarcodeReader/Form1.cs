@@ -16,6 +16,7 @@ namespace BarcodeReaderApp
         private const int _previewHeight = 480;
         public string decoded;
         private Scan_Ticket_BS Scan_Ticket;
+        private Scan_Voucher_BS Scan_Voucher;
         public Form1()
         {
             InitializeComponent();
@@ -149,13 +150,21 @@ namespace BarcodeReaderApp
 		private void button4_Click(object sender, EventArgs e)
 		{
             string ID = textBox1.Text;
-            Scan_Ticket = new Scan_Ticket_BS();
-            string Result = Scan_Ticket.Scan_Ticket(ID);
-            if (Result == "True")
-                MessageBox.Show("Thanh toán thành công !");
+            if (radioButton1.Checked == true)
+            {
+                Scan_Ticket = new Scan_Ticket_BS();
+                string Result = Scan_Ticket.Scan_Ticket(ID);
+                if (Result == "True")
+                    MessageBox.Show("Thanh toán thành công !");
+                else
+                    MessageBox.Show("Vé không tồn tại !");
+            }
             else
-                MessageBox.Show("Vé không tôn tại !");
-            this.Close();
+            {
+                Scan_Voucher = new Scan_Voucher_BS();
+                string Result = Scan_Voucher.Scan_Voucher(ID);
+                MessageBox.Show(Result);
+            }
         }
 
 
@@ -183,6 +192,7 @@ namespace BarcodeReaderApp
             _touch = new TouchlessMgr();
             button2.Enabled = false;
             button4.Enabled = false;
+            radioButton1.Select();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -212,6 +222,16 @@ namespace BarcodeReaderApp
         }
 
         private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
