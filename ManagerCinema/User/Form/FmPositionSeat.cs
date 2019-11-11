@@ -130,14 +130,14 @@ namespace ManagerCinema
                     //arrRowSeatNomal.Add(new SeatNomal(tempRow.ToString(), seatsNomal));
                     //loadValuePanelSeat();
                     pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
-
                     seatsNomal.Clear();
+                    seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString()));
                     tempRow = nameRow;
                 }
 
 
             }
-
+            pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
         }
         private void loadValuePanelSeat()
         {
