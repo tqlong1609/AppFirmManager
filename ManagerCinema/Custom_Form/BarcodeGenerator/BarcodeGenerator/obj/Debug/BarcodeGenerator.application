@@ -14,18 +14,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="BarcodeGenerator.exe.manifest" size="4597">
+    <dependentAssembly dependencyType="install" codebase="BarcodeGenerator.exe.manifest" size="4599">
       <assemblyIdentity name="BarcodeGenerator.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>bs4p432lM6t8k7otJ2Vi5OQBKwXc32HLSR1QRKVAJ+k=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>uHsTXRKT45LgO0aKMjFjzGxJ2JK7uqGsWAcf9SSgwNI=</dsig:DigestValue>
->>>>>>> 16b65f9ceca029a59f1cccd68fa6621284c42799
+        <dsig:DigestValue>Y0oUJIdLuoyNk942rOw3xnX7L+dldx+k7TdqGe5RQPU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

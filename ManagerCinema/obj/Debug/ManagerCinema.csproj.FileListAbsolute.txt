@@ -51,7 +51,6 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Deb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListEmployeeAD.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListCinemaAD.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListMovie.resources
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicketAD.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddMovie.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\WebCamLib.dll
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\bin\Debug\ManagerCinema.exe.config
@@ -109,3 +108,6 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCin
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListUser.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicket.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListVoucher.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListTicket.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListUser.resources
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListVoucher.resources

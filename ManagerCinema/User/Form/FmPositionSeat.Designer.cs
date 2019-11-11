@@ -37,10 +37,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnNext = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label13 = new System.Windows.Forms.Label();
-            this.drdRow = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxRows = new Bunifu.Framework.UI.BunifuDropdown();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.drdColumn = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbxColumns = new Bunifu.Framework.UI.BunifuDropdown();
             this.pnlSeat = new System.Windows.Forms.FlowLayoutPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -162,21 +162,21 @@
             this.label13.TabIndex = 75;
             this.label13.Text = "CHOOSE SEAT";
             // 
-            // drdRow
+            // cbxRows
             // 
-            this.drdRow.BackColor = System.Drawing.Color.Transparent;
-            this.drdRow.BorderRadius = 3;
-            this.drdRow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.drdRow.ForeColor = System.Drawing.Color.White;
-            this.drdRow.Items = new string[0];
-            this.drdRow.Location = new System.Drawing.Point(188, 548);
-            this.drdRow.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
-            this.drdRow.Name = "drdRow";
-            this.drdRow.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.drdRow.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.drdRow.selectedIndex = -1;
-            this.drdRow.Size = new System.Drawing.Size(104, 35);
-            this.drdRow.TabIndex = 76;
+            this.cbxRows.BackColor = System.Drawing.Color.Transparent;
+            this.cbxRows.BorderRadius = 3;
+            this.cbxRows.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cbxRows.ForeColor = System.Drawing.Color.White;
+            this.cbxRows.Items = new string[0];
+            this.cbxRows.Location = new System.Drawing.Point(188, 548);
+            this.cbxRows.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
+            this.cbxRows.Name = "cbxRows";
+            this.cbxRows.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxRows.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxRows.selectedIndex = -1;
+            this.cbxRows.Size = new System.Drawing.Size(104, 35);
+            this.cbxRows.TabIndex = 76;
             // 
             // label11
             // 
@@ -200,19 +200,19 @@
             this.label12.TabIndex = 79;
             this.label12.Text = "COLUMN:";
             // 
-            // drdColumn
+            // cbxColumns
             // 
-            this.drdColumn.BackColor = System.Drawing.Color.Transparent;
-            this.drdColumn.BorderRadius = 3;
-            this.drdColumn.ForeColor = System.Drawing.Color.White;
-            this.drdColumn.Items = new string[0];
-            this.drdColumn.Location = new System.Drawing.Point(513, 548);
-            this.drdColumn.Name = "drdColumn";
-            this.drdColumn.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.drdColumn.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.drdColumn.selectedIndex = -1;
-            this.drdColumn.Size = new System.Drawing.Size(104, 35);
-            this.drdColumn.TabIndex = 78;
+            this.cbxColumns.BackColor = System.Drawing.Color.Transparent;
+            this.cbxColumns.BorderRadius = 3;
+            this.cbxColumns.ForeColor = System.Drawing.Color.White;
+            this.cbxColumns.Items = new string[0];
+            this.cbxColumns.Location = new System.Drawing.Point(513, 548);
+            this.cbxColumns.Name = "cbxColumns";
+            this.cbxColumns.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.cbxColumns.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.cbxColumns.selectedIndex = -1;
+            this.cbxColumns.Size = new System.Drawing.Size(104, 35);
+            this.cbxColumns.TabIndex = 78;
             // 
             // pnlSeat
             // 
@@ -308,9 +308,9 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.drdColumn);
+            this.Controls.Add(this.cbxColumns);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.drdRow);
+            this.Controls.Add(this.cbxRows);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.label9);
@@ -345,10 +345,10 @@
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNext;
         private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuDropdown drdRow;
+        private Bunifu.Framework.UI.BunifuDropdown cbxRows;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private Bunifu.Framework.UI.BunifuDropdown drdColumn;
+        private Bunifu.Framework.UI.BunifuDropdown cbxColumns;
         private System.Windows.Forms.FlowLayoutPanel pnlSeat;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;

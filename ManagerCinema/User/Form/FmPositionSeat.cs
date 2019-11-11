@@ -14,12 +14,12 @@ namespace ManagerCinema
         private MovieBS movieBS;
         private List<SeatNomal> arrRowSeatNomal;
         private List<SeatBench> arrRowSeatBench;
+        private List<string> listRows;
+        private List<string> listColumns;
         private DataTable tableSeats;
         private Thread threadForm;
         private Movie movie;
         private User user;
-        private SeatBench seatBench;
-        private SeatNomal seatNomal;
         private int countNomal;
         private int countBench;
         private int idRoomCinema;
@@ -61,11 +61,11 @@ namespace ManagerCinema
 
         private void FmPositionSeat_Load(object sender, EventArgs e)
         {
+            listRows = new List<string>();
+            listColumns = new List<string>();
             movieBS = new MovieBS();
 
             loadValueInforSeat();
-            //loadListSeatNomal();
-            //loadListSeatBench();
 
             countNomal = user.CountTicketNomal;
             countBench = user.CountTicketBench;
@@ -114,27 +114,43 @@ namespace ManagerCinema
         {
             List<Seat> seatsNomal = new List<Seat>();
             arrRowSeatNomal = new List<SeatNomal>();
+
+            cbxRows.Clear();
+            listRows.Clear();
+
             char tempRow = 'A';
             foreach (DataRow rows in tableSeats.Rows)
             {
-                // A1 => nameRow: A , nameColumn: 1
-                char nameRow = rows["NameSeat"].ToString()[0];
-                if (tempRow == nameRow)
+                if (nameRoom.Equals(rows["NameRoom"].ToString().Trim()))
                 {
-                    char nameColumn = rows["NameSeat"].ToString()[1];
-                    seatsNomal.Add(new Seat(nameColumn.ToString()));
+                    // A1 => nameRow: A , nameColumn: 1
+                    char nameRow = rows["NameSeat"].ToString()[0];
+                    if (tempRow == nameRow)
+                    {
+                        char nameColumn = rows["NameSeat"].ToString()[1];
+                        seatsNomal.Add(new Seat(nameColumn.ToString()));
+                    }
+                    else
+                    {
+                        listRows.Add(tempRow.ToString());
+                        pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
+                        seatsNomal.Clear();
+                        seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString()));
+                        tempRow = nameRow;
+                    }
                 }
-                else
-                {
-                    pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
-                    seatsNomal.Clear();
-                    seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString()));
-                    tempRow = nameRow;
-                }
-
-
             }
+            listRows.Add(tempRow.ToString());
+            addListRows();
             pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
+        }
+
+        private void addListRows()
+        {
+            foreach(string temp in listRows)
+            {
+                cbxRows.AddItem(temp);
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
