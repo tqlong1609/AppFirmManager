@@ -43,6 +43,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barcode)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -76,13 +80,17 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(1, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Giá trị";
+            this.label1.Text = "Mã số";
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btn_Exit);
             this.groupBox1.Controls.Add(this.btn_Save_Info);
             this.groupBox1.Controls.Add(this.btnSave);
@@ -103,7 +111,7 @@
             // btn_Exit
             // 
             this.btn_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Exit.Location = new System.Drawing.Point(12, 264);
+            this.btn_Exit.Location = new System.Drawing.Point(12, 304);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(192, 43);
             this.btn_Exit.TabIndex = 57;
@@ -114,7 +122,7 @@
             // btn_Save_Info
             // 
             this.btn_Save_Info.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Save_Info.Location = new System.Drawing.Point(12, 134);
+            this.btn_Save_Info.Location = new System.Drawing.Point(12, 206);
             this.btn_Save_Info.Name = "btn_Save_Info";
             this.btn_Save_Info.Size = new System.Drawing.Size(192, 43);
             this.btn_Save_Info.TabIndex = 56;
@@ -125,7 +133,7 @@
             // btnSave
             // 
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSave.Location = new System.Drawing.Point(12, 198);
+            this.btnSave.Location = new System.Drawing.Point(12, 255);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(192, 43);
             this.btnSave.TabIndex = 4;
@@ -136,7 +144,7 @@
             // btnEncode
             // 
             this.btnEncode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEncode.Location = new System.Drawing.Point(12, 69);
+            this.btnEncode.Location = new System.Drawing.Point(12, 157);
             this.btnEncode.Name = "btnEncode";
             this.btnEncode.Size = new System.Drawing.Size(192, 43);
             this.btnEncode.TabIndex = 3;
@@ -198,6 +206,40 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 74);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
+            this.textBox1.TabIndex = 58;
+            this.textBox1.Text = "Tên Voucher";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.TabIndex = 59;
+            this.label2.Text = "Tên";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(6, 114);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 60;
+            this.textBox2.Text = "Giá trị Voucher";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 98);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 61;
+            this.label3.Text = "Giá trị";
+            // 
             // TestApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,6 +281,10 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
 		private System.Windows.Forms.Button btn_Exit;
 		private System.Windows.Forms.Button btn_Save_Info;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
