@@ -92,5 +92,27 @@ namespace ManagerCinema
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "BMP (*.bmp)|*.bmp|GIF (*.gif)|*.gif|JPG (*.jpg)|*.jpg|PNG (*.png)|*.png|TIFF (*.tif)|*.tif";
+            sfd.FilterIndex = 3;
+            sfd.AddExtension = true;
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                ImageFormat savetype = ImageFormat.Jpeg;
+                switch (sfd.FilterIndex)
+                {
+                    case 1: savetype = ImageFormat.Bmp; break;
+                    case 2: savetype = ImageFormat.Gif; break;
+                    case 3: savetype = ImageFormat.Jpeg; break;
+                    case 4: savetype = ImageFormat.Png; break;
+                    case 5: savetype = ImageFormat.Tiff; break;
+                    default: break;
+                }
+                pictureBox1.Image.Save(sfd.FileName, savetype);
+            }
+        }
     }
 }
