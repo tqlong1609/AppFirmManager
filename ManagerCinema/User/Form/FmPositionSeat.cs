@@ -14,7 +14,7 @@ namespace ManagerCinema
         private MovieBS movieBS;
         private List<SeatNomal> arrRowSeatNomal;
         private List<SeatBench> arrRowSeatBench;
-
+        private DataTable tableSeats;
         private Thread threadForm;
         private Movie movie;
         private User user;
@@ -64,22 +64,21 @@ namespace ManagerCinema
             movieBS = new MovieBS();
 
             loadValueInforSeat();
-            loadListSeatNomal();
-            loadListSeatBench();
+            //loadListSeatNomal();
+            //loadListSeatBench();
 
             countNomal = user.CountTicketNomal;
             countBench = user.CountTicketBench;
             lbCountNomal.Text = countNomal.ToString();
             lbCountBench.Text = countBench.ToString();
 
-            loadValuePanelSeat();
             //loadValueDropDown();
         }
 
         private void loadValueInforSeat()
         {
             List<string> listSeat = new List<string>(); 
-            DataTable tableSeats = movieBS.getInforSeatFromIdCinema(idRoomCinema);
+            tableSeats = movieBS.getInforSeatFromIdCinema(idRoomCinema);
 
             foreach(DataRow rows in tableSeats.Rows)
             {
@@ -112,28 +111,33 @@ namespace ManagerCinema
             }
         }
 
-        private void loadListSeatNomal()
+        private void loadListSeatNomal(string nameRoom)
         {
-            // NOTE: test tạm thời
-            // colums seat nomal
             List<Seat> seatsNomal = new List<Seat>();
             arrRowSeatNomal = new List<SeatNomal>();
-
-            seatsNomal.Add(new Seat("1"));
-            seatsNomal.Add(new Seat("2"));
-            seatsNomal.Add(new Seat("3"));
-            seatsNomal.Add(new Seat("4"));
-            seatsNomal.Add(new Seat("5"));
-            seatsNomal.Add(new Seat("6"));
-            seatsNomal.Add(new Seat("7"));
-            seatsNomal.Add(new Seat("8"));
-            seatsNomal.Add(new Seat("9"));
-
-            for (int i = 0; i < 9; i++) // row = 9
+            char tempRow = 'A';
+            foreach (DataRow rows in tableSeats.Rows)
             {
-                arrRowSeatNomal.Add(new SeatNomal("A", seatsNomal));
+                // A1 => nameRow: A , nameColumn: 1
+                char nameRow = rows["NameSeat"].ToString()[0];
+                if(tempRow == nameRow)
+                {
+                    char nameColumn = rows["NameSeat"].ToString()[1];
+                    seatsNomal.Add(new Seat(nameColumn.ToString()));
+                }
+                else
+                {
+                    //arrRowSeatNomal.Add(new SeatNomal(tempRow.ToString(), seatsNomal));
+                    //loadValuePanelSeat();
+                    pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
+
+                    seatsNomal.Clear();
+                    tempRow = nameRow;
+                }
+
+
             }
-        }
+
 
         private void loadValuePanelSeat()
         {
@@ -141,10 +145,10 @@ namespace ManagerCinema
             {
                 pnlSeat.Controls.Add(new ucSeatNomal(temp));
             }
-            foreach (SeatBench temp in arrRowSeatBench)
-            {
-                pnlSeat.Controls.Add(new ucSeatBench(temp));
-            }
+            //foreach (SeatBench temp in arrRowSeatBench)
+            //{
+            //    pnlSeat.Controls.Add(new ucSeatBench(temp));
+            //}
         }
 
         private void loadValueDropDown()
@@ -190,6 +194,12 @@ namespace ManagerCinema
         private void openFormReview()
         {
             Application.Run(new FmReview(movie, user, idRoomCinema));
+        }
+
+        private void cbxRoomCinema_onItemSelected(object sender, EventArgs e)
+        {
+            pnlSeat.Controls.Clear();
+            loadListSeatNomal(cbxRoomCinema.selectedValue);
         }
     }
 }

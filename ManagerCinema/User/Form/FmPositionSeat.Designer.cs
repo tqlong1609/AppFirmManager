@@ -292,6 +292,7 @@
             this.cbxRoomCinema.selectedIndex = -1;
             this.cbxRoomCinema.Size = new System.Drawing.Size(122, 35);
             this.cbxRoomCinema.TabIndex = 89;
+            this.cbxRoomCinema.onItemSelected += new System.EventHandler(this.cbxRoomCinema_onItemSelected);
             // 
             // FmPositionSeat
             // 
