@@ -151,7 +151,10 @@ namespace BarcodeReaderApp
             string ID = textBox1.Text;
             Scan_Ticket = new Scan_Ticket_BS();
             string Result = Scan_Ticket.Scan_Ticket(ID);
-            MessageBox.Show("Kết quả: " + Result);
+            if (Result == "True")
+                MessageBox.Show("Thanh toán thành công !");
+            else
+                MessageBox.Show("Vé không tôn tại !");
             this.Close();
         }
 

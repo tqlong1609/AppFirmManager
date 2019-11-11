@@ -120,7 +120,7 @@ namespace ManagerCinema
             {
                 // A1 => nameRow: A , nameColumn: 1
                 char nameRow = rows["NameSeat"].ToString()[0];
-                if(tempRow == nameRow)
+                if (tempRow == nameRow)
                 {
                     char nameColumn = rows["NameSeat"].ToString()[1];
                     seatsNomal.Add(new Seat(nameColumn.ToString()));
@@ -138,7 +138,7 @@ namespace ManagerCinema
 
             }
 
-
+        }
         private void loadValuePanelSeat()
         {
             foreach (SeatNomal temp in arrRowSeatNomal)
