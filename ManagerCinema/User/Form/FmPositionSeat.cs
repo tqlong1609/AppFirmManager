@@ -191,7 +191,8 @@ namespace ManagerCinema
             char valueRow = cbxRows.selectedValue.ToCharArray()[0];
             foreach (DataRow row in tableSeats.Rows)
             {
-                if (row["NameSeat"].ToString().IndexOf(valueRow) > 0)
+                if (row["NameSeat"].ToString().ToCharArray()[0].Equals(valueRow)
+                    && row["NameRoom"].ToString().Equals(cbxRoomCinema.selectedValue))
                 {
                     cbxColumns.AddItem(row["NameSeat"].ToString()[1].ToString());
                 }
