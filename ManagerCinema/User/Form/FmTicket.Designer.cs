@@ -36,17 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cbxDate = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cbxBench = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.cbxNomal = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lbPriceBench = new System.Windows.Forms.Label();
-            this.lbPriceNomal = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbxCity = new Bunifu.Framework.UI.BunifuDropdown();
@@ -54,8 +43,6 @@
             this.btnBuyTicket = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMini = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
@@ -148,134 +135,6 @@
             this.cbxDate.TabIndex = 55;
             this.cbxDate.onItemSelected += new System.EventHandler(this.cbxDate_onItemSelected);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cbxBench);
-            this.panel2.Controls.Add(this.cbxNomal);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.lbPriceBench);
-            this.panel2.Controls.Add(this.lbPriceNomal);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(17, 324);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(583, 162);
-            this.panel2.TabIndex = 56;
-            // 
-            // cbxBench
-            // 
-            this.cbxBench.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbxBench.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.cbxBench.Checked = true;
-            this.cbxBench.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbxBench.ForeColor = System.Drawing.Color.White;
-            this.cbxBench.Location = new System.Drawing.Point(279, 106);
-            this.cbxBench.Name = "cbxBench";
-            this.cbxBench.Size = new System.Drawing.Size(20, 20);
-            this.cbxBench.TabIndex = 63;
-            this.cbxBench.OnChange += new System.EventHandler(this.cbxBench_OnChange);
-            // 
-            // cbxNomal
-            // 
-            this.cbxNomal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbxNomal.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.cbxNomal.Checked = true;
-            this.cbxNomal.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbxNomal.ForeColor = System.Drawing.Color.White;
-            this.cbxNomal.Location = new System.Drawing.Point(279, 59);
-            this.cbxNomal.Name = "cbxNomal";
-            this.cbxNomal.Size = new System.Drawing.Size(20, 20);
-            this.cbxNomal.TabIndex = 62;
-            this.cbxNomal.OnChange += new System.EventHandler(this.cbxNomal_OnChange);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(580, 28);
-            this.panel3.TabIndex = 9;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(436, 7);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(102, 16);
-            this.label13.TabIndex = 58;
-            this.label13.Text = "PRICE (VND)";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(267, 7);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 16);
-            this.label12.TabIndex = 57;
-            this.label12.Text = "Type";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(42, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 16);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "TYPE TICKET";
-            // 
-            // lbPriceBench
-            // 
-            this.lbPriceBench.AutoSize = true;
-            this.lbPriceBench.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPriceBench.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbPriceBench.Location = new System.Drawing.Point(462, 106);
-            this.lbPriceBench.Name = "lbPriceBench";
-            this.lbPriceBench.Size = new System.Drawing.Size(74, 19);
-            this.lbPriceBench.TabIndex = 5;
-            this.lbPriceBench.Text = "100,000";
-            // 
-            // lbPriceNomal
-            // 
-            this.lbPriceNomal.AutoSize = true;
-            this.lbPriceNomal.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPriceNomal.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbPriceNomal.Location = new System.Drawing.Point(462, 59);
-            this.lbPriceNomal.Name = "lbPriceNomal";
-            this.lbPriceNomal.Size = new System.Drawing.Size(66, 19);
-            this.lbPriceNomal.TabIndex = 4;
-            this.lbPriceNomal.Text = "50,000";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(43, 107);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 19);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Bench Ticket";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(41, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 19);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Nomal Ticket";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -346,7 +205,7 @@
             this.btnBuyTicket.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
             this.btnBuyTicket.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnBuyTicket.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnBuyTicket.Location = new System.Drawing.Point(164, 494);
+            this.btnBuyTicket.Location = new System.Drawing.Point(164, 348);
             this.btnBuyTicket.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBuyTicket.Name = "btnBuyTicket";
             this.btnBuyTicket.Size = new System.Drawing.Size(264, 52);
@@ -389,13 +248,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(612, 562);
+            this.ClientSize = new System.Drawing.Size(612, 414);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbxCity);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnBuyTicket);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.cbxDate);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -413,10 +271,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmTicket_MouseUp);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
@@ -436,21 +290,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Bunifu.Framework.UI.BunifuDropdown cbxDate;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lbPriceBench;
-        private System.Windows.Forms.Label lbPriceNomal;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBuyTicket;
         private Bunifu.Framework.UI.BunifuImageButton btnBack;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuDropdown cbxCity;
-        private Bunifu.Framework.UI.BunifuCheckbox cbxBench;
-        private Bunifu.Framework.UI.BunifuCheckbox cbxNomal;
     }
 }

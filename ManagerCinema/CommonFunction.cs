@@ -7,6 +7,8 @@ namespace ManagerCinema
 {
     public class CommonFunction
     {
+        private const string FORMAT_MONNEY = "{0:#,##0}"; // format: 20,000
+
         // this is function get id for insert  from movie
         public static int getIdForInsert(DataTable dataTable)
         {
@@ -42,6 +44,11 @@ namespace ManagerCinema
             fs.Read(picbyte, 0, System.Convert.ToInt32(fs.Length));
             fs.Close();
             return Convert.ToBase64String(picbyte);
+        }
+
+        public static string formatMonney(int monney)
+        {
+            return string.Format(FORMAT_MONNEY, monney);
         }
     }
 

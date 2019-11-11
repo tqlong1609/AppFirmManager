@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmDetailMovie));
             this.lbContent = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.lbStatus = new System.Windows.Forms.Label();
+            this.lbPrice = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.lbActor = new System.Windows.Forms.Label();
             this.lbType = new System.Windows.Forms.Label();
@@ -83,16 +83,16 @@
             this.label13.TabIndex = 39;
             this.label13.Text = "Content:";
             // 
-            // lbStatus
+            // lbPrice
             // 
-            this.lbStatus.AutoSize = true;
-            this.lbStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStatus.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbStatus.Location = new System.Drawing.Point(376, 324);
-            this.lbStatus.Name = "lbStatus";
-            this.lbStatus.Size = new System.Drawing.Size(21, 20);
-            this.lbStatus.TabIndex = 38;
-            this.lbStatus.Text = "...";
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbPrice.Location = new System.Drawing.Point(376, 324);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(21, 20);
+            this.lbPrice.TabIndex = 38;
+            this.lbPrice.Text = "...";
             // 
             // lbDate
             // 
@@ -355,7 +355,7 @@
             this.Controls.Add(this.btnMini);
             this.Controls.Add(this.lbContent);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.lbStatus);
+            this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.lbActor);
             this.Controls.Add(this.lbType);
@@ -394,7 +394,7 @@
 
         private System.Windows.Forms.Label lbContent;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lbStatus;
+        private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.Label lbActor;
         private System.Windows.Forms.Label lbType;

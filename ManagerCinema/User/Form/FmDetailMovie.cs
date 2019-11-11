@@ -39,7 +39,7 @@ namespace ManagerCinema
             lbType.Text = movie.getTypeFirm();
             lbActor.Text = movie.getActor();
             lbDate.Text = movie.getDate();
-            lbStatus.Text = movie.getPrice().ToString();
+            lbPrice.Text =  CommonFunction.formatMonney(movie.getPrice()) + " VND";
             lbContent.Text = movie.getContent();
         }
 
@@ -47,7 +47,7 @@ namespace ManagerCinema
         {
             this.Close();
         }
-
+        
         private void btnMini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

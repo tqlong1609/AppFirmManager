@@ -11,7 +11,6 @@ namespace ManagerCinema
 {
     public partial class FmTicket : FormMain
     {
-        private const string FORMAT_MONNEY = "{0:#,##0}"; // format: 20,000
 
         private Thread threadForm;
         private Movie movie;
@@ -96,8 +95,6 @@ namespace ManagerCinema
 
             loadInfoTicket();
 
-            lbPriceNomal.Text = formatMonney(priceNomal);
-            lbPriceBench.Text = formatMonney(priceBench);
         }
 
         private void loadInfoTicket()
@@ -122,8 +119,6 @@ namespace ManagerCinema
 
         private void initNomal()
         {
-            cbxBench.Checked = false;
-            cbxNomal.Checked = true;
             user.CountTicketNomal = 1;
             user.CountTicketBench = 0;
 
@@ -132,8 +127,6 @@ namespace ManagerCinema
 
         private void initBench()
         {
-            cbxNomal.Checked = false;
-            cbxBench.Checked = true;
             user.CountTicketBench = 1;
             user.CountTicketNomal = 0;
         }
@@ -148,10 +141,7 @@ namespace ManagerCinema
             initBench();
         }
 
-        private string formatMonney(int monney)
-        {
-            return string.Format(FORMAT_MONNEY, monney);
-        }
+        
 
         private void cbxCity_onItemSelected(object sender, EventArgs e)
         {
