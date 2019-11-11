@@ -184,5 +184,18 @@ namespace ManagerCinema
             pnlSeat.Controls.Clear();
             loadListSeatNomal(cbxRoomCinema.selectedValue);
         }
+
+        private void cbxRows_onItemSelected(object sender, EventArgs e)
+        {
+            cbxColumns.Clear();
+            char valueRow = cbxRows.selectedValue.ToCharArray()[0];
+            foreach (DataRow row in tableSeats.Rows)
+            {
+                if (row["NameSeat"].ToString().IndexOf(valueRow) > 0)
+                {
+                    cbxColumns.AddItem(row["NameSeat"].ToString()[1].ToString());
+                }
+            }
+        }
     }
 }

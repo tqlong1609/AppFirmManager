@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuFlatButton5.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnNewVoucher.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAAD45JREFUeF7t
         XQuMJEUZPuQQUVHxhYoPVB5B8AkmGhFFBfEBgaCiAU4FwScQRASMIBjByBsRyIkYUSEHKAYRwYDKcRAT
@@ -190,7 +190,7 @@
         MBgMBoPBYDAY5hsWLPgf57GGzoHPVRgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuFlatButton3.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnListTimeShowing.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAAD45JREFUeF7t
         XQuMJEUZPuQQUVHxhYoPVB5B8AkmGhFFBfEBgaCiAU4FwScQRASMIBjByBsRyIkYUSEHKAYRwYDKcRAT
@@ -331,7 +331,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="btnBookTicket.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnListUser.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAABgZJREFUeF7t
         nVtoHFUcxtNotd6vLWJVfBUUFS+oUISoRRHFFx8ULWoffBQv4JO34gVEpdimFS8gtvogCIL6VEoUVKyJ
@@ -505,7 +505,7 @@
         OcYf3dcxHPChZav6+pWDg4ODg4ODg4ODg4ODg4ODg8MoYIMN/g9IXbhdisPHFwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnTimeShowing.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnVoucher.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAACKJJREFUeF7t
         nHmMFEUUxhdEwAtvozFGjSZEovHCAyWaaAT1L6PgGTyIqNGoICgJildAURKRaCToHx7ECzExcqkYoiQY

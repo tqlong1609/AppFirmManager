@@ -177,6 +177,7 @@
             this.cbxRows.selectedIndex = -1;
             this.cbxRows.Size = new System.Drawing.Size(104, 35);
             this.cbxRows.TabIndex = 76;
+            this.cbxRows.onItemSelected += new System.EventHandler(this.cbxRows_onItemSelected);
             // 
             // label11
             // 

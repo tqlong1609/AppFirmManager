@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBackground = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnNewVoucher = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnListTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListMovies = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnBookTicket = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnListUser = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListSeat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListCinema = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnVoucher = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTicket = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListEmployee = new Bunifu.Framework.UI.BunifuFlatButton();
             this.circlePictureBox2 = new ManagerCinema.ObjectFolder.Grapichs.CirclePictureBox();
@@ -94,76 +94,77 @@
             this.pnlBackground.Size = new System.Drawing.Size(865, 641);
             this.pnlBackground.TabIndex = 22;
             // 
-            // bunifuFlatButton5
+            // btnNewVoucher
             // 
-            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton5.BorderRadius = 0;
-            this.bunifuFlatButton5.ButtonText = "NEW VOUCHER";
-            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton5.Iconimage")));
-            this.bunifuFlatButton5.Iconimage_right = null;
-            this.bunifuFlatButton5.Iconimage_right_Selected = null;
-            this.bunifuFlatButton5.Iconimage_Selected = null;
-            this.bunifuFlatButton5.IconMarginLeft = 20;
-            this.bunifuFlatButton5.IconMarginRight = 0;
-            this.bunifuFlatButton5.IconRightVisible = true;
-            this.bunifuFlatButton5.IconRightZoom = 0D;
-            this.bunifuFlatButton5.IconVisible = true;
-            this.bunifuFlatButton5.IconZoom = 90D;
-            this.bunifuFlatButton5.IsTab = false;
-            this.bunifuFlatButton5.Location = new System.Drawing.Point(1, 610);
-            this.bunifuFlatButton5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
-            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(223, 64);
-            this.bunifuFlatButton5.TabIndex = 38;
-            this.bunifuFlatButton5.Text = "NEW VOUCHER";
-            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
+            this.btnNewVoucher.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnNewVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnNewVoucher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNewVoucher.BorderRadius = 0;
+            this.btnNewVoucher.ButtonText = "NEW VOUCHER";
+            this.btnNewVoucher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewVoucher.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNewVoucher.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNewVoucher.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNewVoucher.Iconimage")));
+            this.btnNewVoucher.Iconimage_right = null;
+            this.btnNewVoucher.Iconimage_right_Selected = null;
+            this.btnNewVoucher.Iconimage_Selected = null;
+            this.btnNewVoucher.IconMarginLeft = 20;
+            this.btnNewVoucher.IconMarginRight = 0;
+            this.btnNewVoucher.IconRightVisible = true;
+            this.btnNewVoucher.IconRightZoom = 0D;
+            this.btnNewVoucher.IconVisible = true;
+            this.btnNewVoucher.IconZoom = 90D;
+            this.btnNewVoucher.IsTab = false;
+            this.btnNewVoucher.Location = new System.Drawing.Point(1, 610);
+            this.btnNewVoucher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnNewVoucher.Name = "btnNewVoucher";
+            this.btnNewVoucher.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnNewVoucher.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnNewVoucher.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnNewVoucher.selected = false;
+            this.btnNewVoucher.Size = new System.Drawing.Size(223, 64);
+            this.btnNewVoucher.TabIndex = 38;
+            this.btnNewVoucher.Text = "NEW VOUCHER";
+            this.btnNewVoucher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewVoucher.Textcolor = System.Drawing.Color.White;
+            this.btnNewVoucher.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewVoucher.Click += new System.EventHandler(this.btnNewVoucher_Click);
             // 
-            // bunifuFlatButton3
+            // btnListTimeShowing
             // 
-            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton3.BorderRadius = 0;
-            this.bunifuFlatButton3.ButtonText = "LIST TIME SHOWING";
-            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
-            this.bunifuFlatButton3.Iconimage_right = null;
-            this.bunifuFlatButton3.Iconimage_right_Selected = null;
-            this.bunifuFlatButton3.Iconimage_Selected = null;
-            this.bunifuFlatButton3.IconMarginLeft = 20;
-            this.bunifuFlatButton3.IconMarginRight = 0;
-            this.bunifuFlatButton3.IconRightVisible = true;
-            this.bunifuFlatButton3.IconRightZoom = 0D;
-            this.bunifuFlatButton3.IconVisible = true;
-            this.bunifuFlatButton3.IconZoom = 90D;
-            this.bunifuFlatButton3.IsTab = false;
-            this.bunifuFlatButton3.Location = new System.Drawing.Point(1, 551);
-            this.bunifuFlatButton3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
-            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(223, 64);
-            this.bunifuFlatButton3.TabIndex = 34;
-            this.bunifuFlatButton3.Text = "LIST TIME SHOWING";
-            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListTimeShowing.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnListTimeShowing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListTimeShowing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnListTimeShowing.BorderRadius = 0;
+            this.btnListTimeShowing.ButtonText = "LIST TIME SHOWING";
+            this.btnListTimeShowing.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListTimeShowing.DisabledColor = System.Drawing.Color.Gray;
+            this.btnListTimeShowing.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnListTimeShowing.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnListTimeShowing.Iconimage")));
+            this.btnListTimeShowing.Iconimage_right = null;
+            this.btnListTimeShowing.Iconimage_right_Selected = null;
+            this.btnListTimeShowing.Iconimage_Selected = null;
+            this.btnListTimeShowing.IconMarginLeft = 20;
+            this.btnListTimeShowing.IconMarginRight = 0;
+            this.btnListTimeShowing.IconRightVisible = true;
+            this.btnListTimeShowing.IconRightZoom = 0D;
+            this.btnListTimeShowing.IconVisible = true;
+            this.btnListTimeShowing.IconZoom = 90D;
+            this.btnListTimeShowing.IsTab = false;
+            this.btnListTimeShowing.Location = new System.Drawing.Point(1, 551);
+            this.btnListTimeShowing.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnListTimeShowing.Name = "btnListTimeShowing";
+            this.btnListTimeShowing.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListTimeShowing.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnListTimeShowing.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnListTimeShowing.selected = false;
+            this.btnListTimeShowing.Size = new System.Drawing.Size(223, 64);
+            this.btnListTimeShowing.TabIndex = 34;
+            this.btnListTimeShowing.Text = "LIST TIME SHOWING";
+            this.btnListTimeShowing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnListTimeShowing.Textcolor = System.Drawing.Color.White;
+            this.btnListTimeShowing.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListTimeShowing.Click += new System.EventHandler(this.btnListTimeShowing_Click);
             // 
             // btnListMovies
             // 
@@ -201,41 +202,41 @@
             this.btnListMovies.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListMovies.Click += new System.EventHandler(this.btnListMovies_Click);
             // 
-            // btnBookTicket
+            // btnListUser
             // 
-            this.btnBookTicket.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBookTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBookTicket.BorderRadius = 0;
-            this.btnBookTicket.ButtonText = "LIST USER";
-            this.btnBookTicket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookTicket.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBookTicket.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBookTicket.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBookTicket.Iconimage")));
-            this.btnBookTicket.Iconimage_right = null;
-            this.btnBookTicket.Iconimage_right_Selected = null;
-            this.btnBookTicket.Iconimage_Selected = null;
-            this.btnBookTicket.IconMarginLeft = 18;
-            this.btnBookTicket.IconMarginRight = 0;
-            this.btnBookTicket.IconRightVisible = true;
-            this.btnBookTicket.IconRightZoom = 0D;
-            this.btnBookTicket.IconVisible = true;
-            this.btnBookTicket.IconZoom = 90D;
-            this.btnBookTicket.IsTab = false;
-            this.btnBookTicket.Location = new System.Drawing.Point(1, 427);
-            this.btnBookTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnBookTicket.Name = "btnBookTicket";
-            this.btnBookTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnBookTicket.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnBookTicket.selected = false;
-            this.btnBookTicket.Size = new System.Drawing.Size(223, 64);
-            this.btnBookTicket.TabIndex = 36;
-            this.btnBookTicket.Text = "LIST USER";
-            this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBookTicket.Textcolor = System.Drawing.Color.White;
-            this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
+            this.btnListUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnListUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnListUser.BorderRadius = 0;
+            this.btnListUser.ButtonText = "LIST USER";
+            this.btnListUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnListUser.DisabledColor = System.Drawing.Color.Gray;
+            this.btnListUser.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnListUser.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnListUser.Iconimage")));
+            this.btnListUser.Iconimage_right = null;
+            this.btnListUser.Iconimage_right_Selected = null;
+            this.btnListUser.Iconimage_Selected = null;
+            this.btnListUser.IconMarginLeft = 18;
+            this.btnListUser.IconMarginRight = 0;
+            this.btnListUser.IconRightVisible = true;
+            this.btnListUser.IconRightZoom = 0D;
+            this.btnListUser.IconVisible = true;
+            this.btnListUser.IconZoom = 90D;
+            this.btnListUser.IsTab = false;
+            this.btnListUser.Location = new System.Drawing.Point(1, 427);
+            this.btnListUser.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnListUser.Name = "btnListUser";
+            this.btnListUser.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnListUser.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnListUser.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnListUser.selected = false;
+            this.btnListUser.Size = new System.Drawing.Size(223, 64);
+            this.btnListUser.TabIndex = 36;
+            this.btnListUser.Text = "LIST USER";
+            this.btnListUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnListUser.Textcolor = System.Drawing.Color.White;
+            this.btnListUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListUser.Click += new System.EventHandler(this.btnListUser_Click);
             // 
             // btnListSeat
             // 
@@ -271,6 +272,7 @@
             this.btnListSeat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnListSeat.Textcolor = System.Drawing.Color.White;
             this.btnListSeat.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListSeat.Click += new System.EventHandler(this.btnListSeat_Click);
             // 
             // btnListCinema
             // 
@@ -308,41 +310,41 @@
             this.btnListCinema.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListCinema.Click += new System.EventHandler(this.btnListCinema_Click);
             // 
-            // btnTimeShowing
+            // btnVoucher
             // 
-            this.btnTimeShowing.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnTimeShowing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnTimeShowing.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTimeShowing.BorderRadius = 0;
-            this.btnTimeShowing.ButtonText = "LIST VOUCHER";
-            this.btnTimeShowing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTimeShowing.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTimeShowing.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTimeShowing.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnTimeShowing.Iconimage")));
-            this.btnTimeShowing.Iconimage_right = null;
-            this.btnTimeShowing.Iconimage_right_Selected = null;
-            this.btnTimeShowing.Iconimage_Selected = null;
-            this.btnTimeShowing.IconMarginLeft = 10;
-            this.btnTimeShowing.IconMarginRight = 0;
-            this.btnTimeShowing.IconRightVisible = true;
-            this.btnTimeShowing.IconRightZoom = 0D;
-            this.btnTimeShowing.IconVisible = true;
-            this.btnTimeShowing.IconZoom = 100D;
-            this.btnTimeShowing.IsTab = false;
-            this.btnTimeShowing.Location = new System.Drawing.Point(1, 489);
-            this.btnTimeShowing.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnTimeShowing.Name = "btnTimeShowing";
-            this.btnTimeShowing.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnTimeShowing.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnTimeShowing.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTimeShowing.selected = false;
-            this.btnTimeShowing.Size = new System.Drawing.Size(223, 64);
-            this.btnTimeShowing.TabIndex = 33;
-            this.btnTimeShowing.Text = "LIST VOUCHER";
-            this.btnTimeShowing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTimeShowing.Textcolor = System.Drawing.Color.White;
-            this.btnTimeShowing.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimeShowing.Click += new System.EventHandler(this.btnTimeShowing_Click);
+            this.btnVoucher.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnVoucher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVoucher.BorderRadius = 0;
+            this.btnVoucher.ButtonText = "LIST VOUCHER";
+            this.btnVoucher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoucher.DisabledColor = System.Drawing.Color.Gray;
+            this.btnVoucher.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnVoucher.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnVoucher.Iconimage")));
+            this.btnVoucher.Iconimage_right = null;
+            this.btnVoucher.Iconimage_right_Selected = null;
+            this.btnVoucher.Iconimage_Selected = null;
+            this.btnVoucher.IconMarginLeft = 10;
+            this.btnVoucher.IconMarginRight = 0;
+            this.btnVoucher.IconRightVisible = true;
+            this.btnVoucher.IconRightZoom = 0D;
+            this.btnVoucher.IconVisible = true;
+            this.btnVoucher.IconZoom = 100D;
+            this.btnVoucher.IsTab = false;
+            this.btnVoucher.Location = new System.Drawing.Point(1, 489);
+            this.btnVoucher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnVoucher.Name = "btnVoucher";
+            this.btnVoucher.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnVoucher.OnHovercolor = System.Drawing.Color.Gray;
+            this.btnVoucher.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnVoucher.selected = false;
+            this.btnVoucher.Size = new System.Drawing.Size(223, 64);
+            this.btnVoucher.TabIndex = 33;
+            this.btnVoucher.Text = "LIST VOUCHER";
+            this.btnVoucher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVoucher.Textcolor = System.Drawing.Color.White;
+            this.btnVoucher.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoucher.Click += new System.EventHandler(this.btnVoucher_Click);
             // 
             // btnListTicket
             // 
@@ -481,13 +483,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(1092, 687);
-            this.Controls.Add(this.bunifuFlatButton5);
-            this.Controls.Add(this.bunifuFlatButton3);
+            this.Controls.Add(this.btnNewVoucher);
+            this.Controls.Add(this.btnListTimeShowing);
             this.Controls.Add(this.btnListMovies);
-            this.Controls.Add(this.btnBookTicket);
+            this.Controls.Add(this.btnListUser);
             this.Controls.Add(this.btnListSeat);
             this.Controls.Add(this.btnListCinema);
-            this.Controls.Add(this.btnTimeShowing);
+            this.Controls.Add(this.btnVoucher);
             this.Controls.Add(this.btnListTicket);
             this.Controls.Add(this.btnListEmployee);
             this.Controls.Add(this.label4);
@@ -518,10 +520,10 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuFlatButton btnBookTicket;
+        private Bunifu.Framework.UI.BunifuFlatButton btnListUser;
         private Bunifu.Framework.UI.BunifuFlatButton btnListSeat;
         private Bunifu.Framework.UI.BunifuFlatButton btnListCinema;
-        private Bunifu.Framework.UI.BunifuFlatButton btnTimeShowing;
+        private Bunifu.Framework.UI.BunifuFlatButton btnVoucher;
         private Bunifu.Framework.UI.BunifuFlatButton btnListTicket;
         private Bunifu.Framework.UI.BunifuFlatButton btnListEmployee;
         private System.Windows.Forms.Label label4;
@@ -534,7 +536,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlBackground;
         private Bunifu.Framework.UI.BunifuFlatButton btnListMovies;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
+        private Bunifu.Framework.UI.BunifuFlatButton btnListTimeShowing;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNewVoucher;
     }
 }

@@ -36,17 +36,12 @@ namespace ManagerCinema
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnTimeShowing_Click(object sender, EventArgs e)
+        private void btnVoucher_Click(object sender, EventArgs e)
         {
             clearpanel();
             pnlBackground.Controls.Add(new UcListVoucher());
         }
 
-        private void bunifuFlatButton5_Click(object sender, EventArgs e)
-        {
-            TestApp new_Voucher = new TestApp();
-            new_Voucher.Show();
-        }
 
         private void btnListEmployee_Click(object sender, EventArgs e)
         {
@@ -79,10 +74,26 @@ namespace ManagerCinema
             pnlBackground.Controls.Add(new UcListTicket());
         }
 
-        private void btnBookTicket_Click(object sender, EventArgs e)
+        private void btnListUser_Click(object sender, EventArgs e)
         {
             clearpanel();
             pnlBackground.Controls.Add(new UcListUser());
+        }
+
+        private void btnListSeat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListTimeShowing_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewVoucher_Click(object sender, EventArgs e)
+        {
+            TestApp new_Voucher = new TestApp();
+            new_Voucher.Show();
         }
     }
 }
