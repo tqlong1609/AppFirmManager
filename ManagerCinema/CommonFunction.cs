@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManagerCinema
 {
@@ -15,7 +11,7 @@ namespace ManagerCinema
         public static int getIdForInsert(DataTable dataTable)
         {
             int sum = 0;
-            foreach(DataRow temp in dataTable.Rows)
+            foreach (DataRow temp in dataTable.Rows)
             {
                 if (temp["IdMovie"].ToString().Trim() == sum.ToString())
                 {
@@ -49,5 +45,5 @@ namespace ManagerCinema
         }
     }
 
-   
+
 }

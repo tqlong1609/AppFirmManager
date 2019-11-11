@@ -68,22 +68,6 @@ C:\Users\HP\Desktop\Push\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerat
 C:\Users\HP\Desktop\Push\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.application
 C:\Users\HP\Desktop\Push\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe
 C:\Users\HP\Desktop\Push\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.config
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.manifest
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.application
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.pdb
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.dll
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.xml
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csprojAssemblyReference.cache
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.TestApp.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.Properties.Resources.resources
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.GenerateResource.cache
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe.manifest
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.application
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.CopyComplete
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe
-C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.pdb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.config
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.manifest
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.application
@@ -101,3 +85,19 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.CopyComplete
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.config
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe.manifest
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.application
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.exe
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.pdb
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.dll
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.xml
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.TestApp.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.Properties.Resources.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe.manifest
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.application
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.CopyComplete
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.pdb

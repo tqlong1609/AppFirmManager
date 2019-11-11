@@ -1,12 +1,6 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerCinema
@@ -37,8 +31,9 @@ namespace ManagerCinema
         }
 
         #region move form
-        private void FmLogin_MouseDown(object sender, MouseEventArgs e) {
-            mouseDownForm(e,this);
+        private void FmLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDownForm(e, this);
         }
 
         private void FmLogin_MouseMove(object sender, MouseEventArgs e)

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using ManagerCinema.ObjectFolder;
+using System;
 using System.Threading;
-using ManagerCinema.ObjectFolder;
+using System.Windows.Forms;
+using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
 {
@@ -16,7 +10,7 @@ namespace ManagerCinema
     {
         // thread handle open new form
         private Thread threadForm;
-
+        private LoginBS LoginBS;
         public UcLogin()
         {
             InitializeComponent();
@@ -38,11 +32,7 @@ namespace ManagerCinema
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Equals("user") && txtPassword.Text.Equals("1"))
-            {
-                TypeLogin.typeLogin = ETypeLogin.user;
-            }
-            else if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
+            if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
             {
                 TypeLogin.typeLogin = ETypeLogin.manager;
             }
@@ -52,10 +42,18 @@ namespace ManagerCinema
             }
             else
             {
-                MessageBox.Show("Enter your username or password incorrect!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                string Username = txtUsername.Text;
+                string Password = txtPassword.Text;
+                LoginBS = new LoginBS();
+                string Result = LoginBS.Login(Username, Password);
+                if (Result == "1")
+                    TypeLogin.typeLogin = ETypeLogin.user;
+                else
+                {
+                    MessageBox.Show("Enter your username or password incorrect!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
-
             openFormFollowType(TypeLogin.typeLogin);
         }
 

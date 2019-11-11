@@ -1,10 +1,5 @@
 ﻿using ManagerCinema.DBLayer;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManagerCinema.BSLayer
 {
@@ -24,28 +19,28 @@ namespace ManagerCinema.BSLayer
         }
 
         public bool addMovies(int id, string name, int time, string director, string country,
-            string producer, string type, string actor, string date, string content,int price,
+            string producer, string type, string actor, string date, string content, int price,
             string pathImage)
         {
             string sqlString = string.Format("exec dbo.insertMovie " +
                 "@idMovie = '{0}', @name = '{1}', @time = '{2}'," +
                 " @director = '{3}', @country = '{4}', @producer = '{5}'," +
                 " @type = '{6}', @actor = '{7}', @date = '{8}', @content = '{9}'," +
-                "@price = '{10}', @image = '{11}'",id,name,time,director,country,producer,
-                type,actor,date,content,price,pathImage);
+                "@price = '{10}', @image = '{11}'", id, name, time, director, country, producer,
+                type, actor, date, content, price, pathImage);
 
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
 
         public DataTable getInforTicketFromIdMovies(int id)
         {
-            string sqlString = string.Format("select * from getInforTicketFromIdMovies({0})",id);
+            string sqlString = string.Format("select * from getInforTicketFromIdMovies({0})", id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 
         public DataTable getInforSeatFromIdCinema(int id)
         {
-            string sqlString = string.Format("select * from getInforSeatFromIdCinema({0})",id);
+            string sqlString = string.Format("select * from getInforSeatFromIdCinema({0})", id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
 
         }

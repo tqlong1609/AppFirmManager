@@ -33,12 +33,10 @@
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinScreen = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinScreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
@@ -97,26 +95,8 @@
             this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
             this.bunifuMetroTextbox3.Size = new System.Drawing.Size(462, 51);
             this.bunifuMetroTextbox3.TabIndex = 25;
-            this.bunifuMetroTextbox3.Text = "Email";
+            this.bunifuMetroTextbox3.Text = "Username";
             this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMetroTextbox1
-            // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.LightSlateGray;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.LightSlateGray;
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(46, 208);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(462, 51);
-            this.bunifuMetroTextbox1.TabIndex = 26;
-            this.bunifuMetroTextbox1.Text = "New Password";
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label1
             // 
@@ -156,7 +136,7 @@
             this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.Location = new System.Drawing.Point(110, 351);
+            this.btnLogin.Location = new System.Drawing.Point(112, 217);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(322, 56);
@@ -179,36 +159,16 @@
             this.btnBack.Zoom = 10;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // bunifuMetroTextbox2
-            // 
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.LightSlateGray;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.LightSlateGray;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.Silver;
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(46, 278);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(462, 51);
-            this.bunifuMetroTextbox2.TabIndex = 31;
-            this.bunifuMetroTextbox2.Text = "Confirm Password";
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // FmFogetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(561, 431);
-            this.Controls.Add(this.bunifuMetroTextbox2);
+            this.ClientSize = new System.Drawing.Size(561, 307);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bunifuMetroTextbox1);
             this.Controls.Add(this.bunifuMetroTextbox3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnClose);
@@ -233,11 +193,9 @@
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
         private Bunifu.Framework.UI.BunifuImageButton btnMinScreen;
         private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private Bunifu.Framework.UI.BunifuImageButton btnBack;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
     }
 }

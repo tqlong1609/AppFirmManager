@@ -1,8 +1,7 @@
 ﻿using ManagerCinema.ObjectFolder;
 using System;
-using System.Windows.Forms;
-using BarcodeReaderApp;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace ManagerCinema
 {
