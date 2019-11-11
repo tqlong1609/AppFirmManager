@@ -72,7 +72,6 @@ namespace ManagerCinema
             lbCountNomal.Text = countNomal.ToString();
             lbCountBench.Text = countBench.ToString();
 
-            //loadValueDropDown();
         }
 
         private void loadValueInforSeat()
@@ -127,8 +126,6 @@ namespace ManagerCinema
                 }
                 else
                 {
-                    //arrRowSeatNomal.Add(new SeatNomal(tempRow.ToString(), seatsNomal));
-                    //loadValuePanelSeat();
                     pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
                     seatsNomal.Clear();
                     seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString()));
@@ -138,36 +135,6 @@ namespace ManagerCinema
 
             }
             pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
-        }
-        private void loadValuePanelSeat()
-        {
-            foreach (SeatNomal temp in arrRowSeatNomal)
-            {
-                pnlSeat.Controls.Add(new ucSeatNomal(temp));
-            }
-            //foreach (SeatBench temp in arrRowSeatBench)
-            //{
-            //    pnlSeat.Controls.Add(new ucSeatBench(temp));
-            //}
-        }
-
-        private void loadValueDropDown()
-        {
-            if (countNomal > 0)
-            {
-                drdRow.AddItem("A");
-                drdRow.AddItem("B");
-                drdRow.AddItem("C");
-                drdRow.AddItem("D");
-                drdRow.AddItem("E");
-                drdRow.AddItem("F");
-                drdRow.AddItem("G");
-                drdRow.AddItem("H");
-            }
-            if (countBench > 0)
-            {
-                drdRow.AddItem("I");
-            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

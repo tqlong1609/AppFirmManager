@@ -2,11 +2,13 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
+using BarcodeLibTest.BSLayer;
 
 namespace BarcodeLibTest
 {
     public partial class TestApp : Form
     {
+        private New_Voucher_BS New_Voucher_BS;
         BarcodeLib.Barcode b = new BarcodeLib.Barcode();
 
         public TestApp()
@@ -69,7 +71,36 @@ namespace BarcodeLibTest
 
         private void btn_Save_Info_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thêm dữ liệu vào SQL từ Button này !");
+            int ID = 0;
+            int Value = 0;
+            try
+            {
+                ID = int.Parse(txtData.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi định dạng ID");
+                return;
+            }
+            try
+            {
+                Value = int.Parse(textBox2.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi định dạng giá trị");
+                return;
+            }
+            try
+            {
+                New_Voucher_BS = new New_Voucher_BS();
+                New_Voucher_BS.Add_New_Voucher(ID, textBox1.Text, Value);
+                MessageBox.Show("Tạo Voucher mới thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Tạo Voucher mới thất bại");
+            }
         }
 
         private void TxtWidth_TextChanged(object sender, EventArgs e)

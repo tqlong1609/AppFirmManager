@@ -119,6 +119,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="BSLayer\New_Voucher_BS.cs" />
+    <Compile Include="DBLayer\DBMain.cs" />
     <Compile Include="Symbologies\Blank.cs" />
     <Compile Include="Symbologies\Codabar.cs" />
     <Compile Include="Symbologies\Code11.cs" />
