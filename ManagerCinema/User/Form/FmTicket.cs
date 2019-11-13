@@ -67,6 +67,8 @@ namespace ManagerCinema
             UcLogin.ticket.IdCinema = idCinema;
             UcLogin.ticket.Date = cbxDate.selectedValue;
             UcLogin.ticket.Time = cbxTime.selectedValue;
+            UcLogin.ticket.Address = cbxCity.selectedValue;
+            UcLogin.ticket.NameCinema = cbxCinema.selectedValue;
         }
 
         private void openFormPositionSeat()

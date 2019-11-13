@@ -17,12 +17,16 @@ namespace ManagerCinema
         private User user;
         private int idRoomCinema;
 
-        public FmCheckQR(Movie movie, User user, int idRoomCinema)
+        // id ticket used to get qr code
+        private int idTicket;
+
+        public FmCheckQR(Movie movie, User user, int idRoomCinema, int idTicket)
         {
             InitializeComponent();
             this.movie = movie;
             this.user = user;
             this.idRoomCinema = idRoomCinema;
+            this.idTicket = idTicket;
         }
 
         // Need to add an input here

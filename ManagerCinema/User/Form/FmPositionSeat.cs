@@ -183,6 +183,7 @@ namespace ManagerCinema
             nameSeat = cbxRows.selectedValue + cbxColumns.selectedValue;
             UcLogin.ticket.IdRoomCinema = idRoomCinema;
             UcLogin.ticket.NameSeat = nameSeat;
+            UcLogin.ticket.NameRoom = cbxRoomCinema.selectedValue;
         }
 
         private void openFormReview()

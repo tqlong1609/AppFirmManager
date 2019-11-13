@@ -17,6 +17,29 @@ namespace ManagerCinema.ObjectFolder
         private string nameSeat;
         private int price;
 
+        private string address;
+        private string nameCinema;
+
+        private string nameRoom;
+
+        public string NameRoom
+        {
+            get { return nameRoom; }
+            set { this.nameRoom = value; }
+        }
+
+        public string Address
+        {
+            get { return address; }
+            set { this.address = value; }
+        }
+
+        public string NameCinema
+        {
+            get { return nameCinema; }
+            set { this.nameCinema = value; }
+        }
+
         public int IdUser
         {
             get { return idUser; }

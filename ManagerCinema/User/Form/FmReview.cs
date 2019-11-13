@@ -1,4 +1,5 @@
-﻿using ManagerCinema.ObjectFolder;
+﻿using ManagerCinema.BSLayer;
+using ManagerCinema.ObjectFolder;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -11,6 +12,9 @@ namespace ManagerCinema
         private Movie movie;
         private User user;
         private int idRoomCinema;
+        private TicketBS ticketBS;
+
+        private int idTicket;
 
         public FmReview(Movie movie, User user, int idRoomCinema)
         {
@@ -60,27 +64,52 @@ namespace ManagerCinema
 
         private void FmReview_Load(object sender, EventArgs e)
         {
+            ticketBS = new TicketBS();
+
+            loadValueBegin();
+            
+        }
+
+        private void loadValueBegin()
+        {
             lbNameMovie.Text = movie.getNameMovie();
             pbxMovie.Image = movie.getImage();
+            lbAddress.Text = UcLogin.ticket.Address;
+            lbCinema.Text = UcLogin.ticket.NameCinema;
+            lbShowtime.Text = UcLogin.ticket.Date + " " + UcLogin.ticket.Time;
+            lbNameSeat.Text = UcLogin.ticket.NameSeat;
+            lbSumMonney.Text = CommonFunction.formatMonney(UcLogin.ticket.Price);
+            lbNameRoom.Text = UcLogin.ticket.NameRoom;
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            this.Close();
-            threadForm = new Thread(openFormCheckQR);
-            threadForm.SetApartmentState(ApartmentState.STA);
-            threadForm.Start();
+            if (saveTicket())
+            {
+                this.Close();
+                threadForm = new Thread(openFormCheckQR);
+                threadForm.SetApartmentState(ApartmentState.STA);
+                threadForm.Start();
+            }
         }
 
         private void openFormCheckQR()
         {
-            Application.Run(new FmCheckQR(movie, user, idRoomCinema));
+            Application.Run(new FmCheckQR(movie, user, idRoomCinema,idTicket));
         }
 
         // insert into ticket get idTicket
-        private int saveTicket()
+        private bool saveTicket()
         {
-
+            idTicket = CommonFunction.getIdOnTime();
+            if(
+            ticketBS.insertTicket(idTicket, UcLogin.ticket.IdUser, UcLogin.ticket.IdCinema,
+                UcLogin.ticket.IdRoomCinema, UcLogin.ticket.NameSeat, UcLogin.ticket.Time,
+                UcLogin.ticket.Date, UcLogin.ticket.IdMovie, UcLogin.ticket.Price))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

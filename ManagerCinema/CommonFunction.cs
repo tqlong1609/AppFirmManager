@@ -50,6 +50,16 @@ namespace ManagerCinema
         {
             return string.Format(FORMAT_MONNEY, monney);
         }
+
+        public static int getIdOnTime()
+        {
+            DateTime dateTime = DateTime.Now;
+            string hour = dateTime.Hour.ToString();
+            string minutes = dateTime.Minute.ToString();
+            string secound = dateTime.Second.ToString();
+            string miliSecound = dateTime.Millisecond.ToString();
+            return int.Parse(hour + minutes + secound + miliSecound);
+        }
     }
 
 
