@@ -76,5 +76,11 @@ namespace ManagerCinema
         {
             Application.Run(new FmCheckQR(movie, user, idRoomCinema));
         }
+
+        // insert into ticket get idTicket
+        private int saveTicket()
+        {
+
+        }
     }
 }

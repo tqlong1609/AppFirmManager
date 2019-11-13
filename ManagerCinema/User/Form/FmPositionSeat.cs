@@ -22,14 +22,16 @@ namespace ManagerCinema
         private User user;
         private int countNomal;
         private int countBench;
+        private int idCinema;
         private int idRoomCinema;
+        private string nameSeat;
 
-        public FmPositionSeat(Movie movie, User user, int idRoomCinema)
+        public FmPositionSeat(Movie movie, User user, int idCinema)
         {
             InitializeComponent();
             this.movie = movie;
             this.user = user;
-            this.idRoomCinema = idRoomCinema;
+            this.idCinema = idCinema;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -77,7 +79,7 @@ namespace ManagerCinema
         private void loadValueInforSeat()
         {
             List<string> listSeat = new List<string>(); 
-            tableSeats = movieBS.getInforSeatFromIdCinema(idRoomCinema);
+            tableSeats = movieBS.getInforSeatFromIdCinema(idCinema);
 
             foreach(DataRow rows in tableSeats.Rows)
             {
@@ -123,6 +125,7 @@ namespace ManagerCinema
             {
                 if (nameRoom.Equals(rows["NameRoom"].ToString().Trim()))
                 {
+                    idRoomCinema = int.Parse(rows["idRoomCinema"].ToString().Trim());
                     // A1 => nameRow: A , nameColumn: 1
                     char nameRow = rows["NameSeat"].ToString()[0];
                     if (tempRow == nameRow)
@@ -168,15 +171,23 @@ namespace ManagerCinema
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            setTicket();
             this.Close();
             threadForm = new Thread(openFormReview);
             threadForm.SetApartmentState(ApartmentState.STA);
             threadForm.Start();
         }
 
+        private void setTicket()
+        {
+            nameSeat = cbxRows.selectedValue + cbxColumns.selectedValue;
+            UcLogin.ticket.IdRoomCinema = idRoomCinema;
+            UcLogin.ticket.NameSeat = nameSeat;
+        }
+
         private void openFormReview()
         {
-            Application.Run(new FmReview(movie, user, idRoomCinema));
+            Application.Run(new FmReview(movie, user, idCinema));
         }
 
         private void cbxRoomCinema_onItemSelected(object sender, EventArgs e)

@@ -11,9 +11,11 @@ namespace ManagerCinema
         // thread handle open new form
         private Thread threadForm;
         private LoginBS LoginBS;
+        public static Ticket ticket;
         public UcLogin()
         {
             InitializeComponent();
+            ticket = new Ticket();
         }
 
         private void lbFogetPass_Click(object sender, EventArgs e)
@@ -46,8 +48,12 @@ namespace ManagerCinema
                 string Password = txtPassword.Text;
                 LoginBS = new LoginBS();
                 string Result = LoginBS.Login(Username, Password);
-                if (Result == "1")
+
+                if (Result != "")
+                {
                     TypeLogin.typeLogin = ETypeLogin.user;
+                    ticket.IdUser = int.Parse(Result);
+                }
                 else
                 {
                     MessageBox.Show("Enter your username or password incorrect!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

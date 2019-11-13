@@ -110,6 +110,7 @@
     <Compile Include="Admin\UserControl\UcListMovie.Designer.cs">
       <DependentUpon>UcListMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObjectFolder\Ticket.cs" />
     <Compile Include="UcListTicket.cs">
       <SubType>UserControl</SubType>
     </Compile>

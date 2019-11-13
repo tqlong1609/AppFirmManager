@@ -7,6 +7,7 @@ namespace ManagerCinema
 {
     public partial class FmDetailMovie : FormMain
     {
+        private Ticket ticket;
         private Thread threadForm;
 
         private Movie movie;
@@ -74,6 +75,7 @@ namespace ManagerCinema
         {
             if (TypeLogin.typeLogin == ETypeLogin.user)
             {
+                setTicket();
                 this.Close();
                 threadForm = new Thread(openFormTicket);
                 threadForm.SetApartmentState(ApartmentState.STA);
@@ -84,6 +86,12 @@ namespace ManagerCinema
                 MessageBox.Show("You have to login to buy ticket", "Notification",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void setTicket()
+        {
+            UcLogin.ticket.IdMovie = movie.getId();
+            UcLogin.ticket.Price = movie.getPrice();
         }
 
         private void openFormTicket()
