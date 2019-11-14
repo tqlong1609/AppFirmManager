@@ -1,9 +1,12 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
+using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
 {
     public partial class UcListCinemaAD : UserControl
     {
+        private CinemaBS CinemaBS;
         public UcListCinemaAD()
         {
             InitializeComponent();
@@ -11,7 +14,8 @@ namespace ManagerCinema
 
         private void UcListCinemaAD_Load(object sender, System.EventArgs e)
         {
-
+            CinemaBS = new CinemaBS();
+            dataGridView1.DataSource = CinemaBS.loadData();
         }
     }
 }

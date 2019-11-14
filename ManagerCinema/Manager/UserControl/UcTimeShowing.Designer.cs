@@ -30,19 +30,17 @@
         {
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(3, 171);
+            this.dgvData.Location = new System.Drawing.Point(3, 116);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(855, 397);
+            this.dgvData.Size = new System.Drawing.Size(855, 452);
             this.dgvData.TabIndex = 18;
             // 
             // txtSearch
@@ -64,14 +62,6 @@
             this.txtSearch.TabIndex = 15;
             this.txtSearch.Text = "Search by time showing";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 126);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(855, 444);
-            this.dataGridView1.TabIndex = 13;
             // 
             // bunifuImageButton3
             // 
@@ -95,11 +85,10 @@
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "UcTimeShowing";
             this.Size = new System.Drawing.Size(861, 571);
+            this.Load += new System.EventHandler(this.UcTimeShowing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
 
@@ -110,6 +99,5 @@
         private System.Windows.Forms.DataGridView dgvData;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

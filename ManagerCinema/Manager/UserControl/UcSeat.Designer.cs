@@ -98,6 +98,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "UcSeat";
             this.Size = new System.Drawing.Size(861, 571);
+            this.Load += new System.EventHandler(this.UcSeat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

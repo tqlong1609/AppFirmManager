@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 127);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(855, 444);
-            this.dataGridView1.TabIndex = 0;
             // 
             // txtSearch
             // 
@@ -68,9 +58,9 @@
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(3, 171);
+            this.dgvData.Location = new System.Drawing.Point(3, 131);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(855, 397);
+            this.dgvData.Size = new System.Drawing.Size(855, 437);
             this.dgvData.TabIndex = 12;
             // 
             // bunifuImageButton3
@@ -95,11 +85,9 @@
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.dataGridView1);
             this.Name = "UcListBackground";
             this.Size = new System.Drawing.Size(861, 571);
             this.Load += new System.EventHandler(this.UcListBackground_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
@@ -107,8 +95,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private System.Windows.Forms.DataGridView dgvData;

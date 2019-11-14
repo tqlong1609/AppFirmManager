@@ -4,18 +4,18 @@ using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
 {
-    public partial class UcSeat : UserControl
+    public partial class UcListSeat : UserControl
     {
         private SeatBS SeatBS;
-        public UcSeat()
+        public UcListSeat()
         {
             InitializeComponent();
         }
 
-        private void UcSeat_Load(object sender, System.EventArgs e)
+        private void UcListSeat_Load(object sender, EventArgs e)
         {
             SeatBS = new SeatBS();
-            dgvData.DataSource = SeatBS.loadData();
+            dvwSeats.DataSource = SeatBS.loadData();
         }
     }
 }

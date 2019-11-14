@@ -82,12 +82,14 @@ namespace ManagerCinema
 
         private void btnListSeat_Click(object sender, EventArgs e)
         {
-
+            clearpanel();
+            pnlBackground.Controls.Add(new UcListSeat());
         }
 
         private void btnListTimeShowing_Click(object sender, EventArgs e)
         {
-
+            clearpanel();
+            pnlBackground.Controls.Add(new UcTimeShow());
         }
 
         private void btnNewVoucher_Click(object sender, EventArgs e)
