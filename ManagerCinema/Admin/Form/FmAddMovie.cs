@@ -40,7 +40,7 @@ namespace ManagerCinema
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            int id = CommonFunction.getIdForInsert(movieBS.loadData());
+            int id = CommonFunction.getIdOnTime();
             string codeImage = CommonFunction.converImgToString(path);
             bool isSuccess = movieBS.addMovies(id,txtName.Text,int.Parse(txtTime.Text),txtDirector.Text,txtCountry.Text,txtProducer.Text,
                 cbxType.selectedValue,txtActor.Text,dpkDateShowing.Value.ToLongDateString(),

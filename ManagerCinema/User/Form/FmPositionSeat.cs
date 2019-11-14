@@ -94,24 +94,6 @@ namespace ManagerCinema
             }
         }
 
-        private void loadListSeatBench()
-        {
-            // columns seat bench
-            List<Seat> seatsBench = new List<Seat>();
-            arrRowSeatBench = new List<SeatBench>();
-
-            seatsBench.Add(new Seat("1"));
-            seatsBench.Add(new Seat("2"));
-            seatsBench.Add(new Seat("3"));
-            seatsBench.Add(new Seat("4"));
-            seatsBench.Add(new Seat("5"));
-
-            for (int i = 0; i < 3; i++) // row = 3
-            {
-                arrRowSeatBench.Add(new SeatBench("A", seatsBench));
-            }
-        }
-
         private void loadListSeatNomal(string nameRoom)
         {
             List<Seat> seatsNomal = new List<Seat>();
@@ -131,14 +113,14 @@ namespace ManagerCinema
                     if (tempRow == nameRow)
                     {
                         char nameColumn = rows["NameSeat"].ToString()[1];
-                        seatsNomal.Add(new Seat(nameColumn.ToString()));
+                        seatsNomal.Add(new Seat(nameColumn.ToString(),getStatus(rows["StatusSeat"].ToString())));
                     }
                     else
                     {
                         listRows.Add(tempRow.ToString());
                         pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
                         seatsNomal.Clear();
-                        seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString()));
+                        seatsNomal.Add(new Seat(rows["NameSeat"].ToString()[1].ToString(), getStatus(rows["StatusSeat"].ToString())));
                         tempRow = nameRow;
                     }
                 }
@@ -146,6 +128,13 @@ namespace ManagerCinema
             listRows.Add(tempRow.ToString());
             addListRows();
             pnlSeat.Controls.Add(new ucSeatNomal(new SeatNomal(tempRow.ToString(), seatsNomal)));
+        }
+
+        private bool getStatus(string status)
+        {
+            if (status == "True")
+                return true;
+            return false;
         }
 
         private void addListRows()
@@ -206,7 +195,10 @@ namespace ManagerCinema
                 if (row["NameSeat"].ToString().ToCharArray()[0].Equals(valueRow)
                     && row["NameRoom"].ToString().Equals(cbxRoomCinema.selectedValue))
                 {
-                    cbxColumns.AddItem(row["NameSeat"].ToString()[1].ToString());
+                    if (row["StatusSeat"].ToString() == "True")
+                    {
+                        cbxColumns.AddItem(row["NameSeat"].ToString()[1].ToString());
+                    }
                 }
             }
         }

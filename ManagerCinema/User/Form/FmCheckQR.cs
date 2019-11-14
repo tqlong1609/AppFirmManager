@@ -43,7 +43,7 @@ namespace ManagerCinema
                 }
             };
 
-            using (var bitmap = barcodeWriter.Write(this.movie.getId().ToString()))
+            using (var bitmap = barcodeWriter.Write(idTicket.ToString()))
             {
                 using (var stream = new MemoryStream())
                 {

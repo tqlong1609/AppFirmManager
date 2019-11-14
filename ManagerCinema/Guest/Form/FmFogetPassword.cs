@@ -12,6 +12,7 @@ namespace ManagerCinema
     {
         // thread handle open new form
         private Thread threadForm;
+        private Thread threadEmail;
         private ForgetPasswordBS ForgetPasswordBS;
         public FmFogetPassword()
         {
@@ -63,19 +64,41 @@ namespace ManagerCinema
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
             client.EnableSsl = true;
             client.Credentials = new NetworkCredential("17110313@student.hcmute.edu.vn", "k16111999");
-            client.Send(mess);
+            try{
+                client.Send(mess);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Unable to connect");
+            }
         }
-
+        int New_Password;
+        string Gmail;
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string Username = bunifuMetroTextbox3.Text;
             ForgetPasswordBS = new ForgetPasswordBS();
-            string Gmail = ForgetPasswordBS.Send_Mail_To(Username);
+            Gmail = ForgetPasswordBS.Send_Mail_To(Username);
             Random rd = new Random();
-            int New_Password = rd.Next(100000, 9999999);
+            New_Password = rd.Next(100000, 9999999);
             ForgetPasswordBS.Change_Password(Username, New_Password.ToString());
+            try
+            {
+                threadEmail = new Thread(sendEmail);
+                threadEmail.SetApartmentState(ApartmentState.STA);
+                threadEmail.Start();
+                MessageBox.Show("Send new password success in your email");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Unable to connect");
+            }
+            //this.Close();
+        }
+
+        private void sendEmail()
+        {
             GuiMail("17110313@student.hcmute.edu.vn", Gmail, "Reset Password", "Mật khẩu mới của bạn là: " + New_Password);
-            this.Close();
         }
     }
 }

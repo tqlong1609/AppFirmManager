@@ -26,10 +26,16 @@ namespace ManagerCinema
             string Username_Existed = RegistBS.Check_Username(Username);
             if (Username_Existed == "True")
             {
-                MessageBox.Show("Tài khoản đã tồn tại");
+                MessageBox.Show("Account is already existed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            RegistBS.Regist(Username, Numberphone, Gender, Email, Password, Confirm_Password, Address, Date_Of_Birth, Name);
+            if (Password == Confirm_Password)
+            {
+                RegistBS.Regist(Username, Numberphone, Gender, Email, Password, Confirm_Password, Address, Date_Of_Birth, Name);
+                MessageBox.Show("Thank you for your request!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+                MessageBox.Show("Password and confirm password must be the same", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void UcRegister_Load(object sender, System.EventArgs e)

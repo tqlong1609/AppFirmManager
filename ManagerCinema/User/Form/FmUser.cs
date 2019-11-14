@@ -37,7 +37,7 @@ namespace ManagerCinema
 
             loadMovies();
             // add Usercontrol permisstion login into panel
-            addItemGuestTheme();
+            addItemGuestTheme(listMovies);
         }
 
         private void loadMovies()
@@ -53,7 +53,7 @@ namespace ManagerCinema
             }
         }
 
-        private void addItemGuestTheme()
+        private void addItemGuestTheme(List<Movie> listMovies)
         {
             flpBackground.Controls.Add(new UcBackground());
 
@@ -118,6 +118,37 @@ namespace ManagerCinema
         private void openFormLogin()
         {
             Application.Run(new FmLogin());
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            flpBackground.Controls.Clear();
+            if (txtSearch.Text == "")
+            {
+                addItemGuestTheme(listMovies);
+            }
+            else
+            {
+                string valueSearch = txtSearch.Text.ToLower();
+                List<Movie> movies = new List<Movie>();
+                movies.Clear();
+                foreach (Movie movie in listMovies)
+                {
+                    if (movie.getTime().ToString().ToLower().Equals(valueSearch) ||
+                        movie.getNameMovie().ToLower().Equals(valueSearch) ||
+                        movie.getDirector().ToLower().Equals(valueSearch) ||
+                        movie.getProducer().ToLower().Equals(valueSearch) ||
+                        movie.getTypeFirm().ToLower().Equals(valueSearch) ||
+                        movie.getActor().ToLower().Equals(valueSearch) ||
+                        movie.getDate().ToLower().Equals(valueSearch) ||
+                        movie.getCountry().ToLower().Equals(valueSearch) ||
+                        movie.getPrice().ToString().ToLower().Equals(valueSearch))
+                    {
+                        movies.Add(movie);
+                    }
+                }
+                addItemGuestTheme(movies);
+            }
         }
     }
 }

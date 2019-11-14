@@ -59,5 +59,15 @@ namespace ManagerCinema.DBLayer
             SqlCommand cmd1 = new SqlCommand(Query, connect);
             return cmd1.ExecuteScalar().ToString();
         }
+
+        public void ExecuteScalar_void(string Query, CommandType type)
+        {
+            if (connect.State == ConnectionState.Open) { connect.Close(); }
+            connect.Open();
+            command.CommandText = Query;
+            command.CommandType = type;
+            SqlCommand cmd1 = new SqlCommand(Query, connect);
+            cmd1.ExecuteScalar();
+        }
     }
 }

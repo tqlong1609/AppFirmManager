@@ -36,11 +36,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLoad = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBack
@@ -129,15 +130,20 @@
             this.label3.TabIndex = 69;
             this.label3.Text = "THANK YOU";
             // 
-            // button1
+            // btnLoad
             // 
-            this.button1.Location = new System.Drawing.Point(207, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 34);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "Download QR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLoad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLoad.Image = ((System.Drawing.Image)(resources.GetObject("btnLoad.Image")));
+            this.btnLoad.ImageActive = null;
+            this.btnLoad.Location = new System.Drawing.Point(242, 320);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(49, 43);
+            this.btnLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLoad.TabIndex = 109;
+            this.btnLoad.TabStop = false;
+            this.btnLoad.Zoom = 10;
+            this.btnLoad.Click += new System.EventHandler(this.button1_Click);
             // 
             // FmCheckQR
             // 
@@ -145,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(550, 420);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -165,6 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLoad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,6 +186,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuImageButton btnLoad;
     }
 }

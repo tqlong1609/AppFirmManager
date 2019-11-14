@@ -32,7 +32,7 @@
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.flpBackground = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -40,7 +40,7 @@
             this.btnLogout = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.pbxProfile = new ManagerCinema.ObjectFolder.Grapichs.CirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
@@ -85,19 +85,20 @@
             this.panel2.Size = new System.Drawing.Size(1311, 63);
             this.panel2.TabIndex = 9;
             // 
-            // bunifuImageButton3
+            // btnSearch
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.bunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton3.Image = global::ManagerCinema.Properties.Resources.search_127px;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(857, 117);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(29, 33);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 6;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Image = global::ManagerCinema.Properties.Resources.search_127px;
+            this.btnSearch.ImageActive = null;
+            this.btnSearch.Location = new System.Drawing.Point(857, 117);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(29, 33);
+            this.btnSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.Zoom = 10;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pictureBox2
             // 
@@ -197,7 +198,7 @@
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbxProfile);
-            this.Controls.Add(this.bunifuImageButton3);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.flpBackground);
             this.Controls.Add(this.panel2);
@@ -213,7 +214,7 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Form_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
@@ -229,7 +230,7 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton btnSearch;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;

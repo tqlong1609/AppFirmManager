@@ -33,6 +33,8 @@
             this.txtPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbFogetPass
@@ -41,7 +43,7 @@
             this.lbFogetPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbFogetPass.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFogetPass.ForeColor = System.Drawing.Color.Gray;
-            this.lbFogetPass.Location = new System.Drawing.Point(54, 151);
+            this.lbFogetPass.Location = new System.Drawing.Point(384, 157);
             this.lbFogetPass.Name = "lbFogetPass";
             this.lbFogetPass.Size = new System.Drawing.Size(132, 21);
             this.lbFogetPass.TabIndex = 18;
@@ -58,12 +60,11 @@
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtPassword.ForeColor = System.Drawing.Color.Silver;
             this.txtPassword.isPassword = false;
-            this.txtPassword.Location = new System.Drawing.Point(54, 93);
+            this.txtPassword.Location = new System.Drawing.Point(121, 93);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(462, 51);
+            this.txtPassword.Size = new System.Drawing.Size(395, 51);
             this.txtPassword.TabIndex = 17;
-            this.txtPassword.Text = "Password";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtUsername
@@ -76,12 +77,11 @@
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsername.ForeColor = System.Drawing.Color.Silver;
             this.txtUsername.isPassword = false;
-            this.txtUsername.Location = new System.Drawing.Point(54, 23);
+            this.txtUsername.Location = new System.Drawing.Point(121, 23);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(462, 51);
+            this.txtUsername.Size = new System.Drawing.Size(395, 51);
             this.txtUsername.TabIndex = 16;
-            this.txtUsername.Text = "Username";
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // btnLogin
@@ -110,11 +110,35 @@
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(27, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 20);
+            this.label5.TabIndex = 72;
+            this.label5.Text = "Username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(27, 108);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 20);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Password:";
+            // 
             // UcLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbFogetPass);
             this.Controls.Add(this.txtPassword);
@@ -131,5 +155,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtPassword;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtUsername;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
     }
 }

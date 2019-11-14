@@ -111,22 +111,22 @@
       <DependentUpon>UcListMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="ObjectFolder\Ticket.cs" />
-    <Compile Include="UcListTicket.cs">
+    <Compile Include="Admin\UserControl\UcListTicket.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcListTicket.Designer.cs">
+    <Compile Include="Admin\UserControl\UcListTicket.Designer.cs">
       <DependentUpon>UcListTicket.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcListUser.cs">
+    <Compile Include="Admin\UserControl\UcListUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcListUser.Designer.cs">
+    <Compile Include="Admin\UserControl\UcListUser.Designer.cs">
       <DependentUpon>UcListUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcListVoucher.cs">
+    <Compile Include="Admin\UserControl\UcListVoucher.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcListVoucher.Designer.cs">
+    <Compile Include="Admin\UserControl\UcListVoucher.Designer.cs">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmEditUser.cs">
@@ -283,13 +283,13 @@
     <EmbeddedResource Include="Admin\UserControl\UcListMovie.resx">
       <DependentUpon>UcListMovie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcListTicket.resx">
+    <EmbeddedResource Include="Admin\UserControl\UcListTicket.resx">
       <DependentUpon>UcListTicket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcListUser.resx">
+    <EmbeddedResource Include="Admin\UserControl\UcListUser.resx">
       <DependentUpon>UcListUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcListVoucher.resx">
+    <EmbeddedResource Include="Admin\UserControl\UcListVoucher.resx">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmEditUser.resx">

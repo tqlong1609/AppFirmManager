@@ -9,22 +9,6 @@ namespace ManagerCinema
     {
         private const string FORMAT_MONNEY = "{0:#,##0}"; // format: 20,000
 
-        // this is function get id for insert  from movie
-        public static int getIdForInsert(DataTable dataTable)
-        {
-            int sum = 0;
-            foreach (DataRow temp in dataTable.Rows)
-            {
-                if (temp["IdMovie"].ToString().Trim() == sum.ToString())
-                {
-                    sum++;
-                }
-                else
-                    return sum;
-            }
-            return sum;
-        }
-
         // convert string to image
         public static Image stringToImg(string byteString)
         {

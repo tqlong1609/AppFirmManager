@@ -76,8 +76,7 @@
             this.cbxTime.BackColor = System.Drawing.Color.Transparent;
             this.cbxTime.BorderRadius = 3;
             this.cbxTime.ForeColor = System.Drawing.Color.White;
-            this.cbxTime.Items = new string[] {
-        "11:30"};
+            this.cbxTime.Items = new string[0];
             this.cbxTime.Location = new System.Drawing.Point(164, 259);
             this.cbxTime.Name = "cbxTime";
             this.cbxTime.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -124,8 +123,7 @@
             this.cbxDate.BackColor = System.Drawing.Color.Transparent;
             this.cbxDate.BorderRadius = 3;
             this.cbxDate.ForeColor = System.Drawing.Color.White;
-            this.cbxDate.Items = new string[] {
-        "30-09-2019"};
+            this.cbxDate.Items = new string[0];
             this.cbxDate.Location = new System.Drawing.Point(164, 202);
             this.cbxDate.Name = "cbxDate";
             this.cbxDate.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
