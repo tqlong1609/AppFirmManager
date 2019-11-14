@@ -8,6 +8,8 @@ namespace BarcodeLibTest
 {
     public partial class TestApp : Form
     {
+        protected bool isMoveForm;
+        protected Point pStart;
         private New_Voucher_BS New_Voucher_BS;
         BarcodeLib.Barcode b = new BarcodeLib.Barcode();
 
@@ -20,6 +22,7 @@ namespace BarcodeLibTest
 
         private void TestApp_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
 
@@ -71,41 +74,40 @@ namespace BarcodeLibTest
 
         private void btn_Save_Info_Click(object sender, EventArgs e)
         {
-            int ID = 0;
-            int Value = 0;
-            try
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMini_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void splitContainer1_Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMoveForm = true;
+            pStart = new Point(e.X, e.Y);
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void splitContainer1_Panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMoveForm)
             {
-                ID = int.Parse(txtData.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi định dạng ID");
-                return;
-            }
-            try
-            {
-                Value = int.Parse(textBox2.Text);
-            }
-            catch
-            {
-                MessageBox.Show("Lỗi định dạng giá trị");
-                return;
-            }
-            try
-            {
-                New_Voucher_BS = new New_Voucher_BS();
-                New_Voucher_BS.Add_New_Voucher(ID, textBox1.Text, Value);
-                MessageBox.Show("Tạo Voucher mới thành công");
-            }
-            catch
-            {
-                MessageBox.Show("Tạo Voucher mới thất bại");
+                this.Location = new Point(this.Left + e.X - pStart.X, this.Top + e.Y - pStart.Y);
+                this.Cursor = Cursors.Hand;
             }
         }
 
-        private void TxtWidth_TextChanged(object sender, EventArgs e)
+        private void splitContainer1_Panel1_MouseUp(object sender, MouseEventArgs e)
         {
-
+            isMoveForm = false;
+            pStart = Point.Empty;
+            this.Cursor = Cursors.Default;
         }
     }
 }

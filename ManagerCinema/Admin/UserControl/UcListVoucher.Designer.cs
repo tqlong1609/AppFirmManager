@@ -33,12 +33,12 @@
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnAddVoucher = new Bunifu.Framework.UI.BunifuImageButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddVoucher)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,19 +104,20 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             // 
-            // bunifuImageButton3
+            // btnAddVoucher
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.bunifuImageButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(107, 583);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(76, 55);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 37;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
+            this.btnAddVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnAddVoucher.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddVoucher.Image = ((System.Drawing.Image)(resources.GetObject("btnAddVoucher.Image")));
+            this.btnAddVoucher.ImageActive = null;
+            this.btnAddVoucher.Location = new System.Drawing.Point(107, 583);
+            this.btnAddVoucher.Name = "btnAddVoucher";
+            this.btnAddVoucher.Size = new System.Drawing.Size(76, 55);
+            this.btnAddVoucher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAddVoucher.TabIndex = 37;
+            this.btnAddVoucher.TabStop = false;
+            this.btnAddVoucher.Zoom = 10;
+            this.btnAddVoucher.Click += new System.EventHandler(this.btnAddVoucher_Click);
             // 
             // dataGridView1
             // 
@@ -135,7 +136,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton1);
-            this.Controls.Add(this.bunifuImageButton3);
+            this.Controls.Add(this.btnAddVoucher);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UcListVoucher";
             this.Size = new System.Drawing.Size(865, 641);
@@ -143,7 +144,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddVoucher)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -155,7 +156,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        private Bunifu.Framework.UI.BunifuImageButton btnAddVoucher;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

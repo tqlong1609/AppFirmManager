@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using BarcodeLibTest;
 using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
@@ -16,6 +17,12 @@ namespace ManagerCinema
         {
             VoucherBS = new VoucherBS();
             dataGridView1.DataSource = VoucherBS.loadData();
+        }
+
+        private void btnAddVoucher_Click(object sender, EventArgs e)
+        {
+            TestApp new_Voucher = new TestApp();
+            new_Voucher.ShowDialog();
         }
     }
 }

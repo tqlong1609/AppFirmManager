@@ -92,8 +92,7 @@ namespace ManagerCinema
 
         private void btnNewVoucher_Click(object sender, EventArgs e)
         {
-            TestApp new_Voucher = new TestApp();
-            new_Voucher.Show();
+            
         }
     }
 }
