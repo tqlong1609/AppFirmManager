@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Windows.Forms;
+using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
 {
     public partial class UcListBackground : UserControl
     {
+        private TicketBS TicketBS;
         public UcListBackground()
         {
             InitializeComponent();
@@ -12,6 +14,8 @@ namespace ManagerCinema
 
         private void UcListBackground_Load(object sender, EventArgs e)
         {
+            TicketBS = new TicketBS();
+            dgvData.DataSource = TicketBS.loadData();
         }
 
 

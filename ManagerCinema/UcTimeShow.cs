@@ -4,18 +4,18 @@ using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
 {
-    public partial class UcTimeShowing : UserControl
+    public partial class UcTimeShow : UserControl
     {
         private TimeBS TimeBS;
-        public UcTimeShowing()
+        public UcTimeShow()
         {
             InitializeComponent();
         }
 
-        private void UcTimeShowing_Load(object sender, System.EventArgs e)
+        private void UcTimeShow_Load(object sender, EventArgs e)
         {
             TimeBS = new TimeBS();
-            dgvData.DataSource = TimeBS.loadData();
+            dwvTime.DataSource = TimeBS.loadData();
         }
     }
 }

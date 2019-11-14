@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -42,13 +42,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="143360">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="123904">
+>>>>>>> 1dfd23add3553bcbfd147d5dc0704a374afd1df1
       <assemblyIdentity name="BarcodeGenerator" version="1.0.0.2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>E+aZlF+2Bh0iFE5w8+YgXqqabN8xs8TlupVjmM/fPLo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
@@ -62,6 +67,9 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>J8jOp+eTrOc3QViBpcFrTi2YzkZgnScugsbJBa0tnzY=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>76XwVwVCk3vv4isu7RTpTftJ/Z7xhwyLO4gqmP5/I/A=</dsig:DigestValue>
+>>>>>>> 1dfd23add3553bcbfd147d5dc0704a374afd1df1
       </hash>
     </dependentAssembly>
   </dependency>

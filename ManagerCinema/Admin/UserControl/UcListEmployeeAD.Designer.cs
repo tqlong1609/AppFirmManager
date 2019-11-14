@@ -139,6 +139,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "UcListEmployeeAD";
             this.Size = new System.Drawing.Size(865, 641);
+            this.Load += new System.EventHandler(this.UcListEmployeeAD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();

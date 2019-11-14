@@ -66,11 +66,15 @@
     <Compile Include="Admin\Form\FmAdmin.Designer.cs">
       <DependentUpon>FmAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="BSLayer\CinemaBS.cs" />
+    <Compile Include="BSLayer\EmployeeBS.cs" />
     <Compile Include="BSLayer\ForgetPasswordBS.cs" />
     <Compile Include="BSLayer\LoginBS.cs" />
     <Compile Include="BSLayer\MovieBS.cs" />
     <Compile Include="BSLayer\RegisterBS.cs" />
+    <Compile Include="BSLayer\SeatBS.cs" />
     <Compile Include="BSLayer\TicketBS.cs" />
+    <Compile Include="BSLayer\TimeBS.cs" />
     <Compile Include="BSLayer\UserBS.cs" />
     <Compile Include="BSLayer\VoucherBS.cs" />
     <Compile Include="CommonFunction.cs" />
@@ -128,6 +132,18 @@
     </Compile>
     <Compile Include="Admin\UserControl\UcListVoucher.Designer.cs">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcListSeat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcListSeat.Designer.cs">
+      <DependentUpon>UcListSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcTimeShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcTimeShow.Designer.cs">
+      <DependentUpon>UcTimeShow.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmEditUser.cs">
       <SubType>Form</SubType>
@@ -291,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\UserControl\UcListVoucher.resx">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcListSeat.resx">
+      <DependentUpon>UcListSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcTimeShow.resx">
+      <DependentUpon>UcTimeShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmEditUser.resx">
       <DependentUpon>FmEditUser.cs</DependentUpon>
