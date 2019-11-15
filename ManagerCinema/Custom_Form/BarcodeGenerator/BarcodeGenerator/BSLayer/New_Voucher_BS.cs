@@ -17,5 +17,11 @@ namespace BarcodeLibTest.BSLayer
             string sqlString = "EXEC New_Voucher '" + IdVoucher + "','" + IdUser + "','" + Name + "','" + Value + "','" + Status + "'";
             dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
+
+        public string is_Existed(int IdVoucher)
+        {
+            string sqlString = "SELECT dbo.Check_Voucher('" + IdVoucher + "')";
+            return dBMain.ExecuteScalar_Check(sqlString, CommandType.Text);
+        }
     }
 }

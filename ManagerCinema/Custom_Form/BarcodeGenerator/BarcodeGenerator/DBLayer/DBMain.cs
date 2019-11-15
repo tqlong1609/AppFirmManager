@@ -59,5 +59,15 @@ namespace BarcodeLibTest.DBLayer
             SqlCommand cmd1 = new SqlCommand(Query, connect);
             cmd1.ExecuteScalar();
         }
+
+        public string ExecuteScalar_Check(string Query, CommandType type)
+        {
+            if (connect.State == ConnectionState.Open) { connect.Close(); }
+            connect.Open();
+            command.CommandText = Query;
+            command.CommandType = type;
+            SqlCommand cmd2 = new SqlCommand(Query, connect);
+            return cmd2.ExecuteScalar().ToString();
+        }
     }
 }
