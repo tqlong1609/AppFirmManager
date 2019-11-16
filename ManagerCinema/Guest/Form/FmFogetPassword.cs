@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using System.Net.Mail;
 using System.Net;
 using ManagerCinema.BSLayer;
+using System.Text.RegularExpressions;
 
 namespace ManagerCinema
 {
@@ -60,40 +61,66 @@ namespace ManagerCinema
 
         void GuiMail(string from, string to, string subject, string message, Attachment file = null)
         {
+            if (to == "")
+            {
+                MessageBox.Show("Your Gmail is not exsit!");
+                return;
+            }
             MailMessage mess = new MailMessage(from, to, subject, message);
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
             client.EnableSsl = true;
             client.Credentials = new NetworkCredential("17110313@student.hcmute.edu.vn", "k16111999");
-            try{
-                client.Send(mess);
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Unable to connect");
-            }
-        }
-        int New_Password;
-        string Gmail;
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string Username = bunifuMetroTextbox3.Text;
-            ForgetPasswordBS = new ForgetPasswordBS();
-            Gmail = ForgetPasswordBS.Send_Mail_To(Username);
-            Random rd = new Random();
-            New_Password = rd.Next(100000, 9999999);
-            ForgetPasswordBS.Change_Password(Username, New_Password.ToString());
             try
             {
-                threadEmail = new Thread(sendEmail);
-                threadEmail.SetApartmentState(ApartmentState.STA);
-                threadEmail.Start();
+                client.Send(mess);
                 MessageBox.Show("Send new password success in your email");
             }
             catch (Exception)
             {
                 MessageBox.Show("Unable to connect");
             }
-            //this.Close();
+        }
+
+        public static bool isEmail(string inputEmail)
+        {
+            inputEmail = inputEmail ?? string.Empty;
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
+        }
+
+
+        int New_Password;
+        string Gmail;
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string Destination_Gmail = bunifuMetroTextbox3.Text;
+            if (!isEmail(Destination_Gmail))
+            {
+                MessageBox.Show("Your Gmail is not in the right format, please try again");
+                return;
+            }
+
+            ForgetPasswordBS = new ForgetPasswordBS();
+            Gmail = ForgetPasswordBS.Send_Mail_To(Destination_Gmail);
+            Random rd = new Random();
+            New_Password = rd.Next(100000, 9999999);
+            ForgetPasswordBS.Change_Password(Destination_Gmail, New_Password.ToString());
+            try
+            {
+                threadEmail = new Thread(sendEmail);
+                threadEmail.SetApartmentState(ApartmentState.STA);
+                threadEmail.Start();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Unable to connect");
+            }
         }
 
         private void sendEmail()
