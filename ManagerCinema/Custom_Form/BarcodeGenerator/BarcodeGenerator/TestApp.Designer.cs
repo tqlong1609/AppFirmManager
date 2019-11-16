@@ -67,9 +67,10 @@
             // 
             this.barcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.barcode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.barcode.Location = new System.Drawing.Point(3, 16);
+            this.barcode.Location = new System.Drawing.Point(3, 18);
+            this.barcode.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.barcode.Name = "barcode";
-            this.barcode.Size = new System.Drawing.Size(435, 440);
+            this.barcode.Size = new System.Drawing.Size(435, 438);
             this.barcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.barcode.TabIndex = 13;
             this.barcode.TabStop = false;
@@ -79,19 +80,20 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(4, 72);
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtId.Enabled = false;
+            this.txtId.Location = new System.Drawing.Point(6, 56);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(200, 20);
+            this.txtId.Size = new System.Drawing.Size(200, 22);
             this.txtId.TabIndex = 1;
-            this.txtId.Text = "123456789";
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 56);
+            this.label1.Location = new System.Drawing.Point(3, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(50, 16);
             this.label1.TabIndex = 29;
             this.label1.Text = "Mã số";
             // 
@@ -110,6 +112,7 @@
             this.groupBox1.Controls.Add(this.chkGenerateLabel);
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(0, 51);
             this.groupBox1.Name = "groupBox1";
@@ -140,14 +143,14 @@
             this.btn_Exit.IconVisible = true;
             this.btn_Exit.IconZoom = 81D;
             this.btn_Exit.IsTab = false;
-            this.btn_Exit.Location = new System.Drawing.Point(12, 345);
+            this.btn_Exit.Location = new System.Drawing.Point(13, 394);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Exit.OnHovercolor = System.Drawing.Color.DimGray;
             this.btn_Exit.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Exit.selected = false;
-            this.btn_Exit.Size = new System.Drawing.Size(192, 43);
+            this.btn_Exit.Size = new System.Drawing.Size(192, 52);
             this.btn_Exit.TabIndex = 17;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,14 +180,14 @@
             this.btnSave.IconVisible = true;
             this.btnSave.IconZoom = 81D;
             this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(12, 294);
+            this.btnSave.Location = new System.Drawing.Point(13, 333);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSave.OnHovercolor = System.Drawing.Color.DimGray;
             this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(192, 43);
+            this.btnSave.Size = new System.Drawing.Size(192, 53);
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save image";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,16 +215,16 @@
             this.btn_Save_Info.IconRightVisible = true;
             this.btn_Save_Info.IconRightZoom = 0D;
             this.btn_Save_Info.IconVisible = true;
-            this.btn_Save_Info.IconZoom = 81D;
+            this.btn_Save_Info.IconZoom = 70D;
             this.btn_Save_Info.IsTab = false;
-            this.btn_Save_Info.Location = new System.Drawing.Point(12, 243);
+            this.btn_Save_Info.Location = new System.Drawing.Point(13, 271);
             this.btn_Save_Info.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save_Info.Name = "btn_Save_Info";
             this.btn_Save_Info.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Save_Info.OnHovercolor = System.Drawing.Color.DimGray;
             this.btn_Save_Info.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Save_Info.selected = false;
-            this.btn_Save_Info.Size = new System.Drawing.Size(192, 43);
+            this.btn_Save_Info.Size = new System.Drawing.Size(192, 54);
             this.btn_Save_Info.TabIndex = 15;
             this.btn_Save_Info.Text = "Save code";
             this.btn_Save_Info.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -251,14 +254,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 81D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(12, 192);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(12, 200);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.DimGray;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(192, 43);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(192, 63);
             this.bunifuFlatButton1.TabIndex = 14;
             this.bunifuFlatButton1.Text = "Create code ";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,35 +271,35 @@
             // 
             // txtValue
             // 
-            this.txtValue.Location = new System.Drawing.Point(6, 150);
+            this.txtValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtValue.Location = new System.Drawing.Point(6, 146);
             this.txtValue.Name = "txtValue";
-            this.txtValue.Size = new System.Drawing.Size(200, 20);
+            this.txtValue.Size = new System.Drawing.Size(200, 22);
             this.txtValue.TabIndex = 60;
-            this.txtValue.Text = "Giá trị Voucher";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 134);
+            this.label3.Location = new System.Drawing.Point(3, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(49, 16);
             this.label3.TabIndex = 61;
             this.label3.Text = "Giá trị";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(6, 110);
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtName.Location = new System.Drawing.Point(6, 100);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(200, 20);
+            this.txtName.Size = new System.Drawing.Size(200, 22);
             this.txtName.TabIndex = 58;
-            this.txtName.Text = "Tên Voucher";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 94);
+            this.label2.Location = new System.Drawing.Point(3, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
+            this.label2.Size = new System.Drawing.Size(35, 16);
             this.label2.TabIndex = 59;
             this.label2.Text = "Tên";
             // 
@@ -305,15 +308,15 @@
             this.lblEncodingTime.AutoSize = true;
             this.lblEncodingTime.Location = new System.Drawing.Point(86, 200);
             this.lblEncodingTime.Name = "lblEncodingTime";
-            this.lblEncodingTime.Size = new System.Drawing.Size(0, 13);
+            this.lblEncodingTime.Size = new System.Drawing.Size(0, 16);
             this.lblEncodingTime.TabIndex = 45;
             // 
             // chkGenerateLabel
             // 
             this.chkGenerateLabel.AutoSize = true;
-            this.chkGenerateLabel.Location = new System.Drawing.Point(108, 55);
+            this.chkGenerateLabel.Location = new System.Drawing.Point(112, 30);
             this.chkGenerateLabel.Name = "chkGenerateLabel";
-            this.chkGenerateLabel.Size = new System.Drawing.Size(72, 17);
+            this.chkGenerateLabel.Size = new System.Drawing.Size(92, 20);
             this.chkGenerateLabel.TabIndex = 40;
             this.chkGenerateLabel.Text = "Tạo nhãn";
             this.chkGenerateLabel.UseVisualStyleBackColor = true;
@@ -322,6 +325,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox2.Controls.Add(this.barcode);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Location = new System.Drawing.Point(0, 51);
             this.groupBox2.Name = "groupBox2";

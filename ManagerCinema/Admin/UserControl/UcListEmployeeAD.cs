@@ -15,7 +15,8 @@ namespace ManagerCinema
         private void UcListEmployeeAD_Load(object sender, EventArgs e)
         {
             EmployeeBS = new EmployeeBS();
-            dataGridView1.DataSource = EmployeeBS.loadData();
+            gvwEmployee.DataSource = EmployeeBS.loadData();
+            gvwEmployee.Columns["Image"].Visible = false;
         }
     }
 }

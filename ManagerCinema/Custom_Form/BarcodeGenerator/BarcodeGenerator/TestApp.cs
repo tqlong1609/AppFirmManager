@@ -20,9 +20,21 @@ namespace BarcodeLibTest
             btn_Save_Info.Enabled = false;
         }
 
+        public static int getIdOnTime()
+        {
+            DateTime dateTime = DateTime.Now;
+            string hour = dateTime.Hour.ToString();
+            string minutes = dateTime.Minute.ToString();
+            string secound = dateTime.Second.ToString();
+            string miliSecound = dateTime.Millisecond.ToString();
+            return int.Parse(hour + minutes + secound + miliSecound);
+        }
+
         private void TestApp_Load(object sender, EventArgs e)
         {
             this.StartPosition = FormStartPosition.CenterParent;
+            txtId.Text = getIdOnTime().ToString();
+
         }
 
 

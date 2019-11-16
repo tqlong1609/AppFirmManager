@@ -17,6 +17,7 @@ namespace ManagerCinema.DBLayer
             command = connect.CreateCommand();
         }
 
+        // error
         public DataTable ExecuteQueryDataSet(string strSql, CommandType type)
         {
             if (connect.State == ConnectionState.Open) { connect.Close(); }

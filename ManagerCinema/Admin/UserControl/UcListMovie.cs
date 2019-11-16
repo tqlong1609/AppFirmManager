@@ -17,6 +17,7 @@ namespace ManagerCinema
         {
             movieBS = new MovieBS();
             dvwMovies.DataSource = movieBS.loadData();
+            dvwMovies.Columns["Image"].Visible = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

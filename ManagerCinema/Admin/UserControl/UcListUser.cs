@@ -15,7 +15,7 @@ namespace ManagerCinema
         private void UserControl1_Load(object sender, EventArgs e)
         {
             UserBS = new UserBS();
-            dataGridView1.DataSource = UserBS.loadData();
+            gvwUser.DataSource = UserBS.loadData();
         }
     }
 }

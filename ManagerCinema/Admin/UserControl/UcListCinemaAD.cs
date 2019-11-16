@@ -15,7 +15,7 @@ namespace ManagerCinema
         private void UcListCinemaAD_Load(object sender, System.EventArgs e)
         {
             CinemaBS = new CinemaBS();
-            dataGridView1.DataSource = CinemaBS.loadData();
+            gvwCinema.DataSource = CinemaBS.loadData();
         }
     }
 }

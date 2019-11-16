@@ -16,7 +16,7 @@ namespace ManagerCinema
         private void UcListVoucher_Load(object sender, EventArgs e)
         {
             VoucherBS = new VoucherBS();
-            dataGridView1.DataSource = VoucherBS.loadData();
+            gvwVoucher.DataSource = VoucherBS.loadData();
         }
 
         private void btnAddVoucher_Click(object sender, EventArgs e)

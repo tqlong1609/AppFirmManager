@@ -15,7 +15,7 @@ namespace ManagerCinema
         private void UcListSeat_Load(object sender, EventArgs e)
         {
             SeatBS = new SeatBS();
-            dvwSeats.DataSource = SeatBS.loadData();
+            gvwSeat.DataSource = SeatBS.loadData();
         }
     }
 }

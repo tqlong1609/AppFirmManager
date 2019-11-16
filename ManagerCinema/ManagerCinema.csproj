@@ -133,16 +133,16 @@
     <Compile Include="Admin\UserControl\UcListVoucher.Designer.cs">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcListSeat.cs">
+    <Compile Include="Admin\UserControl\UcListSeat.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcListSeat.Designer.cs">
+    <Compile Include="Admin\UserControl\UcListSeat.Designer.cs">
       <DependentUpon>UcListSeat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UcTimeShow.cs">
+    <Compile Include="Admin\UserControl\UcTimeShow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UcTimeShow.Designer.cs">
+    <Compile Include="Admin\UserControl\UcTimeShow.Designer.cs">
       <DependentUpon>UcTimeShow.cs</DependentUpon>
     </Compile>
     <Compile Include="User\Form\FmEditUser.cs">
@@ -308,10 +308,10 @@
     <EmbeddedResource Include="Admin\UserControl\UcListVoucher.resx">
       <DependentUpon>UcListVoucher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcListSeat.resx">
+    <EmbeddedResource Include="Admin\UserControl\UcListSeat.resx">
       <DependentUpon>UcListSeat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UcTimeShow.resx">
+    <EmbeddedResource Include="Admin\UserControl\UcTimeShow.resx">
       <DependentUpon>UcTimeShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Form\FmEditUser.resx">

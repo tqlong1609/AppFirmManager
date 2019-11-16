@@ -33,7 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlBackground = new System.Windows.Forms.Panel();
-            this.btnNewVoucher = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListMovies = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListUser = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -93,42 +92,6 @@
             this.pnlBackground.Name = "pnlBackground";
             this.pnlBackground.Size = new System.Drawing.Size(865, 641);
             this.pnlBackground.TabIndex = 22;
-            // 
-            // btnNewVoucher
-            // 
-            this.btnNewVoucher.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnNewVoucher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnNewVoucher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNewVoucher.BorderRadius = 0;
-            this.btnNewVoucher.ButtonText = "NEW VOUCHER";
-            this.btnNewVoucher.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNewVoucher.DisabledColor = System.Drawing.Color.Gray;
-            this.btnNewVoucher.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnNewVoucher.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNewVoucher.Iconimage")));
-            this.btnNewVoucher.Iconimage_right = null;
-            this.btnNewVoucher.Iconimage_right_Selected = null;
-            this.btnNewVoucher.Iconimage_Selected = null;
-            this.btnNewVoucher.IconMarginLeft = 20;
-            this.btnNewVoucher.IconMarginRight = 0;
-            this.btnNewVoucher.IconRightVisible = true;
-            this.btnNewVoucher.IconRightZoom = 0D;
-            this.btnNewVoucher.IconVisible = true;
-            this.btnNewVoucher.IconZoom = 90D;
-            this.btnNewVoucher.IsTab = false;
-            this.btnNewVoucher.Location = new System.Drawing.Point(1, 610);
-            this.btnNewVoucher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnNewVoucher.Name = "btnNewVoucher";
-            this.btnNewVoucher.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnNewVoucher.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnNewVoucher.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnNewVoucher.selected = false;
-            this.btnNewVoucher.Size = new System.Drawing.Size(223, 64);
-            this.btnNewVoucher.TabIndex = 38;
-            this.btnNewVoucher.Text = "NEW VOUCHER";
-            this.btnNewVoucher.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNewVoucher.Textcolor = System.Drawing.Color.White;
-            this.btnNewVoucher.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewVoucher.Click += new System.EventHandler(this.btnNewVoucher_Click);
             // 
             // btnListTimeShowing
             // 
@@ -483,7 +446,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(1092, 687);
-            this.Controls.Add(this.btnNewVoucher);
             this.Controls.Add(this.btnListTimeShowing);
             this.Controls.Add(this.btnListMovies);
             this.Controls.Add(this.btnListUser);
@@ -537,6 +499,5 @@
         private System.Windows.Forms.Panel pnlBackground;
         private Bunifu.Framework.UI.BunifuFlatButton btnListMovies;
         private Bunifu.Framework.UI.BunifuFlatButton btnListTimeShowing;
-        private Bunifu.Framework.UI.BunifuFlatButton btnNewVoucher;
     }
 }

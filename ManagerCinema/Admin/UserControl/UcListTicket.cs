@@ -15,7 +15,7 @@ namespace ManagerCinema
         private void UcListTicket_Load(object sender, EventArgs e)
         {
             TicketBS = new TicketBS();
-            dataGridView1.DataSource = TicketBS.loadData();
+            gvwTicket.DataSource = TicketBS.loadData();
         }
     }
 }
