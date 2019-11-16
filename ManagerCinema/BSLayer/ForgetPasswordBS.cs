@@ -17,10 +17,10 @@ namespace ManagerCinema.BSLayer
             string sqlString = "SELECT [dbo].[take_Gmail]('" + Username + "')";
             return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
-        public bool Change_Password(string Username, string New_Password)
+        public bool Change_Password(string Gmail, string New_Password)
         {
             string sqlString = "Update Account Set Password=N'" + New_Password +
-                "' Where Username='" + Username + "'";
+                "' Where Email='" + Gmail + "'";
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
     }
