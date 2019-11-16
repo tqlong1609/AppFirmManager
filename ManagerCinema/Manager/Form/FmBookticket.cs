@@ -35,5 +35,10 @@ namespace ManagerCinema
         {
             mouseUpForm(this);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

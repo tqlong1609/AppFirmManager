@@ -33,7 +33,7 @@ namespace BarcodeLibTest
             btn_Save_Info.Enabled = true;
             try
             {
-                barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtData.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, chkGenerateLabel.Checked, BarcodeLib.LabelPositions.BOTTOMCENTER);
+                barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtId.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, chkGenerateLabel.Checked, BarcodeLib.LabelPositions.BOTTOMCENTER);
                 barcode.Width = barcode.Image.Width;
                 barcode.Height = barcode.Image.Height;
                 barcode.Location = new Point((groupBox2.Location.X + groupBox2.Width / 2) - barcode.Width / 2, (groupBox2.Location.Y + groupBox2.Height / 2) - barcode.Height / 2);
@@ -74,7 +74,33 @@ namespace BarcodeLibTest
 
         private void btn_Save_Info_Click(object sender, EventArgs e)
         {
-
+            New_Voucher_BS = new New_Voucher_BS();
+            int ID, Value;
+            try
+            {
+                ID = int.Parse(txtId.Text);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Voucher ID is not in the correct format");
+                return;
+            }
+            try
+            {
+                Value = int.Parse(txtValue.Text);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Voucher Value is not in the correct format");
+                return;
+            }
+            if (New_Voucher_BS.is_Existed(ID) == "False")
+            {
+                New_Voucher_BS.Add_New_Voucher(ID, txtName.Text, Value);
+                MessageBox.Show("New Voucher added !");
+            }
+            else
+                MessageBox.Show("Voucher existed !");
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -108,6 +134,12 @@ namespace BarcodeLibTest
             isMoveForm = false;
             pStart = Point.Empty;
             this.Cursor = Cursors.Default;
+        }
+
+        private void txtId_TextChanged(object sender, EventArgs e)
+        {
+            btn_Save_Info.Enabled = false;
+            btnSave.Enabled = false;
         }
     }
 }
