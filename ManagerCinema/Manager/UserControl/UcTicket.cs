@@ -23,5 +23,25 @@ namespace ManagerCinema
         {
 
         }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            string id = txtSearch.Text;
+            if(id == "")
+            {
+                dgvData.DataSource = TicketBS.loadData();
+                return;
+            }
+            try
+            {
+                TicketBS = new TicketBS();
+                var temp = TicketBS.Search_Ticket_Id(id);
+                dgvData.DataSource = temp;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Search string is not in the right format! Please type again");
+            }
+        }
     }
 }

@@ -15,14 +15,14 @@
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
           UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
+          If you want to change the Windows User Account Control level replace the
           requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
+         If you want to utilize File and Registry Virtualization for backward
          compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
@@ -49,11 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>xW945JqdOkXFzmnLcY6JluGbQCA3FUYDvk8Ocb852Fk=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>hsI09QWzdejOoOOteajpFxSOQaEM+kVNV8HoXc6wjQU=</dsig:DigestValue>
->>>>>>> 49b3e28f16288df7334c871ce52e05d751f8b64a
+        <dsig:DigestValue>Z3wZHZqriU1EJ/XXZjduudm46pVGd7HEOyj/lm0uPw4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

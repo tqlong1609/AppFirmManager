@@ -19,8 +19,7 @@ namespace ManagerCinema.BSLayer
         }
         public bool Change_Password(string Gmail, string New_Password)
         {
-            string sqlString = "Update Account Set Password=N'" + New_Password +
-                "' Where Email='" + Gmail + "'";
+            string sqlString = "Update Account Set Account.Password = " + New_Password + "FROM Account JOIN Customer ON idAccount = idUser Where Email='" + Gmail + "'";
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
     }

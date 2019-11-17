@@ -17,5 +17,12 @@ namespace BarcodeReaderApp.BSLayer
             string sqlString = "SELECT [dbo].[Scan_Ticket]('" + ID + "')";
             return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
+
+        public void Delete_Ticket(string ID)
+        {
+            string sqlString = "DELETE FROM Ticket WHERE idTicket = " + ID;
+            dBMain.ExecuteScalar_void(sqlString, CommandType.Text);
+        }
+
     }
 }

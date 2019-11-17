@@ -17,5 +17,25 @@ namespace ManagerCinema
             TimeBS = new TimeBS();
             dgvData.DataSource = TimeBS.loadData();
         }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            string id = txtSearch.Text;
+            if (id == "")
+            {
+                dgvData.DataSource = TimeBS.loadData();
+                return;
+            }
+            try
+            {
+                TimeBS = new TimeBS();
+                var temp = TimeBS.Search_Time_Id(id);
+                dgvData.DataSource = temp;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Search string is not in the right format! Please type again");
+            }
+        }
     }
 }

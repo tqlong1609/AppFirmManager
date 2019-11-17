@@ -97,9 +97,10 @@ namespace ManagerCinema
 
         int New_Password;
         string Gmail;
+        string Destination_Gmail;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string Destination_Gmail = bunifuMetroTextbox3.Text;
+            Destination_Gmail = bunifuMetroTextbox3.Text;
             if (!isEmail(Destination_Gmail))
             {
                 MessageBox.Show("Your Gmail is not in the right format, please try again");
@@ -125,7 +126,7 @@ namespace ManagerCinema
 
         private void sendEmail()
         {
-            GuiMail("17110313@student.hcmute.edu.vn", Gmail, "Reset Password", "Mật khẩu mới của bạn là: " + New_Password);
+            GuiMail("17110313@student.hcmute.edu.vn", Destination_Gmail, "Reset Password", "Mật khẩu mới của bạn là: " + New_Password);
         }
     }
 }
