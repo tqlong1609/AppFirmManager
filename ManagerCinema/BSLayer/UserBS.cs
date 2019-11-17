@@ -17,5 +17,11 @@ namespace ManagerCinema.BSLayer
             string sqlString = "SELECT * from getAllCustomer()";
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
+
+        public string get_ID_User(string Username)
+        {
+            string sqlString = "SELECT idUser FROM Account JOIN Customer ON Account.idAccount = Customer.idUser WHERE Username = '" + Username + "'";
+            return dBMain.ExecuteScalar(sqlString, CommandType.Text);
+        }
     }
 }

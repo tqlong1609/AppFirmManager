@@ -36,5 +36,12 @@ namespace ManagerCinema.BSLayer
             string sqlString = "select idTicket, Time, Date, Price from Ticket_VIEW_Employee where idTicket = " + id;
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
+
+        public bool insert_Ticket(string id, string idUser, string idCinema, string idRoomCinema, string nameSeat, string time, string date, string idMovie, string price)
+        {
+            string sqlString = string.Format("exec insertTicket {0},{1},{2},{3},'{4}','{5}','{6}',{7},{8}",
+                id, idUser, idCinema, idRoomCinema, nameSeat, time, date, idMovie, price);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
     }
 }
