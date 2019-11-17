@@ -247,6 +247,7 @@
             this.btnConfirm.Size = new System.Drawing.Size(282, 55);
             this.btnConfirm.TabIndex = 94;
             this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // FmEditUser
             // 
