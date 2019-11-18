@@ -22,7 +22,7 @@ namespace ManagerCinema
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            new FmAddEmployee().ShowDialog();
+            //new FmAddEmployee().ShowDialog();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

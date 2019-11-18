@@ -75,7 +75,6 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\BarcodeGenerator.pdb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.dll
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Dynamsoft.BarcodeReader.xml
-C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csprojAssemblyReference.cache
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.TestApp.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeLibTest.Properties.Resources.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csproj.GenerateResource.cache
@@ -102,3 +101,4 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeG
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.exe
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.pdb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\Custom_Form\BarcodeGenerator\BarcodeGenerator\obj\Debug\BarcodeGenerator.csprojAssemblyReference.cache
