@@ -42,7 +42,18 @@ namespace ManagerCinema.BSLayer
         {
             string sqlString = string.Format("select * from getInforSeatFromIdCinema({0})", id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
+        }
 
+        public DataTable Search_Movie_Id(string id)
+        {
+            string sqlString = "SELECT * FROM Movie WHERE IdMovie = " + id;
+            return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
+        }
+
+        public bool Delete_Movie(string id)
+        {
+            string sqlString = "Delete From Movie Where idMovie=" + id;
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
     }
 }

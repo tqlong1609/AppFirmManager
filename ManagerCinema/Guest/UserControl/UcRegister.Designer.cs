@@ -174,7 +174,7 @@
             this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuDropdown1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuDropdown1.selectedIndex = -1;
+            this.bunifuDropdown1.selectedIndex = 0;
             this.bunifuDropdown1.Size = new System.Drawing.Size(189, 51);
             this.bunifuDropdown1.TabIndex = 29;
             // 

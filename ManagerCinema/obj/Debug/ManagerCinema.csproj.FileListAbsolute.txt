@@ -115,4 +115,11 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCin
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShow.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListSeat.resources
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShow.resources
+<<<<<<< HEAD
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddEmployee.resources
+=======
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Voucher.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Add_Cinema.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Cinema.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Movie.resources
+>>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414

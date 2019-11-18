@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
@@ -10,12 +12,15 @@ namespace ManagerCinema
         {
             InitializeComponent();
         }
-
         private void btnLogin_Click(object sender, System.EventArgs e)
         {
             string Username = bunifuMetroTextbox1.Text;
             string Numberphone = bunifuMetroTextbox2.Text;
-            string Gender = bunifuDropdown1.ToString();
+            string Gender = "0";
+            if(bunifuDropdown1.selectedValue == "Male")
+            {
+                Gender = "1";
+            }
             string Email = bunifuMetroTextbox3.Text;
             string Password = bunifuMetroTextbox4.Text;
             string Confirm_Password = bunifuMetroTextbox8.Text;
@@ -31,7 +36,15 @@ namespace ManagerCinema
             }
             if (Password == Confirm_Password)
             {
-                RegistBS.Regist(Username, Numberphone, Gender, Email, Password, Confirm_Password, Address, Date_Of_Birth, Name);
+                try
+                {
+                    RegistBS.Regist(Username, Numberphone, Gender, Email, Password, Confirm_Password, Address, Date_Of_Birth, Name);
+                }
+                catch (SqlException exception)
+                {
+                    MessageBox.Show(exception.Message);
+                    return;
+                }
                 MessageBox.Show("Thank you for your request!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

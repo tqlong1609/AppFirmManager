@@ -79,6 +79,7 @@
             this.bunifuImageButton2.TabIndex = 24;
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // bunifuImageButton4
             // 
@@ -93,6 +94,7 @@
             this.bunifuImageButton4.TabIndex = 23;
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
+            this.bunifuImageButton4.Click += new System.EventHandler(this.bunifuImageButton4_Click);
             // 
             // bunifuImageButton1
             // 
@@ -107,6 +109,7 @@
             this.bunifuImageButton1.TabIndex = 22;
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // btnAdd
             // 
