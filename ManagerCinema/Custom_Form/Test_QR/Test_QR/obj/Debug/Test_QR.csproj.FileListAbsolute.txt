@@ -99,3 +99,20 @@ C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.csproj.CopyComplete
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.exe
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.pdb
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\Test_QR.exe.config
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\Test_QR.exe
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\Test_QR.pdb
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.dll
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.presentation.dll
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.pdb
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.xml
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.presentation.pdb
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\bin\Debug\zxing.presentation.xml
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.csprojAssemblyReference.cache
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.Form1.resources
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.Properties.Resources.resources
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.csproj.GenerateResource.cache
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.csproj.CoreCompileInputs.cache
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.csproj.CopyComplete
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.exe
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\Custom_Form\Test_QR\Test_QR\obj\Debug\Test_QR.pdb

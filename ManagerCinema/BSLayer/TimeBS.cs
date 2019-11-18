@@ -11,6 +11,11 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        //public bool insertTimeShowing()
+        //{
+
+        //}
+
         public DataTable loadData()
         {
             string sqlString = "SELECT * from getAllTime()";
