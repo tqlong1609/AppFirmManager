@@ -60,6 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Cinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Cinema.Designer.cs">
+      <DependentUpon>Add_Cinema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Form\FmAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="Admin\Form\FmAddMovie.Designer.cs">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Voucher.Designer.cs">
+      <DependentUpon>Edit Voucher.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
@@ -281,11 +293,17 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_Cinema.resx">
+      <DependentUpon>Add_Cinema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Form\FmAdmin.resx">
       <DependentUpon>FmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Form\FmAddMovie.resx">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Voucher.resx">
+      <DependentUpon>Edit Voucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
       <DependentUpon>FmBookticket.cs</DependentUpon>

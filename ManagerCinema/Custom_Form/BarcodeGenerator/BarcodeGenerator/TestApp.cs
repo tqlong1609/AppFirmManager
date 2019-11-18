@@ -109,6 +109,7 @@ namespace BarcodeLibTest
             if (New_Voucher_BS.is_Existed(ID) == "False")
             {
                 New_Voucher_BS.Add_New_Voucher(ID, txtName.Text, Value);
+                txtId.Text = getIdOnTime().ToString();
                 MessageBox.Show("New Voucher added !");
             }
             else

@@ -43,5 +43,10 @@ namespace ManagerCinema
                 MessageBox.Show("Search string is not in the right format! Please type again");
             }
         }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

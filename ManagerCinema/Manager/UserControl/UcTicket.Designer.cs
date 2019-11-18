@@ -149,6 +149,7 @@
             this.btnConfirm.Size = new System.Drawing.Size(252, 46);
             this.btnConfirm.TabIndex = 92;
             this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // UcListBackground
             // 

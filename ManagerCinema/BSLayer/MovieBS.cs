@@ -42,7 +42,6 @@ namespace ManagerCinema.BSLayer
         {
             string sqlString = string.Format("select * from getInforSeatFromIdCinema({0})", id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
-
         }
     }
 }
