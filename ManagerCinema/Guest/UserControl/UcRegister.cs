@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using ManagerCinema.BSLayer;
 
 namespace ManagerCinema
@@ -10,13 +11,33 @@ namespace ManagerCinema
         {
             InitializeComponent();
         }
-
+        public static bool isEmail(string inputEmail)
+        {
+            inputEmail = inputEmail ?? string.Empty;
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
+        }
         private void btnLogin_Click(object sender, System.EventArgs e)
         {
             string Username = bunifuMetroTextbox1.Text;
             string Numberphone = bunifuMetroTextbox2.Text;
-            string Gender = bunifuDropdown1.ToString();
+            string Gender = "0";
+            if(bunifuDropdown1.selectedValue == "Male")
+            {
+                Gender = "1";
+            }
             string Email = bunifuMetroTextbox3.Text;
+            if(!isEmail(Email))
+            {
+                MessageBox.Show("Your email is not in the right format");
+                return;
+            }
             string Password = bunifuMetroTextbox4.Text;
             string Confirm_Password = bunifuMetroTextbox8.Text;
             string Address = bunifuMetroTextbox5.Text;
