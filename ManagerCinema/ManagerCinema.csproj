@@ -92,10 +92,20 @@
     <Compile Include="Admin\Form\FmAddMovie.Designer.cs">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
     </Compile>
+<!--<<<<<<< HEAD-->
     <!--<<<<<<< HEAD-->
     <!--<Compile Include="Admin\Form\FmAddEmployee.Designer.cs">
       <DependentUpon>FmAddEmployee.cs</DependentUpon>-->
     <!--=======-->
+<!--=======-->
+<!--<<<<<<< HEAD
+    <Compile Include="Admin\Form\FmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Form\FmAddEmployee.Designer.cs">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
+=======-->
+<!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     <Compile Include="Edit Voucher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +123,7 @@
     </Compile>
     <Compile Include="Edit_Movie.Designer.cs">
       <DependentUpon>Edit_Movie.cs</DependentUpon>
+<!--<<<<<<< HEAD-->
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
     </Compile>
     <Compile Include="FmAddTimeShowing.cs">
@@ -120,6 +131,9 @@
     </Compile>
     <Compile Include="FmAddTimeShowing.Designer.cs">
       <DependentUpon>FmAddTimeShowing.cs</DependentUpon>
+<!--=======-->
+<!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
+<!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
@@ -321,10 +335,17 @@
     <EmbeddedResource Include="Admin\Form\FmAddMovie.resx">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
     </EmbeddedResource>
+<!--<<<<<<< HEAD-->
     <!--<<<<<<< HEAD-->
     <!--<EmbeddedResource Include="Admin\Form\FmAddEmployee.resx">
       <DependentUpon>FmAddEmployee.cs</DependentUpon>-->
     <!--=======-->
+<!--=======-->
+<!--<<<<<<< HEAD
+    <EmbeddedResource Include="Admin\Form\FmAddEmployee.resx">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
+=======-->
+<!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     <EmbeddedResource Include="Edit Voucher.resx">
       <DependentUpon>Edit Voucher.cs</DependentUpon>
     </EmbeddedResource>
@@ -333,10 +354,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Movie.resx">
       <DependentUpon>Edit_Movie.cs</DependentUpon>
+<!--<<<<<<< HEAD-->
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
     </EmbeddedResource>
     <EmbeddedResource Include="FmAddTimeShowing.resx">
       <DependentUpon>FmAddTimeShowing.cs</DependentUpon>
+<!--=======-->
+<!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
+<!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
       <DependentUpon>FmBookticket.cs</DependentUpon>
