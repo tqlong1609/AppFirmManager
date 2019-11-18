@@ -117,3 +117,4 @@ C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Deb
 C:\Users\Tran Long\Desktop\Github_3_11_2019\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcTimeShow.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Voucher.resources
 C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Add_Cinema.resources
+C:\Users\HP\Desktop\Other\DBSM\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Cinema.resources

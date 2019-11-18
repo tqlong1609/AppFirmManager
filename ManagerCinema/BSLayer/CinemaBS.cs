@@ -32,5 +32,10 @@ namespace ManagerCinema.BSLayer
             string sqlString = "Delete From Cinema Where idCinema=" + id;
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
+        public DataTable Search_Voucher_Id(string id)
+        {
+            string sqlString = "select * from Cinema where idCinema = " + id;
+            return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
+        }
     }
 }

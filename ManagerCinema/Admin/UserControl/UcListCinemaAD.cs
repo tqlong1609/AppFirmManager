@@ -50,5 +50,33 @@ namespace ManagerCinema
                 MessageBox.Show("Fail");
             }
         }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            int r = gvwCinema.CurrentCell.RowIndex;
+            string id = gvwCinema.Rows[r].Cells[0].Value.ToString();
+            Edit_Cinema edit_Cinema = new Edit_Cinema();
+            edit_Cinema.Show();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            string id = txtSearch.Text;
+            if (id == "")
+            {
+                gvwCinema.DataSource = CinemaBS.loadData();
+                return;
+            }
+            CinemaBS = new CinemaBS();
+            try
+            {
+                var temp = CinemaBS.Search_Voucher_Id(id);
+                gvwCinema.DataSource = temp;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Search string is not in the right format! Please type again");
+            }
+        }
     }
 }
