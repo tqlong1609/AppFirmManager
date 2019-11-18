@@ -79,16 +79,17 @@
     <Compile Include="BSLayer\VoucherBS.cs" />
     <Compile Include="CommonFunction.cs" />
     <Compile Include="DBLayer\DBMain.cs" />
-    <Compile Include="DBSMDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Form\FmAddMovie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\Form\FmAddMovie.Designer.cs">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Form\FmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Form\FmAddEmployee.Designer.cs">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
@@ -287,6 +288,9 @@
     <EmbeddedResource Include="Admin\Form\FmAddMovie.resx">
       <DependentUpon>FmAddMovie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Form\FmAddEmployee.resx">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
       <DependentUpon>FmBookticket.cs</DependentUpon>
     </EmbeddedResource>
@@ -384,17 +388,6 @@
     <EmbeddedResource Include="Guest\UserControl\UcRegister.resx">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DBSMDataSet.xsc">
-      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DBSMDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBSMDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBSMDataSet.xss">
-      <DependentUpon>DBSMDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -17,6 +17,12 @@ namespace ManagerCinema.BSLayer
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 
+        public DataTable getAllTimeShowing()
+        {
+            string sqlString = "select * from getInfoTimeShowing()";
+            return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
+        }
+
         public DataTable Search_Time_Id(string id)
         {
             string sqlString = "select * from TimeShowing_VIEW_Employee where idTimeShowing = " + id;

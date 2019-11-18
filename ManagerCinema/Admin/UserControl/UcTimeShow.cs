@@ -15,7 +15,7 @@ namespace ManagerCinema
         private void UcTimeShow_Load(object sender, EventArgs e)
         {
             TimeBS = new TimeBS();
-            gvwTime.DataSource = TimeBS.loadData();
+            gvwTime.DataSource = TimeBS.getAllTimeShowing();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

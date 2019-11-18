@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmFogetPassword));
             this.label5 = new System.Windows.Forms.Label();
-            this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnMinScreen = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
@@ -53,47 +53,6 @@
             this.label5.Size = new System.Drawing.Size(87, 20);
             this.label5.TabIndex = 71;
             this.label5.Text = "Username:";
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.ImageActive = null;
-            this.btnBack.Location = new System.Drawing.Point(7, 9);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(28, 29);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnBack.TabIndex = 30;
-            this.btnBack.TabStop = false;
-            this.btnBack.Zoom = 10;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.ActiveBorderThickness = 1;
-            this.btnLogin.ActiveCornerRadius = 20;
-            this.btnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
-            this.btnLogin.ActiveForecolor = System.Drawing.Color.DimGray;
-            this.btnLogin.ActiveLineColor = System.Drawing.Color.Red;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
-            this.btnLogin.ButtonText = "Send password into my email";
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.IdleBorderThickness = 1;
-            this.btnLogin.IdleCornerRadius = 20;
-            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnLogin.Location = new System.Drawing.Point(112, 217);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(322, 56);
-            this.btnLogin.TabIndex = 29;
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label2
             // 
@@ -139,6 +98,47 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(577, 5);
             this.panel1.TabIndex = 19;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageActive = null;
+            this.btnBack.Location = new System.Drawing.Point(7, 9);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(28, 29);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnBack.TabIndex = 30;
+            this.btnBack.TabStop = false;
+            this.btnBack.Zoom = 10;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.ActiveBorderThickness = 1;
+            this.btnLogin.ActiveCornerRadius = 20;
+            this.btnLogin.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
+            this.btnLogin.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.btnLogin.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
+            this.btnLogin.ButtonText = "Send password into my email";
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.IdleBorderThickness = 1;
+            this.btnLogin.IdleCornerRadius = 20;
+            this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
+            this.btnLogin.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnLogin.Location = new System.Drawing.Point(112, 217);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(322, 56);
+            this.btnLogin.TabIndex = 29;
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClose
             // 
