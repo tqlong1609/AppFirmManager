@@ -23,9 +23,21 @@ namespace ManagerCinema
         DataTable dataCinema;
         DataTable dataRoomCinema;
 
+        private string idEdit;
+
+        private bool isAdd;
+
         public FmAddTimeShowing()
         {
             InitializeComponent();
+            this.isAdd = true;
+        }
+
+        public FmAddTimeShowing(string idEdit)
+        {
+            InitializeComponent();
+            this.isAdd = false;
+            this.idEdit = idEdit;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -55,6 +67,15 @@ namespace ManagerCinema
 
         private void FmAddTimeShowing_Load(object sender, EventArgs e)
         {
+            if (isAdd)
+            {
+                btnSave.ButtonText = "Add";
+            }
+            else
+            {
+                btnSave.ButtonText = "Edit";
+            }
+
             initProject();
 
              dataMovie = movieBS.loadData();
@@ -88,7 +109,7 @@ namespace ManagerCinema
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            int id = CommonFunction.getIdOnTime();
+            
             int indexMovie = cbxMovie.selectedIndex;
             int indexCinema = cbxCinema.selectedIndex;
             int indexRoomCinema = cbxRoomCinema.selectedIndex;
@@ -99,18 +120,40 @@ namespace ManagerCinema
                 indexRoomCinema >= 0
                 )
             {
-                if (timeBS.insertTimeShowing(id,dataMovie.Rows[indexMovie][0].ToString(),
-                    dataRoomCinema.Rows[indexRoomCinema][0].ToString(),
-                    dpkTime.Value.ToShortTimeString(),dpkDateShowing.Value.ToLongDateString(),
-                    dataCinema.Rows[indexCinema][0].ToString()
-                    ))
+                if (isAdd)
                 {
-                    MessageBox.Show("Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    int id = CommonFunction.getIdOnTime();
+                    if (timeBS.insertTimeShowing(id, dataMovie.Rows[indexMovie][0].ToString(),
+                        dataRoomCinema.Rows[indexRoomCinema][0].ToString(),
+                        dpkTime.Value.ToShortTimeString(), dpkDateShowing.Value.ToLongDateString(),
+                        dataCinema.Rows[indexCinema][0].ToString()
+                        ))
+                    {
+                        MessageBox.Show("Add Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        UcTimeShow.isReset = true;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Add Fail", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Fail", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (timeBS.updateTimeShowing(idEdit, dataMovie.Rows[indexMovie][0].ToString(),
+                                            dataRoomCinema.Rows[indexRoomCinema][0].ToString(),
+                                            dpkTime.Value.ToShortTimeString(), dpkDateShowing.Value.ToLongDateString(),
+                                            dataCinema.Rows[indexCinema][0].ToString()
+                                            ))
+                    {
+                        MessageBox.Show("Edit Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        UcTimeShow.isReset = true;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Edit Fail", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             else

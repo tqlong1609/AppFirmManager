@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuImageButton4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAADMFJREFUeF7t
         nWuQHFUVx5MIwfdbMUEFX2gVPlBLgYCggqWGlygqilBCsORpRBFBAiha4YMgUhrQKpUSX1UQUAmCjxIV
@@ -178,7 +178,7 @@
         w0WCIAiCIAiCIAjCkLJkyf8BLfWRy89cRNMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRemove.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAAD+dJREFUeF7t
         nQeQJUUdxuEAMecMmBVzQBREQUWUIAiSVJKCoCUiCiIIhkIBBSyi6QQOQTInagF6R5ZkcWoJCEVUDws4

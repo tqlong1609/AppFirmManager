@@ -11,6 +11,22 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public bool updateTimeShowing(string id, string idMovie, string idRoom, string time, string date, string idCinema)
+        {
+            string sqlString = string.Format("exec editTimeShowing @id = {0}, " +
+                "@idMovie = {1}, @idRoom = {2}, @time = '{3}', @date = '{4}', @idCinema = {5}",
+                id, idMovie, idRoom, time, date, idCinema);
+
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+
+        }
+
+        public bool removeTimeShowing(string id)
+        {
+            string sqltring = string.Format("exec removeTimeShowing @id = {0}", id);
+            return dBMain.MyExecuteNonQuery(sqltring, CommandType.Text);
+        }
+
         public bool insertTimeShowing(int id, string idMovie, string idRoomCinema, string time , string date, string idCinema)
         {
             string sqlString = string.Format("exec insertTimeShowing @id = {0}, @idMovie = {1}, @idRoomCinema = {2}," +

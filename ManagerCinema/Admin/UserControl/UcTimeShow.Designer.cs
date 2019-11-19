@@ -35,13 +35,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnEdit = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnRemove = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAdd = new Bunifu.Framework.UI.BunifuImageButton();
             this.gvwTime = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRemove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwTime)).BeginInit();
             this.SuspendLayout();
@@ -80,33 +80,35 @@
             this.txtSearch.Text = "Search by Time";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // bunifuImageButton4
+            // btnEdit
             // 
-            this.bunifuImageButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.bunifuImageButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton4.Image")));
-            this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(667, 584);
-            this.bunifuImageButton4.Name = "bunifuImageButton4";
-            this.bunifuImageButton4.Size = new System.Drawing.Size(76, 55);
-            this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton4.TabIndex = 35;
-            this.bunifuImageButton4.TabStop = false;
-            this.bunifuImageButton4.Zoom = 10;
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.Image")));
+            this.btnEdit.ImageActive = null;
+            this.btnEdit.Location = new System.Drawing.Point(667, 584);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(76, 55);
+            this.btnEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnEdit.TabIndex = 35;
+            this.btnEdit.TabStop = false;
+            this.btnEdit.Zoom = 10;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // bunifuImageButton1
+            // btnRemove
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(398, 584);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(76, 55);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 34;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
+            this.btnRemove.ImageActive = null;
+            this.btnRemove.Location = new System.Drawing.Point(398, 584);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(76, 55);
+            this.btnRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnRemove.TabIndex = 34;
+            this.btnRemove.TabStop = false;
+            this.btnRemove.Zoom = 10;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -171,6 +173,7 @@
             this.gvwTime.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvwTime.Size = new System.Drawing.Size(859, 515);
             this.gvwTime.TabIndex = 38;
+            this.gvwTime.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvwTime_CellClick);
             // 
             // UcTimeShow
             // 
@@ -180,15 +183,15 @@
             this.Controls.Add(this.gvwTime);
             this.Controls.Add(this.bunifuImageButton2);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.bunifuImageButton4);
-            this.Controls.Add(this.bunifuImageButton1);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Name = "UcTimeShow";
             this.Size = new System.Drawing.Size(865, 641);
             this.Load += new System.EventHandler(this.UcTimeShow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEdit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRemove)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwTime)).EndInit();
             this.ResumeLayout(false);
@@ -199,8 +202,8 @@
 
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuImageButton btnEdit;
+        private Bunifu.Framework.UI.BunifuImageButton btnRemove;
         private Bunifu.Framework.UI.BunifuImageButton btnAdd;
         private System.Windows.Forms.DataGridView gvwTime;
     }
