@@ -9,7 +9,6 @@ namespace ManagerCinema
 
     public partial class Edit_Movie : Form
     {
-        private DBMain dBMain;
         string idMovie;
         public Edit_Movie(string id)
         {

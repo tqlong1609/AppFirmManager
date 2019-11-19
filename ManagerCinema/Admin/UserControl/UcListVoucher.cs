@@ -9,6 +9,8 @@ namespace ManagerCinema
     public partial class UcListVoucher : UserControl
     {
         private VoucherBS VoucherBS;
+        public static bool isReset = false;
+
         public UcListVoucher()
         {
             InitializeComponent();
@@ -17,6 +19,11 @@ namespace ManagerCinema
         private void UcListVoucher_Load(object sender, EventArgs e)
         {
             VoucherBS = new VoucherBS();
+            loadData();
+        }
+
+        private void loadData()
+        {
             gvwVoucher.DataSource = VoucherBS.loadData();
         }
 
@@ -24,6 +31,11 @@ namespace ManagerCinema
         {
             TestApp new_Voucher = new TestApp();
             new_Voucher.ShowDialog();
+            if (TestApp.isReset)
+            {
+                loadData();
+                TestApp.isReset = false;
+            }
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)

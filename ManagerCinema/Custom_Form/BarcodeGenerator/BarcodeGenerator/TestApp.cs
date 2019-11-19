@@ -9,14 +9,16 @@ namespace BarcodeLibTest
     public partial class TestApp : Form
     {
         protected bool isMoveForm;
+        private int value;
         protected Point pStart;
         private New_Voucher_BS New_Voucher_BS;
         BarcodeLib.Barcode b = new BarcodeLib.Barcode();
 
+        public static bool isReset = false;
+
         public TestApp()
         {
             InitializeComponent();
-            btnSave.Enabled = false;
             btn_Save_Info.Enabled = false;
         }
 
@@ -40,12 +42,20 @@ namespace BarcodeLibTest
 
         private void btnEncode_Click(object sender, EventArgs e)
         {
+            try
+            {
+                value = int.Parse(txtValue.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Voucher Value must be int value", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             errorProvider1.Clear();
-            btnSave.Enabled = true;
             btn_Save_Info.Enabled = true;
             try
             {
-                barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtId.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, chkGenerateLabel.Checked, BarcodeLib.LabelPositions.BOTTOMCENTER);
+                barcode.Image = b.Encode(BarcodeLib.TYPE.CODE39, txtId.Text.Trim(), b.ForeColor, b.BackColor, 300, 150, BarcodeLib.AlignmentPositions.CENTER, RotateFlipType.RotateNoneFlipNone, false, BarcodeLib.LabelPositions.BOTTOMCENTER);
                 barcode.Width = barcode.Image.Width;
                 barcode.Height = barcode.Image.Height;
                 barcode.Location = new Point((groupBox2.Location.X + groupBox2.Width / 2) - barcode.Width / 2, (groupBox2.Location.Y + groupBox2.Height / 2) - barcode.Height / 2);
@@ -56,7 +66,7 @@ namespace BarcodeLibTest
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        public bool saveImage()
         {
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "BMP (*.bmp)|*.bmp|GIF (*.gif)|*.gif|JPG (*.jpg)|*.jpg|PNG (*.png)|*.png|TIFF (*.tif)|*.tif";
@@ -76,6 +86,11 @@ namespace BarcodeLibTest
                     default: break;
                 }
                 barcode.Image.Save(sfd.FileName, savetype);
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -87,33 +102,26 @@ namespace BarcodeLibTest
         private void btn_Save_Info_Click(object sender, EventArgs e)
         {
             New_Voucher_BS = new New_Voucher_BS();
-            int ID, Value;
-            try
+            
+            if (saveImage())
             {
-                ID = int.Parse(txtId.Text);
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Voucher ID is not in the correct format");
-                return;
-            }
-            try
-            {
-                Value = int.Parse(txtValue.Text);
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("Voucher Value is not in the correct format");
-                return;
-            }
-            if (New_Voucher_BS.is_Existed(ID) == "False")
-            {
-                New_Voucher_BS.Add_New_Voucher(ID, txtName.Text, Value);
-                txtId.Text = getIdOnTime().ToString();
-                MessageBox.Show("New Voucher added !");
+                if (New_Voucher_BS.Add_New_Voucher(int.Parse(txtId.Text), txtName.Text, value, true))
+                {
+
+                    MessageBox.Show("New Voucher added !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    isReset = true;
+                    this.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Add Fail !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
-                MessageBox.Show("Voucher existed !");
+            {
+                MessageBox.Show("You are canceled !", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -152,7 +160,6 @@ namespace BarcodeLibTest
         private void txtId_TextChanged(object sender, EventArgs e)
         {
             btn_Save_Info.Enabled = false;
-            btnSave.Enabled = false;
         }
     }
 }

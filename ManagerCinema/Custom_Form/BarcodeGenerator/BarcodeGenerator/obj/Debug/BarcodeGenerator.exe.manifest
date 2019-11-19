@@ -42,18 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="144384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BarcodeGenerator.exe" size="143360">
       <assemblyIdentity name="BarcodeGenerator" version="1.0.0.2" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>OiIR1ySTaYnv/sdjJUJCfwZrif4Kqv+4og4EKuskoe0=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>VevLIEpGg+qZYxkRh6yz33zlbzL6SU3gPuBV27nltZA=</dsig:DigestValue>
->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3
+        <dsig:DigestValue>q3FBNSX82h8gSlqjULsmlagIs6O1D4/GUQQqWGx+dF8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

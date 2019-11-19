@@ -18,7 +18,6 @@ C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.pdb
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
-C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe.config
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Add_Cinema.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources

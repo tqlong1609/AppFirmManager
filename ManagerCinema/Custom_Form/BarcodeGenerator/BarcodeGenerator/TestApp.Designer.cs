@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Exit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSave = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_Save_Info = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtValue = new System.Windows.Forms.TextBox();
@@ -43,7 +42,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEncodingTime = new System.Windows.Forms.Label();
-            this.chkGenerateLabel = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label4 = new System.Windows.Forms.Label();
@@ -101,7 +99,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.btn_Exit);
-            this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.btn_Save_Info);
             this.groupBox1.Controls.Add(this.bunifuFlatButton1);
             this.groupBox1.Controls.Add(this.txtValue);
@@ -109,7 +106,6 @@
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblEncodingTime);
-            this.groupBox1.Controls.Add(this.chkGenerateLabel);
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -143,57 +139,20 @@
             this.btn_Exit.IconVisible = true;
             this.btn_Exit.IconZoom = 81D;
             this.btn_Exit.IsTab = false;
-            this.btn_Exit.Location = new System.Drawing.Point(13, 394);
+            this.btn_Exit.Location = new System.Drawing.Point(14, 339);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Exit.OnHovercolor = System.Drawing.Color.DimGray;
             this.btn_Exit.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Exit.selected = false;
-            this.btn_Exit.Size = new System.Drawing.Size(192, 52);
+            this.btn_Exit.Size = new System.Drawing.Size(192, 58);
             this.btn_Exit.TabIndex = 17;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Exit.Textcolor = System.Drawing.Color.White;
             this.btn_Exit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Activecolor = System.Drawing.Color.Gray;
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.BorderRadius = 0;
-            this.btnSave.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnSave.ButtonText = "Save image";
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSave.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSave.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSave.Iconimage")));
-            this.btnSave.Iconimage_right = null;
-            this.btnSave.Iconimage_right_Selected = null;
-            this.btnSave.Iconimage_Selected = null;
-            this.btnSave.IconMarginLeft = 4;
-            this.btnSave.IconMarginRight = 0;
-            this.btnSave.IconRightVisible = true;
-            this.btnSave.IconRightZoom = 0D;
-            this.btnSave.IconVisible = true;
-            this.btnSave.IconZoom = 81D;
-            this.btnSave.IsTab = false;
-            this.btnSave.Location = new System.Drawing.Point(13, 333);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnSave.OnHovercolor = System.Drawing.Color.DimGray;
-            this.btnSave.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSave.selected = false;
-            this.btnSave.Size = new System.Drawing.Size(192, 53);
-            this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "Save image";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Textcolor = System.Drawing.Color.White;
-            this.btnSave.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btn_Save_Info
             // 
@@ -224,7 +183,7 @@
             this.btn_Save_Info.OnHovercolor = System.Drawing.Color.DimGray;
             this.btn_Save_Info.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Save_Info.selected = false;
-            this.btn_Save_Info.Size = new System.Drawing.Size(192, 54);
+            this.btn_Save_Info.Size = new System.Drawing.Size(192, 60);
             this.btn_Save_Info.TabIndex = 15;
             this.btn_Save_Info.Text = "Save code";
             this.btn_Save_Info.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -254,14 +213,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 81D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(12, 200);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(12, 191);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.DimGray;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(192, 63);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(192, 72);
             this.bunifuFlatButton1.TabIndex = 14;
             this.bunifuFlatButton1.Text = "Create code ";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -310,16 +269,6 @@
             this.lblEncodingTime.Name = "lblEncodingTime";
             this.lblEncodingTime.Size = new System.Drawing.Size(0, 16);
             this.lblEncodingTime.TabIndex = 45;
-            // 
-            // chkGenerateLabel
-            // 
-            this.chkGenerateLabel.AutoSize = true;
-            this.chkGenerateLabel.Location = new System.Drawing.Point(112, 30);
-            this.chkGenerateLabel.Name = "chkGenerateLabel";
-            this.chkGenerateLabel.Size = new System.Drawing.Size(92, 20);
-            this.chkGenerateLabel.TabIndex = 40;
-            this.chkGenerateLabel.Text = "Tạo nhãn";
-            this.chkGenerateLabel.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -452,7 +401,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.CheckBox chkGenerateLabel;
         private System.Windows.Forms.Label lblEncodingTime;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.TextBox txtValue;
@@ -465,7 +413,6 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private Bunifu.Framework.UI.BunifuFlatButton btn_Save_Info;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSave;
         private Bunifu.Framework.UI.BunifuFlatButton btn_Exit;
     }
 }

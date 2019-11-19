@@ -12,16 +12,11 @@ namespace BarcodeLibTest.BSLayer
             dBMain = new DBMain();
         }
 
-        public void Add_New_Voucher(int IdVoucher, string Name, int Value, int Status = 1, int IdUser = 1)
+        public bool Add_New_Voucher(int IdVoucher, string Name, int Value, bool Status)
         {
-            string sqlString = "EXEC New_Voucher '" + IdVoucher + "','" + IdUser + "','" + Name + "','" + Value + "','" + Status + "'";
-            dBMain.ExecuteScalar(sqlString, CommandType.Text);
-        }
-
-        public string is_Existed(int IdVoucher)
-        {
-            string sqlString = "SELECT dbo.Check_Voucher('" + IdVoucher + "')";
-            return dBMain.ExecuteScalar_Check(sqlString, CommandType.Text);
+            string sqlString = string.Format("exec insertVoucher @id = {0}, @name = N'{1}', @value = {2}, @status = '{3}'", 
+                IdVoucher, Name, Value, Status);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
     }
 }
