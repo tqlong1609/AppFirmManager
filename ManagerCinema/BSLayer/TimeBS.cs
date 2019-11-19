@@ -11,10 +11,12 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
-        //public bool insertTimeShowing()
-        //{
-
-        //}
+        public bool insertTimeShowing(int id, string idMovie, string idRoomCinema, string time , string date, string idCinema)
+        {
+            string sqlString = string.Format("exec insertTimeShowing @id = {0}, @idMovie = {1}, @idRoomCinema = {2}," +
+                " @time = '{3}', @date = '{4}', @idCinema = {5}",id,idMovie,idRoomCinema,time,date,idCinema);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
 
         public DataTable loadData()
         {
