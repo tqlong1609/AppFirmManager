@@ -20,6 +20,7 @@ namespace ManagerCinema
         {
             SeatBS = new SeatBS();
             roomCinemaBS = new RoomCinemaBS();
+
             //gvwSeat.DataSource = SeatBS.loadData();
             loadRoom();
             
@@ -27,6 +28,7 @@ namespace ManagerCinema
 
         private void loadRoom()
         {
+            
             dataRoom = roomCinemaBS.loadData();
             foreach(DataRow rows in dataRoom.Rows)
             {
@@ -49,6 +51,7 @@ namespace ManagerCinema
             new FmAddRoom().ShowDialog();
             if(isResetRoom)
             {
+                cbxRoom.Clear();
                 loadRoom();
                 isResetRoom = false;
             }
