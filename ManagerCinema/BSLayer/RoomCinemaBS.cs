@@ -22,5 +22,12 @@ namespace ManagerCinema.BSLayer
             string sqlString = "SELECT * from getAllRoomCinema()";
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
+
+        public bool insertRoom(int id, string idCinema, string name)
+        {
+            string sqlString = string.Format("exec addRoomCinema @idRoom = {0}, @idCinema = {1}, " +
+                "@name = N'{2}', @capacity = 0",id,idCinema,name);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
     }
 }

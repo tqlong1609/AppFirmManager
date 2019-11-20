@@ -135,6 +135,12 @@
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     </Compile>
+    <Compile Include="FmAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAddRoom.Designer.cs">
+      <DependentUpon>FmAddRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
       <!--=======-->
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAddRoom.resx">
+      <DependentUpon>FmAddRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
       <DependentUpon>FmBookticket.cs</DependentUpon>
