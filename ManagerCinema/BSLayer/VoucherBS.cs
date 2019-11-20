@@ -28,5 +28,12 @@ namespace ManagerCinema.BSLayer
             string sqlString = "Delete From Voucher Where idVoucher=" + id;
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
+
+        public bool EditVoucher(string id, string name, string value, string status)
+        {
+            string sqlString = string.Format("exec editVoucher @idVoucher = {0}, " +
+                "@name = '{1}', @value = {2}, @status = '{3}'",id,name,value,status);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
     }
 }

@@ -32,46 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gvwTicket = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwTicket)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton2.Image = global::ManagerCinema.Properties.Resources.search_127px;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(616, 13);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(29, 33);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 34;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtSearch.ForeColor = System.Drawing.Color.White;
-            this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
-            this.txtSearch.HintText = "";
-            this.txtSearch.isPassword = false;
-            this.txtSearch.LineFocusedColor = System.Drawing.Color.Black;
-            this.txtSearch.LineIdleColor = System.Drawing.Color.White;
-            this.txtSearch.LineMouseHoverColor = System.Drawing.Color.White;
-            this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(235, 2);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(374, 54);
-            this.txtSearch.TabIndex = 35;
-            this.txtSearch.Text = "Search by Ticket";
-            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // gvwTicket
             // 
@@ -103,7 +66,7 @@
             this.gvwTicket.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvwTicket.EnableHeadersVisualStyles = false;
             this.gvwTicket.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gvwTicket.Location = new System.Drawing.Point(6, 63);
+            this.gvwTicket.Location = new System.Drawing.Point(6, 3);
             this.gvwTicket.MultiSelect = false;
             this.gvwTicket.Name = "gvwTicket";
             this.gvwTicket.ReadOnly = true;
@@ -119,7 +82,7 @@
             this.gvwTicket.RowTemplate.Height = 30;
             this.gvwTicket.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gvwTicket.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvwTicket.Size = new System.Drawing.Size(859, 575);
+            this.gvwTicket.Size = new System.Drawing.Size(859, 635);
             this.gvwTicket.TabIndex = 36;
             // 
             // UcListTicket
@@ -128,21 +91,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
             this.Controls.Add(this.gvwTicket);
-            this.Controls.Add(this.bunifuImageButton2);
-            this.Controls.Add(this.txtSearch);
             this.Name = "UcListTicket";
             this.Size = new System.Drawing.Size(865, 641);
             this.Load += new System.EventHandler(this.UcListTicket_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwTicket)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private System.Windows.Forms.DataGridView gvwTicket;
     }
 }

@@ -33,53 +33,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAddVoucher = new Bunifu.Framework.UI.BunifuImageButton();
             this.gvwVoucher = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddVoucher)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwVoucher)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton2.Image = global::ManagerCinema.Properties.Resources.search_127px;
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(616, 13);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(29, 33);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 40;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
-            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtSearch.ForeColor = System.Drawing.Color.White;
-            this.txtSearch.HintForeColor = System.Drawing.Color.Empty;
-            this.txtSearch.HintText = "";
-            this.txtSearch.isPassword = false;
-            this.txtSearch.LineFocusedColor = System.Drawing.Color.Black;
-            this.txtSearch.LineIdleColor = System.Drawing.Color.White;
-            this.txtSearch.LineMouseHoverColor = System.Drawing.Color.White;
-            this.txtSearch.LineThickness = 3;
-            this.txtSearch.Location = new System.Drawing.Point(235, 2);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(374, 54);
-            this.txtSearch.TabIndex = 41;
-            this.txtSearch.Text = "Search by Voucher";
-            this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuImageButton4
             // 
@@ -156,7 +118,7 @@
             this.gvwVoucher.DefaultCellStyle = dataGridViewCellStyle3;
             this.gvwVoucher.EnableHeadersVisualStyles = false;
             this.gvwVoucher.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gvwVoucher.Location = new System.Drawing.Point(3, 63);
+            this.gvwVoucher.Location = new System.Drawing.Point(3, 3);
             this.gvwVoucher.MultiSelect = false;
             this.gvwVoucher.Name = "gvwVoucher";
             this.gvwVoucher.ReadOnly = true;
@@ -172,7 +134,7 @@
             this.gvwVoucher.RowTemplate.Height = 30;
             this.gvwVoucher.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gvwVoucher.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvwVoucher.Size = new System.Drawing.Size(859, 515);
+            this.gvwVoucher.Size = new System.Drawing.Size(859, 575);
             this.gvwVoucher.TabIndex = 42;
             // 
             // UcListVoucher
@@ -181,15 +143,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
             this.Controls.Add(this.gvwVoucher);
-            this.Controls.Add(this.bunifuImageButton2);
-            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.bunifuImageButton4);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnAddVoucher);
             this.Name = "UcListVoucher";
             this.Size = new System.Drawing.Size(865, 641);
             this.Load += new System.EventHandler(this.UcListVoucher_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAddVoucher)).EndInit();
@@ -199,9 +158,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton btnAddVoucher;

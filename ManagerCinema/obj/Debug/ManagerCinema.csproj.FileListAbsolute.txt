@@ -61,3 +61,4 @@ C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache

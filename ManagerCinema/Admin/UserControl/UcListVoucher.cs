@@ -38,44 +38,27 @@ namespace ManagerCinema
             }
         }
 
-        private void bunifuImageButton2_Click(object sender, EventArgs e)
-        {
-            string id = txtSearch.Text;
-            if (id == "")
-            {
-                gvwVoucher.DataSource = VoucherBS.loadData();
-                return;
-            }
-            VoucherBS = new VoucherBS();
-            try
-            {
-                var temp = VoucherBS.Search_Voucher_Id(id);
-                gvwVoucher.DataSource = temp;
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Search string is not in the right format! Please type again");
-            }
-        }
-
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             try
             {
-                int r = gvwVoucher.CurrentCell.RowIndex;
-                string id =
-                gvwVoucher.Rows[r].Cells[0].Value.ToString();
-                DialogResult traloi;
-                traloi = MessageBox.Show("Delete this record?", "Warning",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (traloi == DialogResult.Yes)
+                if (gvwVoucher.Rows.Count > 0)
                 {
-                    VoucherBS.Delete_Voucher(id);
-                    gvwVoucher.DataSource = VoucherBS.loadData();
-                }
-                else
-                {
-                    MessageBox.Show("Fail");
+                    int r = gvwVoucher.CurrentCell.RowIndex;
+                    string id =
+                    gvwVoucher.Rows[r].Cells[0].Value.ToString();
+                    DialogResult traloi;
+                    traloi = MessageBox.Show("Delete this record?", "Warning",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (traloi == DialogResult.Yes)
+                    {
+                        VoucherBS.Delete_Voucher(id);
+                        gvwVoucher.DataSource = VoucherBS.loadData();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Fail");
+                    }
                 }
             }
             catch (SqlException)
@@ -86,10 +69,21 @@ namespace ManagerCinema
 
         private void bunifuImageButton4_Click(object sender, EventArgs e)
         {
-            int r = gvwVoucher.CurrentCell.RowIndex;
-            string id = gvwVoucher.Rows[r].Cells[0].Value.ToString();
-            Edit_Voucher edit_Voucher = new Edit_Voucher(id);
-            edit_Voucher.Show();
+            if (gvwVoucher.Rows.Count > 0)
+            {
+                int r = gvwVoucher.CurrentCell.RowIndex;
+                string id = gvwVoucher.Rows[r].Cells[0].Value.ToString();
+                string name = gvwVoucher.Rows[r].Cells[1].Value.ToString();
+                string value = gvwVoucher.Rows[r].Cells[2].Value.ToString();
+                string status = gvwVoucher.Rows[r].Cells[3].Value.ToString();
+                Edit_Voucher edit_Voucher = new Edit_Voucher(id,name,value,status);
+                edit_Voucher.ShowDialog();
+                if(isReset)
+                {
+                    loadData();
+                    isReset = false;
+                }
+            }
         }
     }
 }

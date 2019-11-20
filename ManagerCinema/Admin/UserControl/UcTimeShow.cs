@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using ManagerCinema.BSLayer;
 
@@ -9,6 +10,7 @@ namespace ManagerCinema
         public static bool isReset = false;
         private TimeBS timeBS;
         private int index;
+        private DataTable dataTime;
 
         public UcTimeShow()
         {
@@ -23,7 +25,8 @@ namespace ManagerCinema
 
         public void loadData()
         {
-            gvwTime.DataSource = timeBS.getAllTimeShowing();
+            dataTime = timeBS.getAllTimeShowing();
+            gvwTime.DataSource = dataTime;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -73,5 +76,6 @@ namespace ManagerCinema
                 }
             }
         }
+
     }
 }
