@@ -11,6 +11,11 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public TimeBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
         public bool updateTimeShowing(string id, string idMovie, string idRoom, string time, string date, string idCinema)
         {
             string sqlString = string.Format("exec editTimeShowing @id = {0}, " +

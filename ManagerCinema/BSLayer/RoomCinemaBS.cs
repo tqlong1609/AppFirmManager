@@ -1,10 +1,5 @@
 ﻿using ManagerCinema.DBLayer;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ManagerCinema.BSLayer
 {
@@ -15,6 +10,11 @@ namespace ManagerCinema.BSLayer
         public RoomCinemaBS()
         {
             dBMain = new DBMain();
+        }
+
+        public RoomCinemaBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
         }
 
         public DataTable loadData()

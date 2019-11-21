@@ -11,6 +11,11 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public SeatBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
         public DataTable loadData()
         {
             string sqlString = "SELECT * from getAllSeat()";

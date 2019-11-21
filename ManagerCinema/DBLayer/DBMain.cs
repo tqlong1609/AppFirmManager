@@ -17,6 +17,13 @@ namespace ManagerCinema.DBLayer
             command = connect.CreateCommand();
         }
 
+        public DBMain(string Username, string Password)
+        {
+            string connStr = "Data Source=.;Initial Catalog=DBSM1;Integrated Security=True; User ID = " + Username + ";Password = " + Password;
+            connect = new SqlConnection(connStr);
+            command = connect.CreateCommand();
+        }
+
         // error
         public DataTable ExecuteQueryDataSet(string strSql, CommandType type)
         {

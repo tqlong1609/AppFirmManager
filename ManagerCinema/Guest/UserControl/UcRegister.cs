@@ -12,9 +12,26 @@ namespace ManagerCinema
         {
             InitializeComponent();
         }
+
+        public static bool isUsername(string Username)
+        {
+            Username = Username ?? string.Empty;
+            string strRegex = @"^[A-Za-z_\.][A-Za-z0-9_\.]{6,32}$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(Username))
+                return (true);
+            else
+                return (false);
+        }
+
         private void btnLogin_Click(object sender, System.EventArgs e)
         {
             string Username = bunifuMetroTextbox1.Text;
+            if (!(isUsername(Username)))
+            {
+                MessageBox.Show("Username is not in the valid format!");
+                return;
+            }
             string Numberphone = bunifuMetroTextbox2.Text;
             string Gender = "0";
             if(bunifuDropdown1.selectedValue == "Male")

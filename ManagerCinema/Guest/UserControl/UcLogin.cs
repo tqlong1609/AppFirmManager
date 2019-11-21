@@ -46,7 +46,7 @@ namespace ManagerCinema
             {
                 string Username = txtUsername.Text;
                 string Password = txtPassword.Text;
-                LoginBS = new LoginBS();
+                LoginBS = new LoginBS(Username, Password);
                 string Result = LoginBS.Login(Username, Password);
 
                 if (Result != "")

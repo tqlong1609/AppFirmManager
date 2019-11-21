@@ -12,6 +12,11 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public LoginBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
         public string Login(string Username, string Password)
         {
             string sqlstring = "select count (*) as cnt from sys.server_principals where name = '" + Username + "'";
