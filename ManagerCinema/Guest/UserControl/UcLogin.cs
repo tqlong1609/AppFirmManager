@@ -12,6 +12,7 @@ namespace ManagerCinema
         private Thread threadForm;
         private LoginBS LoginBS;
         public static Ticket ticket;
+        private string idUser;
         public UcLogin()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace ManagerCinema
                 if (Result != "")
                 {
                     TypeLogin.typeLogin = ETypeLogin.user;
+                    idUser = LoginBS.Get_Id_User(Username);
                     ticket.IdUser = int.Parse(Result);
                 }
                 else
@@ -94,7 +96,7 @@ namespace ManagerCinema
 
         private void openFormUser()
         {
-            Application.Run(new Form1());
+            Application.Run(new Form1(idUser));
         }
 
         private void openformAdmin()

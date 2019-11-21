@@ -24,7 +24,9 @@ namespace ManagerCinema.BSLayer
 
         public DataTable Search_Voucher_Id(string id)
         {
-            string sqlString = "select idVoucher, Username, Name, Value, Voucher_Status from Voucher join Account on Voucher.idUser = Account.idAccount WHERE idVoucher = " + id;
+            string sqlString = "select idVoucher, Username, Name, Value, " +
+                "Voucher_Status from Voucher join Account on Voucher.idUser = Account.idAccount " +
+                "WHERE idVoucher = " + id;
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 

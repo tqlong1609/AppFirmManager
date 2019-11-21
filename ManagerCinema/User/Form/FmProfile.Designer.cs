@@ -267,6 +267,7 @@
             this.Name = "FmProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FmProfile";
+            this.Load += new System.EventHandler(this.FmProfile_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FmProfile_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FmProfile_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.FmProfile_MouseUp);

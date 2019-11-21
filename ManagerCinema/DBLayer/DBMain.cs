@@ -5,26 +5,31 @@ namespace ManagerCinema.DBLayer
 {
     class DBMain
     {
-        // NOTE: edit connstr when run
+        // Chuỗi connStr thể hiện đường dẫn đến Database
         string connStr = "Data Source=.;Initial Catalog=DBSM1;Integrated Security=True";
+
+        // Khởi tạo mặc định các Properties
         SqlConnection connect = null;
         SqlCommand command = null;
         SqlDataAdapter adapter = null;
 
+        // Hàm khởi tạo, gọi Connection
         public DBMain()
         {
             connect = new SqlConnection(connStr);
             command = connect.CreateCommand();
         }
 
+        // Overwrite hàm khởi tạo dành cho Connection yêu cầu đăng nhập
         public DBMain(string Username, string Password)
         {
-            string connStr = "Data Source=.;Initial Catalog=DBSM1;Integrated Security=True; User ID = " + Username + ";Password = " + Password;
+            string connStr = "Data Source=.;Initial Catalog=DBSM1;Integrated Security=True; User ID = " + 
+                Username + ";Password = " + Password;
             connect = new SqlConnection(connStr);
             command = connect.CreateCommand();
         }
 
-        // error
+        // Chuỗi strSql chính là câu lệnh SQL Query mà ta muốn thực hiện
         public DataTable ExecuteQueryDataSet(string strSql, CommandType type)
         {
             if (connect.State == ConnectionState.Open) { connect.Close(); }
@@ -56,6 +61,7 @@ namespace ManagerCinema.DBLayer
             {
                 connect.Close();
             }
+            // Trả về True/False tùy thuộc hành động có thành công không
             return isError;
         }
         public string ExecuteScalar(string Query, CommandType type)

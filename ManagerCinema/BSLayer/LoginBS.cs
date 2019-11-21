@@ -29,5 +29,11 @@ namespace ManagerCinema.BSLayer
             }
             return "";
         }
+
+        public string Get_Id_User(string Username)
+        {
+            string sqlString = "select idAccount from Account Where Username = '" + Username + "'";
+            return dBMain.ExecuteScalar(sqlString, CommandType.Text);
+        }
     }
 }

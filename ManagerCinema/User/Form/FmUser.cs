@@ -14,10 +14,17 @@ namespace ManagerCinema
         private Thread threadForm;
         private List<Movie> listMovies;
         private MovieBS movieBS;
+        private string idUser;
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(string id)
+        {
+            InitializeComponent();
+            idUser = id;
         }
 
         private void ptbClose_Click(object sender, EventArgs e)
@@ -42,7 +49,7 @@ namespace ManagerCinema
 
         private void loadMovies()
         {
-            DataTable dataMovies = movieBS.loadData();
+            /*DataTable dataMovies = movieBS.loadData();
             foreach(DataRow rows in dataMovies.Rows)
             {
                 Image img = CommonFunction.stringToImg(rows["image"].ToString().Trim());
@@ -50,7 +57,7 @@ namespace ManagerCinema
                     rows["Director"].ToString(), rows["Producer"].ToString(), rows["Type"].ToString()
                     , rows["Actor"].ToString(), rows["Date"].ToString(), rows["Content"].ToString(),
                     rows["Country"].ToString(), int.Parse(rows["Price"].ToString())));
-            }
+            }*/
         }
 
         private void addItemGuestTheme(List<Movie> listMovies)
@@ -100,7 +107,7 @@ namespace ManagerCinema
 
         private void pbxProfile_Click(object sender, EventArgs e)
         {
-            new FmProfile().ShowDialog();
+            new FmProfile(idUser).ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
