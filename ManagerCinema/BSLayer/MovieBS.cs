@@ -50,10 +50,20 @@ namespace ManagerCinema.BSLayer
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 
-        public bool Delete_Movie(string id)
+        public bool editMovie(string idMoie,string name,int time,string director, string country,
+            string producer, string type, string actor, string date, string content, int price,
+            string image)
         {
-            string sqlString = "Delete From Movie Where idMovie=" + id;
+            string sqlString = string.Format("exec editMovie @idmovie = {0}, @name = N'{1}', " +
+                "@time = {2}, @director = N'{3}'," +
+                " @country = N'{4}',@producer = N'{5}'," +
+                "@type = N'{6}',@actor = N'{7}',@date = N'{8}'," +
+                "@content = N'{9}',@price = {10},@image = '{11}'",
+                idMoie, name, time, director, country, producer, type, actor, 
+                date, content, price, image);
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+
         }
+
     }
 }

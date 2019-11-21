@@ -28,5 +28,31 @@ namespace ManagerCinema.BSLayer
             string sqlString = string.Format("exec getSeatFollowingIdRoom @id = {0}",id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
+
+        public bool insertSeat(string idRoomCinema, string idCinema, string name)
+        {
+            string sqlString = string.Format("insert into Seat values({0},{1},'{2}','{3}')",
+                idRoomCinema,idCinema,name,"True");
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
+
+        public bool checkExistNameSeat(string idRoom, string idCinema, string name)
+        {
+            string sqlString = string.Format("select * from checkExistNameSeat({0},{1},'{2}')",
+                idRoom,idCinema,name);
+            DataTable data = dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
+            if(int.Parse( data.Rows[0][0].ToString().Trim()) > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool deleteSeat(string idRoom, string idCinema, string name)
+        {
+            string sqlString = string.Format("exec deleteSeat @idRoom = {0}," +
+                " @idCinema = {1}, @name = '{2}'", idRoom, idCinema, name);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
     }
 }
