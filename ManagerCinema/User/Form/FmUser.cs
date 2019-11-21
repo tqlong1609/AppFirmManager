@@ -14,10 +14,17 @@ namespace ManagerCinema
         private Thread threadForm;
         private List<Movie> listMovies;
         private MovieBS movieBS;
+        private string idUser;
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public Form1(string id)
+        {
+            InitializeComponent();
+            idUser = id;
         }
 
         private void ptbClose_Click(object sender, EventArgs e)
@@ -100,7 +107,7 @@ namespace ManagerCinema
 
         private void pbxProfile_Click(object sender, EventArgs e)
         {
-            new FmProfile().ShowDialog();
+            new FmProfile(idUser).ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

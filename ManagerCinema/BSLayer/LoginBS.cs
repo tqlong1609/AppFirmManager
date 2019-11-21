@@ -1,8 +1,5 @@
 ﻿using ManagerCinema.DBLayer;
 using System.Data;
-using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
 
 
 namespace ManagerCinema.BSLayer
@@ -15,31 +12,28 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public LoginBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
         public string Login(string Username, string Password)
         {
-            SqlConnection scn = new SqlConnection();
-            scn.ConnectionString = @"Data Source=.;Initial Catalog=DBSM1;database=login;integrated security=SSPI";
-            SqlCommand scmd = new SqlCommand("select count (*) as cnt from . where username=@usr and password=@pwd", scn);
-            scmd.Parameters.Clear();
-            scmd.Parameters.AddWithValue("@usr", Username);
-            scmd.Parameters.AddWithValue("@pwd", Password);
-            try
-            {
-                scn.Open();
-            }
-            catch
-            {
-                return "";
-            }
+            string sqlstring = "select count (*) as cnt from sys.server_principals where name = '" + Username + "'";
+            string Result = dBMain.ExecuteScalar(sqlstring, CommandType.Text).ToString();
 
-            if (scmd.ExecuteScalar().ToString() == "1")
+            if (Result == "1")
             {
-                scn.Close();
                 string sqlString = "SELECT [dbo].[Login]('" + Username + "','" + Password + "')";
                 return dBMain.ExecuteScalar(sqlString, CommandType.Text);
             }
-            scn.Close();
             return "";
+        }
+
+        public string Get_Id_User(string Username)
+        {
+            string sqlString = "select idAccount from Account Where Username = '" + Username + "'";
+            return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
     }
 }

@@ -12,6 +12,11 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
+        public MovieBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
         public DataTable loadData()
         {
             string sqlString = "SELECT * from getAllMovies()";

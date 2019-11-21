@@ -11,7 +11,13 @@ namespace ManagerCinema.BSLayer
             dBMain = new DBMain();
         }
 
-        public bool updateTimeShowing(string id, string idMovie, string idRoom, string time, string date, string idCinema)
+        public TimeBS(string Username, string Password)
+        {
+            dBMain = new DBMain(Username, Password);
+        }
+
+        public bool updateTimeShowing(string id, string idMovie, string idRoom, 
+            string time, string date, string idCinema)
         {
             string sqlString = string.Format("exec editTimeShowing @id = {0}, " +
                 "@idMovie = {1}, @idRoom = {2}, @time = '{3}', @date = '{4}', @idCinema = {5}",
@@ -27,10 +33,14 @@ namespace ManagerCinema.BSLayer
             return dBMain.MyExecuteNonQuery(sqltring, CommandType.Text);
         }
 
-        public bool insertTimeShowing(int id, string idMovie, string idRoomCinema, string time , string date, string idCinema)
+
+        public bool insertTimeShowing(int id, string idMovie, string idRoomCinema, string time , 
+            string date, string idCinema)
         {
-            string sqlString = string.Format("exec insertTimeShowing @id = {0}, @idMovie = {1}, @idRoomCinema = {2}," +
-                " @time = '{3}', @date = '{4}', @idCinema = {5}",id,idMovie,idRoomCinema,time,date,idCinema);
+            string sqlString = string.Format("exec insertTimeShowing @id = {0}, @idMovie = {1}, " +
+                "@idRoomCinema = {2}," +
+                " @time = '{3}', @date = '{4}', @idCinema = {5}",id,idMovie,idRoomCinema,time,date,
+                idCinema);
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
 
