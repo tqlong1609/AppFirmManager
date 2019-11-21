@@ -49,7 +49,7 @@ namespace ManagerCinema
 
         private void loadMovies()
         {
-            /*DataTable dataMovies = movieBS.loadData();
+            DataTable dataMovies = movieBS.loadData();
             foreach(DataRow rows in dataMovies.Rows)
             {
                 Image img = CommonFunction.stringToImg(rows["image"].ToString().Trim());
@@ -57,7 +57,7 @@ namespace ManagerCinema
                     rows["Director"].ToString(), rows["Producer"].ToString(), rows["Type"].ToString()
                     , rows["Actor"].ToString(), rows["Date"].ToString(), rows["Content"].ToString(),
                     rows["Country"].ToString(), int.Parse(rows["Price"].ToString())));
-            }*/
+            }
         }
 
         private void addItemGuestTheme(List<Movie> listMovies)
