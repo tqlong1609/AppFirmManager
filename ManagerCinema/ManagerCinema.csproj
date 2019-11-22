@@ -112,12 +112,6 @@
     <Compile Include="Admin\Form\Edit Voucher.Designer.cs">
       <DependentUpon>Edit Voucher.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Form\Edit_Cinema.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\Form\Edit_Cinema.Designer.cs">
-      <DependentUpon>Edit_Cinema.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Form\FmAddTimeShowing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +120,12 @@
       <!--=======-->
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
+    </Compile>
+    <Compile Include="FmAddCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAddCinema.Designer.cs">
+      <DependentUpon>FmAddCinema.cs</DependentUpon>
     </Compile>
     <Compile Include="FmAddRoom.cs">
       <SubType>Form</SubType>
@@ -347,14 +347,14 @@
     <EmbeddedResource Include="Admin\Form\Edit Voucher.resx">
       <DependentUpon>Edit Voucher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Form\Edit_Cinema.resx">
-      <DependentUpon>Edit_Cinema.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Form\FmAddTimeShowing.resx">
       <DependentUpon>FmAddTimeShowing.cs</DependentUpon>
       <!--=======-->
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAddCinema.resx">
+      <DependentUpon>FmAddCinema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmAddRoom.resx">
       <DependentUpon>FmAddRoom.cs</DependentUpon>

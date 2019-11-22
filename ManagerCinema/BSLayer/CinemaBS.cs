@@ -27,11 +27,24 @@ namespace ManagerCinema.BSLayer
             return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
 
-        public void Add_Cinema(string id, string name, string address, string count, string open, string close)
+        public bool insertCinema(int idCinema, string name, string address, string timeOpen, string timeClose)
         {
-            string sqlString = "insert into Cinema Values(" + id + "," + name + "," + address + "," + count + "," + open + "," + close + ")";
-            dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+            string sqlString = string.Format("exec insertCinema @idCinema = {0}, " +
+                "@name = N'{1}',@address = N'{2}',@timeOpen='{3}',@timeClose='{4}'",
+                idCinema, name, address, timeOpen, timeClose);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+
         }
+
+        public bool updateCinema(string idCinema, string name, string address, string timeOpen, string timeClose)
+        {
+            string sqlString = string.Format("exec updateCinema @idCinema = {0}," +
+                " @name = N'{1}',@address = N'{2}'," +
+                "@timeOpen='{3}',@timeClose='{4}'",idCinema,name,address,timeOpen,timeClose);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+
+        }
+
         public bool Delete_Cinema(string id)
         {
             string sqlString = "Delete From Cinema Where idCinema=" + id;
