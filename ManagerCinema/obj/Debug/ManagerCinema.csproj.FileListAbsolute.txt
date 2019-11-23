@@ -18,12 +18,14 @@ C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.pdb
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.xml
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.pdb
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\bin\Debug\zxing.presentation.xml
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe.config
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.AddSeat.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAdmin.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddMovie.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.Edit_Voucher.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddTimeShowing.resources
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddCinema.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddRoom.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmBookticket.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListEmployeeAD.resources
@@ -60,5 +62,4 @@ C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csproj.CopyComplete
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.exe
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.pdb
-C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.csprojAssemblyReference.cache
-C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddCinema.resources
+C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddEmployee.resources

@@ -127,6 +127,12 @@
     <Compile Include="FmAddCinema.Designer.cs">
       <DependentUpon>FmAddCinema.cs</DependentUpon>
     </Compile>
+    <Compile Include="FmAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAddEmployee.Designer.cs">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FmAddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -355,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FmAddCinema.resx">
       <DependentUpon>FmAddCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAddEmployee.resx">
+      <DependentUpon>FmAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FmAddRoom.resx">
       <DependentUpon>FmAddRoom.cs</DependentUpon>
