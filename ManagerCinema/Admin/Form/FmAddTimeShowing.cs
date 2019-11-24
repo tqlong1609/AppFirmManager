@@ -81,7 +81,7 @@ namespace ManagerCinema
 
              dataMovie = movieBS.loadData();
              //dataCinema = cinemaBS.loadData();
-             dataRoomCinema = roomCinemaBS.loadData();
+             dataRoomCinema = roomCinemaBS.loadCinemaAndRoom();
 
             foreach(DataRow rows in dataMovie.Rows)
             {
@@ -95,7 +95,10 @@ namespace ManagerCinema
 
             listCinem = listCinem.Distinct().ToList();
 
-            //foreach(string date )
+            foreach (string temp in listCinem )
+            {
+                cbxCinema.AddItem(temp);
+            }
 
         }
 
@@ -109,24 +112,34 @@ namespace ManagerCinema
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+
             int indexMovie = cbxMovie.selectedIndex;
-            int indexCinema = cbxCinema.selectedIndex;
-            int indexRoomCinema = cbxRoomCinema.selectedIndex;
             string valuedate = dpkDateShowing.Value.ToLongDateString();
 
             if (indexMovie >= 0 &&
-                indexCinema >= 0 &&
-                indexRoomCinema >= 0
+                cbxCinema.selectedIndex != -1  &&
+                cbxRoomCinema.selectedIndex != -1
                 )
             {
+                string idCinema = "";
+                string idRoom = "";
+
+                foreach (DataRow rows in dataRoomCinema.Rows)
+                {
+                    if (rows["nameCinema"].ToString() == cbxCinema.selectedValue
+                        && rows["nameRoom"].ToString() == cbxRoomCinema.selectedValue)
+                    {
+                        idCinema = rows["idCinema"].ToString();
+                        idRoom = rows["idRoomCinema"].ToString();
+                    }
+                }
                 if (isAdd)
                 {
                     int id = CommonFunction.getIdOnTime();
                     if (timeBS.insertTimeShowing(id, dataMovie.Rows[indexMovie][0].ToString(),
-                        dataRoomCinema.Rows[indexRoomCinema][0].ToString(),
+                        idRoom,
                         dpkTime.Value.ToShortTimeString(), dpkDateShowing.Value.ToLongDateString(),
-                        dataCinema.Rows[indexCinema][0].ToString()
+                        idCinema
                         ))
                     {
                         MessageBox.Show("Add Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -141,9 +154,9 @@ namespace ManagerCinema
                 else
                 {
                     if (timeBS.updateTimeShowing(idEdit, dataMovie.Rows[indexMovie][0].ToString(),
-                                            dataRoomCinema.Rows[indexRoomCinema][0].ToString(),
+                                            idRoom,
                                             dpkTime.Value.ToShortTimeString(), dpkDateShowing.Value.ToLongDateString(),
-                                            dataCinema.Rows[indexCinema][0].ToString()
+                                            idCinema
                                             ))
                     {
                         MessageBox.Show("Edit Success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -159,6 +172,18 @@ namespace ManagerCinema
             else
             {
                 MessageBox.Show("Enter full values", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cbxCinema_onItemSelected(object sender, EventArgs e)
+        {
+            cbxRoomCinema.Clear();
+            foreach(DataRow rows in dataRoomCinema.Rows)
+            {
+                if(rows["nameCinema"].ToString().Equals(cbxCinema.selectedValue))
+                {
+                    cbxRoomCinema.AddItem(rows["nameRoom"].ToString());
+                }
             }
         }
     }

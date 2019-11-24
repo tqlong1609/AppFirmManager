@@ -95,6 +95,7 @@
             this.cbxCinema.selectedIndex = -1;
             this.cbxCinema.Size = new System.Drawing.Size(315, 35);
             this.cbxCinema.TabIndex = 103;
+            this.cbxCinema.onItemSelected += new System.EventHandler(this.cbxCinema_onItemSelected);
             // 
             // label2
             // 

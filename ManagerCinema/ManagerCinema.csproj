@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddSeat.cs">
+    <Compile Include="Admin\Form\AddSeat.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddSeat.Designer.cs">
+    <Compile Include="Admin\Form\AddSeat.Designer.cs">
       <DependentUpon>AddSeat.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Form\FmAdmin.cs">
@@ -121,22 +121,22 @@
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     </Compile>
-    <Compile Include="FmAddCinema.cs">
+    <Compile Include="Admin\Form\FmAddCinema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmAddCinema.Designer.cs">
+    <Compile Include="Admin\Form\FmAddCinema.Designer.cs">
       <DependentUpon>FmAddCinema.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmAddEmployee.cs">
+    <Compile Include="Admin\Form\FmAddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmAddEmployee.Designer.cs">
+    <Compile Include="Admin\Form\FmAddEmployee.Designer.cs">
       <DependentUpon>FmAddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="FmAddRoom.cs">
+    <Compile Include="Admin\Form\FmAddRoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FmAddRoom.Designer.cs">
+    <Compile Include="Admin\Form\FmAddRoom.Designer.cs">
       <DependentUpon>FmAddRoom.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager\Form\FmBookticket.cs">
@@ -330,7 +330,7 @@
     <Compile Include="Guest\UserControl\UcRegister.Designer.cs">
       <DependentUpon>UcRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddSeat.resx">
+    <EmbeddedResource Include="Admin\Form\AddSeat.resx">
       <DependentUpon>AddSeat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Form\FmAdmin.resx">
@@ -359,13 +359,13 @@
       <!-->>>>>>> 5a0dc09a75b95930746c4a70ab98e14d53fab414-->
       <!-->>>>>>> de805c9d931a4625d11760b0269d95a4039251d3-->
     </EmbeddedResource>
-    <EmbeddedResource Include="FmAddCinema.resx">
+    <EmbeddedResource Include="Admin\Form\FmAddCinema.resx">
       <DependentUpon>FmAddCinema.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmAddEmployee.resx">
+    <EmbeddedResource Include="Admin\Form\FmAddEmployee.resx">
       <DependentUpon>FmAddEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FmAddRoom.resx">
+    <EmbeddedResource Include="Admin\Form\FmAddRoom.resx">
       <DependentUpon>FmAddRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manager\Form\FmBookticket.resx">

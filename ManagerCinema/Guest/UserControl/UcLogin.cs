@@ -3,6 +3,8 @@ using System;
 using System.Threading;
 using System.Windows.Forms;
 using ManagerCinema.BSLayer;
+using System.Data;
+using ManagerCinema.DBLayer;
 
 namespace ManagerCinema
 {
@@ -13,10 +15,12 @@ namespace ManagerCinema
         private LoginBS LoginBS;
         public static Ticket ticket;
         private string idUser;
+        private DBMain dbMain;
         public UcLogin()
         {
             InitializeComponent();
             ticket = new Ticket();
+            dbMain = new DBMain();
         }
 
         private void lbFogetPass_Click(object sender, EventArgs e)
@@ -32,16 +36,16 @@ namespace ManagerCinema
         {
             Application.Run(new FmFogetPassword());
         }
-
+        string idEmployee;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Equals("manager") && txtPassword.Text.Equals("1"))
-            {
-                TypeLogin.typeLogin = ETypeLogin.manager;
-            }
-            else if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("1"))
+            if (txtUsername.Text.Equals("admin") && txtPassword.Text.Equals("1"))
             {
                 TypeLogin.typeLogin = ETypeLogin.admin;
+            }
+            else if ((idEmployee = checkLoginManager(txtUsername.Text, txtPassword.Text)) != "")
+            {
+                TypeLogin.typeLogin = ETypeLogin.manager;
             }
             else
             {
@@ -63,6 +67,14 @@ namespace ManagerCinema
                 }
             }
             openFormFollowType(TypeLogin.typeLogin);
+        }
+
+        private string checkLoginManager(string username, string password)
+        {
+            string Username = txtUsername.Text;
+            string Password = txtPassword.Text;
+            string sqlString = string.Format("select dbo.checkLoginEmployee('{0}','{1}')",username,password);
+            return dbMain.ExecuteScalar(sqlString, CommandType.Text);
         }
 
         private void openFormFollowType(ETypeLogin typeLogin)
