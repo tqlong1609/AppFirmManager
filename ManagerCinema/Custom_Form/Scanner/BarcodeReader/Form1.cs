@@ -166,7 +166,13 @@ namespace BarcodeReaderApp
             {
                 Scan_Voucher = new Scan_Voucher_BS();
                 string Result = Scan_Voucher.Scan_Voucher(ID);
-                MessageBox.Show(Result);
+                if (Result == "True")
+                {
+                    MessageBox.Show("Thanh toán thành công !");
+                    Scan_Voucher.Delete_Voucher(ID);
+                }
+                else
+                    MessageBox.Show("Voucher không tồn tại !");
             }
         }
 

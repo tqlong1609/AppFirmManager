@@ -49,10 +49,18 @@ namespace ManagerCinema
 
         private void loadMovies()
         {
+            //Image img;
             DataTable dataMovies = movieBS.loadData();
             foreach(DataRow rows in dataMovies.Rows)
             {
+                //if (rows["image"].ToString().Trim() != "EEE")
+                //{
                 Image img = CommonFunction.stringToImg(rows["image"].ToString().Trim());
+                //}
+                //else
+                //{
+                //    img = Image.FromFile("avataDefaut.jpeg");
+                //}
                 listMovies.Add(new Movie(int.Parse(rows["IdMovie"].ToString()),img, rows["Name"].ToString(), int.Parse(rows["Time"].ToString()),
                     rows["Director"].ToString(), rows["Producer"].ToString(), rows["Type"].ToString()
                     , rows["Actor"].ToString(), rows["Date"].ToString(), rows["Content"].ToString(),

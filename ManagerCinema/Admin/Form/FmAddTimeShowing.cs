@@ -67,6 +67,7 @@ namespace ManagerCinema
 
         private void FmAddTimeShowing_Load(object sender, EventArgs e)
         {
+            List<string> listCinem = new List<string>();
             if (isAdd)
             {
                 btnSave.ButtonText = "Add";
@@ -79,7 +80,7 @@ namespace ManagerCinema
             initProject();
 
              dataMovie = movieBS.loadData();
-             dataCinema = cinemaBS.loadData();
+             //dataCinema = cinemaBS.loadData();
              dataRoomCinema = roomCinemaBS.loadData();
 
             foreach(DataRow rows in dataMovie.Rows)
@@ -87,15 +88,14 @@ namespace ManagerCinema
                 cbxMovie.AddItem(rows["Name"].ToString());
             }
 
-            foreach (DataRow rows in dataCinema.Rows)
-            {
-                cbxCinema.AddItem(rows["Name"].ToString());
-            }
-
             foreach (DataRow rows in dataRoomCinema.Rows)
             {
-                cbxRoomCinema.AddItem(rows["Name"].ToString());
+                listCinem.Add(rows["nameCinema"].ToString());
             }
+
+            listCinem = listCinem.Distinct().ToList();
+
+            //foreach(string date )
 
         }
 

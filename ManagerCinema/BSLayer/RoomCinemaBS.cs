@@ -19,7 +19,7 @@ namespace ManagerCinema.BSLayer
 
         public DataTable loadData()
         {
-            string sqlString = "SELECT * from getAllRoomCinema()";
+            string sqlString = "select * from getNameCinemaAndRoom()";
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 

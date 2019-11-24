@@ -17,5 +17,10 @@ namespace BarcodeReaderApp.BSLayer
             string sqlString = "SELECT [dbo].[Scan_Voucher]('" + ID + "')";
             return dBMain.ExecuteScalar(sqlString, CommandType.Text);
         }
+        public void Delete_Voucher(string ID)
+        {
+            string sqlString = "DELETE FROM cVoucher WHERE idVoucher = " + ID;
+            dBMain.ExecuteScalar_void(sqlString, CommandType.Text);
+        }
     }
 }
