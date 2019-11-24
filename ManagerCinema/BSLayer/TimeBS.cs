@@ -58,7 +58,7 @@ namespace ManagerCinema.BSLayer
 
         public DataTable Search_Time_Id(string id)
         {
-            string sqlString = "select * from TimeShowing_VIEW_Employee where idTimeShowing = " + id;
+            string sqlString = "select * from TimeShowing where idTimeShowing = " + id;
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
     }

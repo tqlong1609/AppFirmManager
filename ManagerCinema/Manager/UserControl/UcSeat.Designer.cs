@@ -71,7 +71,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(374, 54);
             this.txtSearch.TabIndex = 15;
-            this.txtSearch.Text = "Search by seat";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // dgvData

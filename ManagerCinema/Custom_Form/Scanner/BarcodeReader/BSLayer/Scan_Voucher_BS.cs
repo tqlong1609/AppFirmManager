@@ -19,8 +19,14 @@ namespace BarcodeReaderApp.BSLayer
         }
         public void Delete_Voucher(string ID)
         {
-            string sqlString = "DELETE FROM cVoucher WHERE idVoucher = " + ID;
+            string sqlString = "DELETE FROM Voucher WHERE idVoucher = " + ID;
             dBMain.ExecuteScalar_void(sqlString, CommandType.Text);
+        }
+
+        public DataTable getInforVoucher(string id)
+        {
+            string sqlStrig = string.Format("Select * from Voucher where idVoucher = {0}", id);
+            return dBMain.ExecuteQueryDataSet(sqlStrig, CommandType.Text);
         }
     }
 }

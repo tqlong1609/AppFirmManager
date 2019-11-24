@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBookTicket = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListSeat = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnTimeShowing = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnListTicket = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -92,42 +91,6 @@
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 13;
             this.label4.Text = "Online";
-            // 
-            // btnBookTicket
-            // 
-            this.btnBookTicket.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnBookTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBookTicket.BorderRadius = 0;
-            this.btnBookTicket.ButtonText = "BOOKING TICKET";
-            this.btnBookTicket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookTicket.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBookTicket.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBookTicket.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBookTicket.Iconimage")));
-            this.btnBookTicket.Iconimage_right = null;
-            this.btnBookTicket.Iconimage_right_Selected = null;
-            this.btnBookTicket.Iconimage_Selected = null;
-            this.btnBookTicket.IconMarginLeft = 18;
-            this.btnBookTicket.IconMarginRight = 0;
-            this.btnBookTicket.IconRightVisible = true;
-            this.btnBookTicket.IconRightZoom = 0D;
-            this.btnBookTicket.IconVisible = true;
-            this.btnBookTicket.IconZoom = 90D;
-            this.btnBookTicket.IsTab = false;
-            this.btnBookTicket.Location = new System.Drawing.Point(-2, 411);
-            this.btnBookTicket.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnBookTicket.Name = "btnBookTicket";
-            this.btnBookTicket.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
-            this.btnBookTicket.OnHovercolor = System.Drawing.Color.Gray;
-            this.btnBookTicket.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnBookTicket.selected = false;
-            this.btnBookTicket.Size = new System.Drawing.Size(223, 64);
-            this.btnBookTicket.TabIndex = 20;
-            this.btnBookTicket.Text = "BOOKING TICKET";
-            this.btnBookTicket.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBookTicket.Textcolor = System.Drawing.Color.White;
-            this.btnBookTicket.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookTicket.Click += new System.EventHandler(this.btnBookTicket_Click);
             // 
             // btnListSeat
             // 
@@ -338,7 +301,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(1085, 607);
-            this.Controls.Add(this.btnBookTicket);
             this.Controls.Add(this.btnListSeat);
             this.Controls.Add(this.btnTimeShowing);
             this.Controls.Add(this.btnListTicket);
@@ -385,6 +347,5 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnListTicket;
         private Bunifu.Framework.UI.BunifuFlatButton btnTimeShowing;
         private Bunifu.Framework.UI.BunifuFlatButton btnListSeat;
-        private Bunifu.Framework.UI.BunifuFlatButton btnBookTicket;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using ManagerCinema.BSLayer;
 
@@ -6,6 +7,7 @@ namespace ManagerCinema
 {
     public partial class UcListBackground : UserControl
     {
+        private int indexRow;
         private TicketBS TicketBS;
         public UcListBackground()
         {
@@ -27,7 +29,7 @@ namespace ManagerCinema
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
             string id = txtSearch.Text;
-            if(id == "")
+            if (id == "")
             {
                 dgvData.DataSource = TicketBS.loadData();
                 return;
@@ -46,7 +48,24 @@ namespace ManagerCinema
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
+            if(dgvData.Rows.Count > 0 && indexRow >= 0)
+            {
+                string id = dgvData.Rows[indexRow].Cells[0].Value.ToString();
+                if(TicketBS.paymentTicket(id))
+                {
+                    MessageBox.Show("Payment success", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dgvData.DataSource = TicketBS.loadData();
+                }
+                else
+                {
+                    MessageBox.Show("Payment fail", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
 
+        private void dgvData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
         }
     }
 }

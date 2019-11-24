@@ -80,11 +80,6 @@ namespace ManagerCinema
             Scan_Ticket.Show();
         }
 
-        private void btnBookTicket_Click(object sender, EventArgs e)
-        {
-            new FmBookticket().ShowDialog();
-        }
-
         private void openFmQr()
         {
             BarcodeReaderApp.Form1 Scan_Ticket = new BarcodeReaderApp.Form1();

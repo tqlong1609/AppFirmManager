@@ -36,7 +36,7 @@
             this.txtSearch = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.btnConfirm = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPayment = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(374, 54);
             this.txtSearch.TabIndex = 8;
-            this.txtSearch.Text = "Search by ticket";
             this.txtSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuImageButton3
@@ -124,39 +123,40 @@
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvData.Size = new System.Drawing.Size(859, 441);
             this.dgvData.TabIndex = 40;
+            this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             // 
-            // btnConfirm
+            // btnPayment
             // 
-            this.btnConfirm.ActiveBorderThickness = 1;
-            this.btnConfirm.ActiveCornerRadius = 20;
-            this.btnConfirm.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnConfirm.ActiveForecolor = System.Drawing.Color.DimGray;
-            this.btnConfirm.ActiveLineColor = System.Drawing.Color.Red;
-            this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnConfirm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfirm.BackgroundImage")));
-            this.btnConfirm.ButtonText = "Payment";
-            this.btnConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnConfirm.IdleBorderThickness = 1;
-            this.btnConfirm.IdleCornerRadius = 20;
-            this.btnConfirm.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.btnConfirm.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnConfirm.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnConfirm.Location = new System.Drawing.Point(305, 519);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(252, 46);
-            this.btnConfirm.TabIndex = 92;
-            this.btnConfirm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
+            this.btnPayment.ActiveBorderThickness = 1;
+            this.btnPayment.ActiveCornerRadius = 20;
+            this.btnPayment.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnPayment.ActiveForecolor = System.Drawing.Color.DimGray;
+            this.btnPayment.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnPayment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPayment.BackgroundImage")));
+            this.btnPayment.ButtonText = "Payment";
+            this.btnPayment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPayment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayment.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPayment.IdleBorderThickness = 1;
+            this.btnPayment.IdleCornerRadius = 20;
+            this.btnPayment.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
+            this.btnPayment.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnPayment.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnPayment.Location = new System.Drawing.Point(305, 519);
+            this.btnPayment.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.Size = new System.Drawing.Size(252, 46);
+            this.btnPayment.TabIndex = 92;
+            this.btnPayment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnPayment.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // UcListBackground
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(66)))));
-            this.Controls.Add(this.btnConfirm);
+            this.Controls.Add(this.btnPayment);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.bunifuImageButton3);
             this.Controls.Add(this.txtSearch);
@@ -173,6 +173,6 @@
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtSearch;
         private System.Windows.Forms.DataGridView dgvData;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnConfirm;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnPayment;
     }
 }

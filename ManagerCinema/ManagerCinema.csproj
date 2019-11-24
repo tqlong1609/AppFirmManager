@@ -139,12 +139,6 @@
     <Compile Include="Admin\Form\FmAddRoom.Designer.cs">
       <DependentUpon>FmAddRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\Form\FmBookticket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Manager\Form\FmBookticket.Designer.cs">
-      <DependentUpon>FmBookticket.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\UserControl\UcListEmployeeAD.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -367,9 +361,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Form\FmAddRoom.resx">
       <DependentUpon>FmAddRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Manager\Form\FmBookticket.resx">
-      <DependentUpon>FmBookticket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\UserControl\UcListEmployeeAD.resx">
       <DependentUpon>UcListEmployeeAD.cs</DependentUpon>

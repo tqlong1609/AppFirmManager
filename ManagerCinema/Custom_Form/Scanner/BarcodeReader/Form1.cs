@@ -6,6 +6,8 @@ using System.Windows.Forms;
 using TouchlessLib;
 using ZXing;
 using BarcodeReaderApp.BSLayer;
+using System.Data;
+
 namespace BarcodeReaderApp
 {
     public partial class Form1 : Form
@@ -168,11 +170,19 @@ namespace BarcodeReaderApp
                 string Result = Scan_Voucher.Scan_Voucher(ID);
                 if (Result == "True")
                 {
-                    MessageBox.Show("Thanh toán thành công !");
+                    string dataNoti = "";
+                    DataTable data = Scan_Voucher.getInforVoucher(ID);
+                    foreach(DataRow row in data.Rows)
+                    {
+                        dataNoti = string.Format("Id: {0}\nName: {1}\nValue: {2}", row["idVoucher"].ToString(),
+                            row["Name"].ToString(), row["Value"].ToString());
+                    }
+                    MessageBox.Show(dataNoti,"Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     Scan_Voucher.Delete_Voucher(ID);
                 }
                 else
-                    MessageBox.Show("Voucher không tồn tại !");
+                    MessageBox.Show("Voucher không tồn tại \n Hoặc đã được thanh toán!","Notification",
+                        MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
         }
 

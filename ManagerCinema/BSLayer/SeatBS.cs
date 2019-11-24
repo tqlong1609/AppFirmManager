@@ -24,7 +24,7 @@ namespace ManagerCinema.BSLayer
 
         public DataTable Search_Seat_Id(string id)
         {
-            string sqlString = "select * from Seat_VIEW_Employee where idRoomCinema = " + id;
+            string sqlString = string.Format("select * from Seat where name = '{0}'",id);
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
 

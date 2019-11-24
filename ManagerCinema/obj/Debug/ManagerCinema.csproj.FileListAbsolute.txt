@@ -28,7 +28,6 @@ C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddCinema.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddEmployee.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmAddRoom.resources
-C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.FmBookticket.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListEmployeeAD.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListCinemaAD.resources
 C:\Users\Tran Long\Desktop\AppFirmManager\ManagerCinema\obj\Debug\ManagerCinema.UcListMovie.resources

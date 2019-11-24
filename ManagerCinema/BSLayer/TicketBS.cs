@@ -40,7 +40,7 @@ namespace ManagerCinema.BSLayer
 
         public DataTable Search_Ticket_Id(string id)
         {
-            string sqlString = "select idTicket, Time, Date, Price from Ticket_VIEW_Employee " +
+            string sqlString = "select * from Ticket " +
                 "where idTicket = " + id;
             return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
@@ -51,6 +51,18 @@ namespace ManagerCinema.BSLayer
             string sqlString = string.Format("exec insertTicket {0},{1},{2},{3},'{4}','{5}','{6}',{7},{8}",
                 id, idUser, idCinema, idRoomCinema, nameSeat, time, date, idMovie, price);
             return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
+
+        public bool paymentTicket(string id)
+        {
+            string sqlString = string.Format("Delete from Ticket where idTicket = {0}", id);
+            return dBMain.MyExecuteNonQuery(sqlString, CommandType.Text);
+        }
+
+        public DataTable getAllTicketManager()
+        {
+            string sqlString = "select * from getAllTicketManager()";
+            return dBMain.ExecuteQueryDataSet(sqlString, CommandType.Text);
         }
     }
 }
